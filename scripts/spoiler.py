@@ -201,11 +201,11 @@ def resolve(arg, catalog):
 
 
 def techniques_package(index_text, catalog):
-    """data/techniques.json text (solutions branch) -> data/techniques.bin bytes.
+    """data/techniques.json text (maintenance repository) -> data/techniques.bin bytes.
 
     Only what `reveal.py --learn` prints is kept: per technique its name, family, aliases,
     description and its problems easy to hard (catalog id, folder, name). The per-problem
-    notes, difficulties and primary/secondary split stay on the solutions branch.
+    notes, difficulties and primary/secondary split stay in the maintenance repository.
     """
     src = json.loads(index_text)
     if src.get("version") != 1:

@@ -1,7 +1,7 @@
 name: CI
 
-# One workflow for both branches: `solutions` (plain solutions, the maintenance source) and the
-# public branch that scripts/publish.py generates from it (spoilers only, no plaintext solution).
+# One workflow for both repositories: the maintenance repository (plain solutions, the source) and
+# the public one, whose main scripts/publish.py generates from it (spoilers only, no plaintext solution).
 # `on: push` runs on every branch and pull_request runs on refs/pull/N/merge, so jobs are not
 # filtered by ref: the `branch` job looks at the checked-out tree (push or PR alike) and the
 # other jobs run only where their scripts and data exist.
@@ -14,7 +14,7 @@ jobs:
   branch:
     runs-on: ubuntu-24.04
     outputs:
-      solutions: ${{ steps.kind.outputs.solutions }}
+      maintenance: ${{ steps.kind.outputs.maintenance }}
       public: ${{ steps.kind.outputs.public }}
       references: ${{ steps.kind.outputs.references }}
     steps:
@@ -22,8 +22,8 @@ jobs:
       - id: kind
         run: |
           has() { [ -e "$1" ] && echo true || echo false; }
-          # solutions: the spoilers are built here; public: the manifest of a publication.
-          echo "solutions=$(has scripts/build_spoilers.py)" >> "$GITHUB_OUTPUT"
+          # maintenance: the spoilers are built here; public: the manifest of a publication.
+          echo "maintenance=$(has scripts/build_spoilers.py)" >> "$GITHUB_OUTPUT"
           echo "public=$( [ -f data/publication.json ] && [ -f scripts/ci_public.py ] && echo true || echo false)" >> "$GITHUB_OUTPUT"
           echo "references=$(has data/references.json)" >> "$GITHUB_OUTPUT"
           cat "$GITHUB_OUTPUT"
@@ -46,7 +46,7 @@ jobs:
             g++ -std=c++17 -O2 -I. "$t" -o /tmp/t && /tmp/t
             echo "::endgroup::"
           done
-      - name: Tutor scripts tests (tutor state, verify runner; reveal on solutions)
+      - name: Tutor scripts tests (tutor state, verify runner; reveal on maintenance)
         if: hashFiles('scripts/tests/test_tutor_state.py') != ''
         env:
           CXX: g++
@@ -55,11 +55,11 @@ jobs:
           python3 scripts/tests/test_verify.py
           if [ -f scripts/tests/test_reveal.py ]; then python3 scripts/tests/test_reveal.py; fi
 
-  # solutions: the optimal solutions on the samples, the levels compiled, the catalog and the
+  # maintenance: the optimal solutions on the samples, the levels compiled, the catalog and the
   # spoiler packages (integrity, revealability, the technique index).
-  solutions:
+  maintenance:
     needs: branch
-    if: needs.branch.outputs.solutions == 'true'
+    if: needs.branch.outputs.maintenance == 'true'
     runs-on: ubuntu-24.04
     env:
       CXX: g++
@@ -80,11 +80,11 @@ jobs:
         if: hashFiles('scripts/ci_public.py') != ''
         run: python3 scripts/ci_public.py structure
 
-  # solutions: the optimal solutions of the working tree pass every local test, judged by
+  # maintenance: the optimal solutions of the working tree pass every local test, judged by
   # scripts/verify.py as a student's attempt is.
   optimal-tests:
     needs: branch
-    if: needs.branch.outputs.solutions == 'true'
+    if: needs.branch.outputs.maintenance == 'true'
     runs-on: ubuntu-24.04
     env:
       CXX: g++

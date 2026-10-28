@@ -7,7 +7,7 @@ Usage: python3 scripts/ci_public.py structure
 
 The public branch holds no plaintext solution, so everything is checked through the
 spoilers. Spoilers are read from REVEAL_SPOILER_ROOT when set, else from the checkout. On the
-solutions branch (no spoiler.bin, scripts/build_spoilers.py present) they are first built from
+maintenance repository (no spoiler.bin, scripts/build_spoilers.py present) they are first built from
 HEAD into a temporary spoiler root, so the same checks run before a publication.
 
 structure  every practice problem of data/practice.json has tests/ (each NN.in with its
