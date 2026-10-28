@@ -1,0 +1,5 @@
+7
+GATAAGC
+8
+CGCCTAAC
+15 -3 -20

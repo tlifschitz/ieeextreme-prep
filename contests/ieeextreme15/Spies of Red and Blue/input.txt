@@ -1,0 +1,10 @@
+1
+4 4 6
+R1 R2 R3
+B1 B1 B2
+w R2 B2
+w R4 B3
+c B2 R3
+w R4 B2
+c R3 B4
+w R4 B2

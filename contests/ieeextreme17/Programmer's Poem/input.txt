@@ -1,0 +1,10 @@
+2 6
+hash dash crash slash
+underscore four
+
+Waka waka bang splat tick tick hash
+Caret quote back tick dollar dollar dash
+Bang splat equal at dollar underscore
+Percent splat waka waka tilde number four
+Ampersand bracket bracket dot dot slash
+Vertical bar curly bracket comma comma CRASH

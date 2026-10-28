@@ -1,0 +1,64 @@
+10
+6
+DMOTsoYtxqAYfwF 2 ZMQOb QjVMtbYoMqb
+ZMQOb 4 HPlKsLcsfYaHxp EsAoCaAQTqpOoast DMOTsoYtxqAYfwF QjVMtbYoMqb
+EsAoCaAQTqpOoast 4 HPlKsLcsfYaHxp QjVMtbYoMqb ZMQOb DMOTsoYtxqAYfwF
+DMOTsoYtxqAYfwF 1 HPlKsLcsfYaHxp
+EsAoCaAQTqpOoast 2 ZMQOb HPlKsLcsfYaHxp
+ZMQOb 1 EsAoCaAQTqpOoast
+7
+VRdW 1 UDDqcdbTmBQqGyg
+uEGQYRPeougTfIhpazOc 3 VRdW jOSqplLapHphg ryAcz
+VRdW 4 jOSqplLapHphg uEGQYRPeougTfIhpazOc ryAcz UDDqcdbTmBQqGyg
+ryAcz 2 UDDqcdbTmBQqGyg uEGQYRPeougTfIhpazOc
+jOSqplLapHphg 4 VRdW UDDqcdbTmBQqGyg uEGQYRPeougTfIhpazOc ryAcz
+uEGQYRPeougTfIhpazOc 4 ryAcz UDDqcdbTmBQqGyg jOSqplLapHphg VRdW
+uEGQYRPeougTfIhpazOc 3 UDDqcdbTmBQqGyg VRdW jOSqplLapHphg
+4
+kgTxzszeomDnTaOaov 1 Gv
+MNndrObyOdjQI 4 kgTxzszeomDnTaOaov CGiFJfWOQgUQudDfZFU Gv nGYOIQOU
+CGiFJfWOQgUQudDfZFU 2 Gv nGYOIQOU
+kgTxzszeomDnTaOaov 3 CGiFJfWOQgUQudDfZFU nGYOIQOU MNndrObyOdjQI
+3
+SWShUWownKBflfDfcKjj 2 VCxBbwmfnyAY NyMm
+VCxBbwmfnyAY 3 SWShUWownKBflfDfcKjj RzAq XnAcWw
+RzAq 1 XnAcWw
+7
+hH 4 ukzdyczO fSXjNctqtPSCUueOqy aiuMNfLItCjMBsKNZA PcjakVmQLsNQLAb
+aiuMNfLItCjMBsKNZA 3 fSXjNctqtPSCUueOqy PcjakVmQLsNQLAb ukzdyczO
+hH 1 fSXjNctqtPSCUueOqy
+ukzdyczO 2 PcjakVmQLsNQLAb hH
+PcjakVmQLsNQLAb 2 aiuMNfLItCjMBsKNZA hH
+fSXjNctqtPSCUueOqy 1 hH
+ukzdyczO 3 hH fSXjNctqtPSCUueOqy aiuMNfLItCjMBsKNZA
+5
+WnkPmZUHcIfr 1 Vrmg
+Vrmg 1 J
+Vrmg 4 FFwb WnkPmZUHcIfr J T
+T 2 J WnkPmZUHcIfr
+Vrmg 3 WnkPmZUHcIfr FFwb J
+4
+sBvSYuYzm 3 FcFipuEAOxUv LfHjSpIpblckqo WZOAf
+LfHjSpIpblckqo 1 sBvSYuYzm
+LfHjSpIpblckqo 2 WZOAf FcFipuEAOxUv
+FcFipuEAOxUv 2 WZOAf pDbIbwbCIAG
+2
+Tquwh 2 mNpzraDduVtuSvXpp jUsGdwyanwfQuvxBG
+jUsGdwyanwfQuvxBG 1 Hs
+7
+oOZRdKgafQ 3 YZSYPxJZ lVJNimMkZnSUXMDHpn kjcy
+BNscg 3 oOZRdKgafQ kjcy YZSYPxJZ
+kjcy 4 BNscg YZSYPxJZ oOZRdKgafQ lVJNimMkZnSUXMDHpn
+BNscg 3 lVJNimMkZnSUXMDHpn YZSYPxJZ oOZRdKgafQ
+oOZRdKgafQ 3 BNscg kjcy lVJNimMkZnSUXMDHpn
+oOZRdKgafQ 4 BNscg lVJNimMkZnSUXMDHpn kjcy YZSYPxJZ
+kjcy 4 oOZRdKgafQ lVJNimMkZnSUXMDHpn YZSYPxJZ BNscg
+8
+wZDeMXJSlsf 4 xHuCGfpYv p GrMdWnBgrBpRIueBDpGx NxXv
+GrMdWnBgrBpRIueBDpGx 1 p
+GrMdWnBgrBpRIueBDpGx 4 NxXv wZDeMXJSlsf xHuCGfpYv p
+p 4 GrMdWnBgrBpRIueBDpGx xHuCGfpYv wZDeMXJSlsf NxXv
+GrMdWnBgrBpRIueBDpGx 3 xHuCGfpYv wZDeMXJSlsf NxXv
+p 3 GrMdWnBgrBpRIueBDpGx xHuCGfpYv wZDeMXJSlsf
+xHuCGfpYv 4 p wZDeMXJSlsf NxXv GrMdWnBgrBpRIueBDpGx
+GrMdWnBgrBpRIueBDpGx 4 xHuCGfpYv NxXv p wZDeMXJSlsf

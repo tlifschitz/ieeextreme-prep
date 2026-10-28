@@ -1,0 +1,28 @@
+3
+3 1
+chaos scrambler 31
+chaos carousel 17
+carousel chaos 53
+scrambler chaos 37
+scrambler carousel 23
+carousel scrambler 19
+3 1
+chaos scrambler 37
+chaos carousel 17
+carousel chaos 53
+scrambler chaos 31
+scrambler carousel 23
+carousel scrambler 19
+4 2
+a b 40
+a c 20
+a d 20
+b a 30
+b c 30
+b d 20
+c a 20
+c b 20
+c d 40
+d a 30
+d b 20
+d c 30

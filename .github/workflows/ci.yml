@@ -1,0 +1,148 @@
+name: CI
+
+# One workflow for both branches: `solutions` (plain solutions, the maintenance source) and the
+# public branch that scripts/publish.py generates from it (spoilers only, no plaintext solution).
+# `on: push` runs on every branch and pull_request runs on refs/pull/N/merge, so jobs are not
+# filtered by ref: the `branch` job looks at the checked-out tree (push or PR alike) and the
+# other jobs run only where their scripts and data exist.
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  branch:
+    runs-on: ubuntu-24.04
+    outputs:
+      solutions: ${{ steps.kind.outputs.solutions }}
+      public: ${{ steps.kind.outputs.public }}
+      references: ${{ steps.kind.outputs.references }}
+    steps:
+      - uses: actions/checkout@v5
+      - id: kind
+        run: |
+          has() { [ -e "$1" ] && echo true || echo false; }
+          # solutions: the spoilers are built here; public: the manifest of a publication.
+          echo "solutions=$(has scripts/build_spoilers.py)" >> "$GITHUB_OUTPUT"
+          echo "public=$( [ -f data/publication.json ] && [ -f scripts/ci_public.py ] && echo true || echo false)" >> "$GITHUB_OUTPUT"
+          echo "references=$(has data/references.json)" >> "$GITHUB_OUTPUT"
+          cat "$GITHUB_OUTPUT"
+
+  lib:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.14"
+      - run: pip install numpy==2.4.6 pytest
+      - name: Python library tests
+        run: pytest -q lib/tests
+      - name: C++ library tests
+        # Every lib/tests/*.cpp is a program that exits 0 when its tests pass.
+        run: |
+          for t in lib/tests/*.cpp; do
+            echo "::group::$t"
+            g++ -std=c++17 -O2 -I. "$t" -o /tmp/t && /tmp/t
+            echo "::endgroup::"
+          done
+      - name: Tutor scripts tests (tutor state, verify runner; reveal on solutions)
+        if: hashFiles('scripts/tests/test_tutor_state.py') != ''
+        env:
+          CXX: g++
+        run: |
+          python3 scripts/tests/test_tutor_state.py
+          python3 scripts/tests/test_verify.py
+          if [ -f scripts/tests/test_reveal.py ]; then python3 scripts/tests/test_reveal.py; fi
+
+  # solutions: the optimal solutions on the samples, the levels compiled, the catalog and the
+  # spoiler packages (integrity, revealability, the technique index).
+  solutions:
+    needs: branch
+    if: needs.branch.outputs.solutions == 'true'
+    runs-on: ubuntu-24.04
+    env:
+      CXX: g++
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.14"
+      - run: pip install numpy==2.4.6
+      - name: Optimal solutions on the samples, levels compiled
+        if: hashFiles('scripts/ci_solutions.py') != ''
+        run: python3 scripts/ci_solutions.py -j 4
+      - name: Catalog up to date, spoiler packages revealable
+        run: |
+          python3 scripts/catalog.py check
+          python3 scripts/build_spoilers.py --check
+      - name: Practice problems have tests/, their spoilers have hints.json and their judges
+        if: hashFiles('scripts/ci_public.py') != ''
+        run: python3 scripts/ci_public.py structure
+
+  # solutions: the optimal solutions of the working tree pass every local test, judged by
+  # scripts/verify.py as a student's attempt is.
+  optimal-tests:
+    needs: branch
+    if: needs.branch.outputs.solutions == 'true'
+    runs-on: ubuntu-24.04
+    env:
+      CXX: g++
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.14"
+      - run: pip install numpy==2.4.6
+      - name: Optimal solutions pass the local tests
+        if: hashFiles('scripts/ci_verify_optimal.py') != ''
+        run: python3 scripts/ci_verify_optimal.py -j 4
+
+  # public: the spoilers decode, match the publication manifest, and every tracked file is a
+  # manifest artifact; every practice problem has tests/ and its spoiler has hints.json.
+  spoilers:
+    needs: branch
+    if: needs.branch.outputs.public == 'true'
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.14"
+      - name: Spoiler packages decode and match the publication manifest
+        run: python3 scripts/spoiler.py verify
+      - name: Tracked files are the manifest; practice problems have tests/ and hints
+        run: python3 scripts/ci_public.py structure
+
+  # public: the published tests agree with the published spoilers. Each spoiler is decoded
+  # outside the checkout and its optimal is judged by verify.py --solution (checker and
+  # interactive problems through reveal.py --validate / --interact).
+  spoiler-tests:
+    needs: branch
+    if: needs.branch.outputs.public == 'true'
+    runs-on: ubuntu-24.04
+    env:
+      CXX: g++
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.14"
+      - run: pip install numpy==2.4.6
+      - name: Every spoiler's optimal passes the published tests
+        run: python3 scripts/ci_public.py tests -j 4
+
+  # Network dependent, so it never blocks: every URL of data/references.json, with retries.
+  links:
+    needs: branch
+    if: needs.branch.outputs.references == 'true'
+    continue-on-error: true
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.14"
+      - name: Reference links answer
+        if: hashFiles('scripts/ci_public.py') != ''
+        run: python3 scripts/ci_public.py links --retries 3

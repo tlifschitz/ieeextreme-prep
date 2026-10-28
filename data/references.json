@@ -1,0 +1,5958 @@
+{
+  "version": 1,
+  "sources": {
+    "cp-algorithms": {
+      "home": "https://cp-algorithms.com/",
+      "title_suffix": " - Algorithms for Competitive Programming",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://github.com/cp-algorithms/cp-algorithms/blob/main/LICENSE"
+    },
+    "Competitive Programmer's Handbook": {
+      "home": "https://cses.fi/book/",
+      "author": "Antti Laaksonen",
+      "edition": "Draft July 3, 2018",
+      "license": "CC BY-NC-SA 4.0",
+      "license_url": "https://github.com/pllk/cphb"
+    },
+    "USACO Guide": {
+      "home": "https://usaco.guide/",
+      "title_suffix": " · USACO Guide",
+      "license": "CC BY-NC-SA 4.0",
+      "license_url": "https://github.com/cpinitiative/usaco-guide/blob/master/LICENSE"
+    },
+    "CSES Problem Set": {
+      "home": "https://cses.fi/problemset/",
+      "title_prefix": "CSES - ",
+      "license": null,
+      "license_url": null
+    },
+    "Competitive Programming 4": {
+      "home": "https://cpbook.net/",
+      "author": "Steven Halim, Felix Halim, Suhendry Effendy",
+      "edition": "4th edition (Book 1 and Book 2), 19 July 2020",
+      "license": null,
+      "license_url": null
+    },
+    "Guide to Competitive Programming": {
+      "home": "https://link.springer.com/book/10.1007/978-3-031-61794-2",
+      "author": "Antti Laaksonen",
+      "edition": "3rd edition, Springer 2024, ISBN 978-3-031-61793-5",
+      "license": null,
+      "license_url": null
+    },
+    "Introduction to Algorithms": {
+      "home": "https://mitpress.mit.edu/9780262033848/introduction-to-algorithms/",
+      "author": "Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein",
+      "edition": "3rd edition, MIT Press 2009, ISBN 978-0-262-03384-8",
+      "license": null,
+      "license_url": null
+    },
+    "NumPy documentation": {
+      "home": "https://numpy.org/doc/2.2/",
+      "title_suffix": " — NumPy v2.2 Manual",
+      "license": "BSD-3-Clause",
+      "license_url": "https://numpy.org/doc/2.2/license.html"
+    },
+    "Python Data Science Handbook": {
+      "home": "https://jakevdp.github.io/PythonDataScienceHandbook/",
+      "author": "Jake VanderPlas",
+      "title_suffix": " | Python Data Science Handbook",
+      "license": "Text CC BY-NC-ND 3.0 US, code MIT",
+      "license_url": "https://creativecommons.org/licenses/by-nc-nd/3.0/us/legalcode"
+    },
+    "Journal of the ACM": {
+      "home": "https://dl.acm.org/journal/jacm",
+      "license": null,
+      "license_url": null
+    },
+    "Theoretical Computer Science": {
+      "home": "https://www.sciencedirect.com/journal/theoretical-computer-science",
+      "license": null,
+      "license_url": null
+    },
+    "Algorithm Design": {
+      "home": "https://www.pearson.com/",
+      "author": "Jon Kleinberg, Éva Tardos",
+      "edition": "Pearson New International Edition, 2014, ISBN 978-1-292-02394-6",
+      "license": null,
+      "license_url": null
+    },
+    "Algorithms": {
+      "home": "https://jeffe.cs.illinois.edu/teaching/algorithms/",
+      "author": "Jeff Erickson",
+      "edition": "1st paperback edition, June 13, 2019, ISBN 978-1-792-64483-2",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "Algorithms lecture notes": {
+      "home": "https://jeffe.cs.illinois.edu/teaching/algorithms/#notes",
+      "author": "Jeff Erickson",
+      "edition": "notes as published with the 2019 book (each note is cited by its title as chapter)",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "Concrete Mathematics": {
+      "home": "https://www-cs-faculty.stanford.edu/~knuth/gkp.html",
+      "author": "Ronald L. Graham, Donald E. Knuth, Oren Patashnik",
+      "edition": "2nd edition, Addison-Wesley 1994",
+      "license": null,
+      "license_url": null
+    },
+    "Mathematics for Computer Science": {
+      "home": "https://courses.csail.mit.edu/6.042/spring18/mcs.pdf",
+      "author": "Eric Lehman, F. Tom Leighton, Albert R. Meyer",
+      "edition": "revised June 6, 2018",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    "generatingfunctionology": {
+      "home": "https://www2.math.upenn.edu/~wilf/DownldGF.html",
+      "author": "Herbert S. Wilf",
+      "edition": "2nd edition, Academic Press 1994 (free download from the author's page)",
+      "license": null,
+      "license_url": null
+    }
+  },
+  "references": [
+    {
+      "id": "cpalgo-minimum-queue-windows",
+      "techniques": [
+        "monotonic-queue"
+      ],
+      "kind": "web",
+      "source": "cp-algorithms",
+      "title": "Minimum Stack / Minimum Queue",
+      "url": "https://cp-algorithms.com/data_structures/stack_queue_modification.html",
+      "section": "Finding the minimum for all subarrays of fixed length",
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "How a queue that maintains its minimum gives the minimum of every window of fixed length in O(n)."
+    },
+    {
+      "id": "cpalgo-dsu",
+      "techniques": [
+        "dsu"
+      ],
+      "kind": "web",
+      "source": "cp-algorithms",
+      "title": "Disjoint Set Union",
+      "url": "https://cp-algorithms.com/data_structures/disjoint_set_union.html",
+      "section": "Build an efficient data structure",
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Union-find from the naive version to path compression and union by size or rank, with the complexity."
+    },
+    {
+      "id": "cpalgo-dsu-parity",
+      "techniques": [
+        "dsu-parity"
+      ],
+      "kind": "web",
+      "source": "cp-algorithms",
+      "title": "Disjoint Set Union",
+      "url": "https://cp-algorithms.com/data_structures/disjoint_set_union.html",
+      "section": "Support the parity of the path length / Checking bipartiteness online",
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Storing the parity of the path to the representative so that union-find detects odd cycles online."
+    },
+    {
+      "id": "cpalgo-fenwick",
+      "techniques": [
+        "fenwick-tree"
+      ],
+      "kind": "web",
+      "source": "cp-algorithms",
+      "title": "Fenwick Tree",
+      "url": "https://cp-algorithms.com/data_structures/fenwick.html",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "How a Fenwick tree stores partial sums, with point update / range query and the range-update variants."
+    },
+    {
+      "id": "cpalgo-segment-tree-lazy",
+      "techniques": [
+        "segment-tree-lazy"
+      ],
+      "kind": "web",
+      "source": "cp-algorithms",
+      "title": "Segment Tree",
+      "url": "https://cp-algorithms.com/data_structures/segment_tree.html",
+      "section": "Range updates (Lazy Propagation)",
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Postponing range updates in a segment tree by pushing pending changes down only when a node is visited."
+    },
+    {
+      "id": "cpalgo-sqrt-decomposition",
+      "techniques": [
+        "sqrt-decomposition"
+      ],
+      "kind": "web",
+      "source": "cp-algorithms",
+      "title": "Sqrt Decomposition",
+      "url": "https://cp-algorithms.com/data_structures/sqrt_decomposition.html",
+      "section": "Sqrt-decomposition based data structure",
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Splitting an array into blocks of size about sqrt(n) to answer range queries and updates in O(sqrt(n))."
+    },
+    {
+      "id": "cpalgo-sparse-table",
+      "techniques": [
+        "sparse-table"
+      ],
+      "kind": "web",
+      "source": "cp-algorithms",
+      "title": "Sparse Table",
+      "url": "https://cp-algorithms.com/data_structures/sparse-table.html",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Precomputing answers on power-of-two ranges so that range minimum queries take O(1) after O(n log n)."
+    },
+    {
+      "id": "cpalgo-kruskal-dsu",
+      "techniques": [
+        "kruskal-dsu"
+      ],
+      "kind": "web",
+      "source": "cp-algorithms",
+      "title": "Minimum Spanning Tree - Kruskal with Disjoint Set Union",
+      "url": "https://cp-algorithms.com/graph/mst_kruskal_with_dsu.html",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Kruskal's algorithm: sort the edges by weight and join components with union-find."
+    },
+    {
+      "id": "cpalgo-dijkstra",
+      "techniques": [
+        "dijkstra"
+      ],
+      "kind": "web",
+      "source": "cp-algorithms",
+      "title": "Dijkstra - finding shortest paths from given vertex",
+      "url": "https://cp-algorithms.com/graph/dijkstra.html",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Dijkstra's algorithm on non-negative weights, its proof and how to restore the paths."
+    },
+    {
+      "id": "cpalgo-dijkstra-sparse",
+      "techniques": [
+        "dijkstra"
+      ],
+      "kind": "web",
+      "source": "cp-algorithms",
+      "title": "Dijkstra on sparse graphs",
+      "url": "https://cp-algorithms.com/graph/dijkstra_sparse.html",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "The O(m log n) implementation of Dijkstra with a set or a priority queue."
+    },
+    {
+      "id": "cpalgo-topological-sort",
+      "techniques": [
+        "topological-sort"
+      ],
+      "kind": "web",
+      "source": "cp-algorithms",
+      "title": "Topological Sorting",
+      "url": "https://cp-algorithms.com/graph/topological-sort.html",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Ordering the vertices of a DAG so every edge points forward (DFS-based version, not Kahn's)."
+    },
+    {
+      "id": "cpalgo-connected-components",
+      "techniques": [
+        "connected-components"
+      ],
+      "kind": "web",
+      "source": "cp-algorithms",
+      "title": "Finding Connected Components",
+      "url": "https://cp-algorithms.com/graph/search-for-connected-components.html",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Labelling the connected components of an undirected graph with DFS or BFS, recursive and iterative."
+    },
+    {
+      "id": "cpalgo-dfs",
+      "techniques": [
+        "tree-traversal"
+      ],
+      "kind": "web",
+      "source": "cp-algorithms",
+      "title": "Depth First Search",
+      "url": "https://cp-algorithms.com/graph/depth-first-search.html",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 3,
+      "note": "Depth-first search, entry and exit times and edge classification: the basis of rooted-tree passes."
+    },
+    {
+      "id": "cpalgo-lca-binary-lifting",
+      "techniques": [
+        "lca"
+      ],
+      "kind": "web",
+      "source": "cp-algorithms",
+      "title": "Lowest Common Ancestor - Binary Lifting",
+      "url": "https://cp-algorithms.com/graph/lca_binary_lifting.html",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Finding the LCA with ancestor tables at power-of-two distances in O(log n) per query."
+    },
+    {
+      "id": "cpalgo-lca-euler-tour",
+      "techniques": [
+        "lca"
+      ],
+      "kind": "web",
+      "source": "cp-algorithms",
+      "title": "Lowest Common Ancestor - O(sqrt(N)) and O(log N) with O(N) preprocessing",
+      "url": "https://cp-algorithms.com/graph/lca.html",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Reducing LCA to a range minimum query over the Euler tour of the tree."
+    },
+    {
+      "id": "cpalgo-hld",
+      "techniques": [
+        "heavy-light-decomposition"
+      ],
+      "kind": "web",
+      "source": "cp-algorithms",
+      "title": "Heavy-light decomposition",
+      "url": "https://cp-algorithms.com/graph/hld.html",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Cutting a tree into heavy paths so that any path query touches O(log n) segments."
+    },
+    {
+      "id": "cpalgo-euler-path",
+      "techniques": [
+        "eulerian-path"
+      ],
+      "kind": "web",
+      "source": "cp-algorithms",
+      "title": "Finding the Eulerian path in O(M)",
+      "url": "https://cp-algorithms.com/graph/euler_path.html",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "The degree conditions for an Eulerian path or cycle and Hierholzer-style construction in O(m)."
+    },
+    {
+      "id": "cpalgo-knapsack",
+      "techniques": [
+        "knapsack-dp"
+      ],
+      "kind": "web",
+      "source": "cp-algorithms",
+      "title": "Knapsack Problem",
+      "url": "https://cp-algorithms.com/dynamic_programming/knapsack.html",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "0-1, complete (unbounded) and multiple knapsack DPs and the order of the loops in each."
+    },
+    {
+      "id": "cpalgo-intro-dp",
+      "techniques": [
+        "linear-dp"
+      ],
+      "kind": "web",
+      "source": "cp-algorithms",
+      "title": "Introduction to Dynamic Programming",
+      "url": "https://cp-algorithms.com/dynamic_programming/intro-to-dp.html",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 3,
+      "note": "What a DP state and transition are, memoization versus bottom-up, and classic DP problems."
+    },
+    {
+      "id": "cpalgo-submasks",
+      "techniques": [
+        "bitmask-dp"
+      ],
+      "kind": "web",
+      "source": "cp-algorithms",
+      "title": "Enumerating submasks of a bitmask",
+      "url": "https://cp-algorithms.com/algebra/all-submasks.html",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Enumerating the submasks of a mask, and of all masks in O(3^n), as used in DP over subsets."
+    },
+    {
+      "id": "cpalgo-max-subarray",
+      "techniques": [
+        "kadane"
+      ],
+      "kind": "web",
+      "source": "cp-algorithms",
+      "title": "Search the subsegment with the maximum/minimum sum",
+      "url": "https://cp-algorithms.com/others/maximum_average_segment.html",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Maximum subarray sum in O(n) with prefix sums or Kadane's running sum, plus variants."
+    },
+    {
+      "id": "cpalgo-catalan",
+      "techniques": [
+        "ballot-path-dp"
+      ],
+      "kind": "web",
+      "source": "cp-algorithms",
+      "title": "Catalan Numbers",
+      "url": "https://cp-algorithms.com/combinatorics/catalan-numbers.html",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "The Catalan numbers, the objects they count (bracket sequences, lattice paths) and their recurrence."
+    },
+    {
+      "id": "cpalgo-bracket-sequences",
+      "techniques": [
+        "ballot-path-dp"
+      ],
+      "kind": "web",
+      "source": "cp-algorithms",
+      "title": "Balanced bracket sequences",
+      "url": "https://cp-algorithms.com/combinatorics/bracket_sequences.html",
+      "section": "Number of balanced sequences",
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Counting balanced bracket sequences by formula and by a DP over the current balance."
+    },
+    {
+      "id": "cpalgo-cht",
+      "techniques": [
+        "convex-hull-trick"
+      ],
+      "kind": "web",
+      "source": "cp-algorithms",
+      "title": "Convex hull trick and Li Chao tree",
+      "url": "https://cp-algorithms.com/geometry/convex_hull_trick.html",
+      "section": "Convex hull trick",
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Keeping the lower envelope of lines to answer min of a*x + b queries, the classic DP speed-up."
+    },
+    {
+      "id": "cpalgo-binary-search-predicate",
+      "techniques": [
+        "binary-search-on-answer"
+      ],
+      "kind": "web",
+      "source": "cp-algorithms",
+      "title": "Binary Search",
+      "url": "https://cp-algorithms.com/num_methods/binary_search.html",
+      "section": "Search on arbitrary predicate",
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Binary searching the boundary of a monotone predicate, including binary search on the answer."
+    },
+    {
+      "id": "cpalgo-tortoise-hare",
+      "techniques": [
+        "functional-graph",
+        "periodicity"
+      ],
+      "kind": "web",
+      "source": "cp-algorithms",
+      "title": "Tortoise and Hare Algorithm (Linked List cycle detection)",
+      "url": "https://cp-algorithms.com/others/tortoise_and_hare.html",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Floyd's two-pointer method to detect a cycle in a successor sequence and find where it starts."
+    },
+    {
+      "id": "cpalgo-prefix-function-period",
+      "techniques": [
+        "periodicity"
+      ],
+      "kind": "web",
+      "source": "cp-algorithms",
+      "title": "Prefix function - Knuth-Morris-Pratt",
+      "url": "https://cp-algorithms.com/string/prefix-function.html",
+      "section": "Compressing a string",
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Finding the smallest period of a string from its prefix function."
+    },
+    {
+      "id": "cpalgo-modular-inverse",
+      "techniques": [
+        "modular-arithmetic"
+      ],
+      "kind": "web",
+      "source": "cp-algorithms",
+      "title": "Modular Inverse",
+      "url": "https://cp-algorithms.com/algebra/module-inverse.html",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Computing modular inverses with extended Euclid, Fermat's little theorem, and for a whole array."
+    },
+    {
+      "id": "cpalgo-binary-exp",
+      "techniques": [
+        "modular-arithmetic"
+      ],
+      "kind": "web",
+      "source": "cp-algorithms",
+      "title": "Binary Exponentiation",
+      "url": "https://cp-algorithms.com/algebra/binary-exp.html",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Fast exponentiation by squaring, modulo m, and its applications."
+    },
+    {
+      "id": "cpalgo-sieve",
+      "techniques": [
+        "number-theory-primes"
+      ],
+      "kind": "web",
+      "source": "cp-algorithms",
+      "title": "Sieve of Eratosthenes",
+      "url": "https://cp-algorithms.com/algebra/sieve-of-eratosthenes.html",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "The sieve of Eratosthenes, its complexity, optimizations and segmented version."
+    },
+    {
+      "id": "cpalgo-factorization",
+      "techniques": [
+        "number-theory-primes"
+      ],
+      "kind": "web",
+      "source": "cp-algorithms",
+      "title": "Integer factorization",
+      "url": "https://cp-algorithms.com/algebra/factorization.html",
+      "section": "Trial division",
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Factorizing an integer by trial division up to its square root."
+    },
+    {
+      "id": "cpalgo-binomial",
+      "techniques": [
+        "combinatorics-counting"
+      ],
+      "kind": "web",
+      "source": "cp-algorithms",
+      "title": "Binomial Coefficients",
+      "url": "https://cp-algorithms.com/combinatorics/binomial-coefficients.html",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Properties of binomial coefficients and how to compute them exactly or modulo m."
+    },
+    {
+      "id": "cpalgo-inclusion-exclusion",
+      "techniques": [
+        "inclusion-exclusion"
+      ],
+      "kind": "web",
+      "source": "cp-algorithms",
+      "title": "The Inclusion-Exclusion Principle",
+      "url": "https://cp-algorithms.com/combinatorics/inclusion-exclusion.html",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "The inclusion-exclusion formula, its proof and many worked counting applications."
+    },
+    {
+      "id": "cpalgo-power-series",
+      "techniques": [
+        "generating-functions"
+      ],
+      "kind": "web",
+      "source": "cp-algorithms",
+      "title": "Operations on polynomials and series",
+      "url": "https://cp-algorithms.com/algebra/polynomial.html",
+      "section": "Basic Notion and facts",
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Polynomials and formal power series: multiplication, inverse series, division."
+    },
+    {
+      "id": "cpalgo-big-integer",
+      "techniques": [
+        "big-integer-arithmetic"
+      ],
+      "kind": "web",
+      "source": "cp-algorithms",
+      "title": "Arbitrary-Precision Arithmetic",
+      "url": "https://cp-algorithms.com/algebra/big-integer.html",
+      "section": "Classical Integer Long Arithmetic",
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Storing big integers as arrays of digits and implementing addition, subtraction and multiplication."
+    },
+    {
+      "id": "cpalgo-fractions",
+      "techniques": [
+        "probability"
+      ],
+      "kind": "web",
+      "source": "cp-algorithms",
+      "title": "Arbitrary-Precision Arithmetic",
+      "url": "https://cp-algorithms.com/algebra/big-integer.html",
+      "section": "Arithmetic in Irreducible Fractions",
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 3,
+      "note": "Keeping exact rational values as reduced numerator/denominator pairs instead of floating point."
+    },
+    {
+      "id": "cpalgo-bit-manipulation",
+      "techniques": [
+        "bitwise-reasoning"
+      ],
+      "kind": "web",
+      "source": "cp-algorithms",
+      "title": "Bit manipulation",
+      "url": "https://cp-algorithms.com/algebra/bit-manipulation.html",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 3,
+      "note": "Binary representation, bitwise and shift operators and the standard bit tricks."
+    },
+    {
+      "id": "cpalgo-manacher",
+      "techniques": [
+        "manacher"
+      ],
+      "kind": "web",
+      "source": "cp-algorithms",
+      "title": "Manacher's Algorithm - Finding all sub-palindromes in O(N)",
+      "url": "https://cp-algorithms.com/string/manacher.html",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Computing the longest palindrome centered at every position in O(n), odd and even lengths."
+    },
+    {
+      "id": "cpalgo-basic-geometry",
+      "techniques": [
+        "geometry-basics"
+      ],
+      "kind": "web",
+      "source": "cp-algorithms",
+      "title": "Basic Geometry",
+      "url": "https://cp-algorithms.com/geometry/basic-geometry.html",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Points as vectors, dot and cross products and what they say about angles, areas and orientation."
+    },
+    {
+      "id": "cpalgo-segments-intersect",
+      "techniques": [
+        "geometry-basics"
+      ],
+      "kind": "web",
+      "source": "cp-algorithms",
+      "title": "Check if two segments intersect",
+      "url": "https://cp-algorithms.com/geometry/check-segments-intersection.html",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Testing whether two segments intersect with orientation (cross product) tests and the collinear case."
+    },
+    {
+      "id": "cpalgo-games-on-graphs",
+      "techniques": [
+        "game-minimax-dp"
+      ],
+      "kind": "web",
+      "source": "cp-algorithms",
+      "title": "Games on arbitrary graphs",
+      "url": "https://cp-algorithms.com/game_theory/games_on_graphs.html",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Classifying game states as winning or losing by working backwards from terminal states."
+    },
+    {
+      "id": "cphb-8-2-nearest-smaller-elements",
+      "techniques": [
+        "monotonic-stack"
+      ],
+      "kind": "web",
+      "source": "Competitive Programmer's Handbook",
+      "title": "Competitive Programmer’s Handbook",
+      "url": "https://cses.fi/book/book.pdf",
+      "section": "8.2 Nearest smaller elements",
+      "chapter": "8 Amortized analysis",
+      "pages": null,
+      "edition": "Draft July 3, 2018",
+      "min_step": 4,
+      "note": "Finding the nearest smaller element of every position with a stack in amortized O(n)."
+    },
+    {
+      "id": "cphb-8-3-sliding-window-minimum",
+      "techniques": [
+        "monotonic-queue"
+      ],
+      "kind": "web",
+      "source": "Competitive Programmer's Handbook",
+      "title": "Competitive Programmer’s Handbook",
+      "url": "https://cses.fi/book/book.pdf",
+      "section": "8.3 Sliding window minimum",
+      "chapter": "8 Amortized analysis",
+      "pages": null,
+      "edition": "Draft July 3, 2018",
+      "min_step": 4,
+      "note": "The minimum of every fixed-size window with a deque that keeps increasing values."
+    },
+    {
+      "id": "cphb-15-2-union-find-structure",
+      "techniques": [
+        "dsu"
+      ],
+      "kind": "web",
+      "source": "Competitive Programmer's Handbook",
+      "title": "Competitive Programmer’s Handbook",
+      "url": "https://cses.fi/book/book.pdf",
+      "section": "15.2 Union-find structure",
+      "chapter": "15 Spanning trees",
+      "pages": null,
+      "edition": "Draft July 3, 2018",
+      "min_step": 4,
+      "note": "The union-find structure with union by size and the cost of its operations."
+    },
+    {
+      "id": "cphb-15-1-kruskals-algorithm",
+      "techniques": [
+        "kruskal-dsu"
+      ],
+      "kind": "web",
+      "source": "Competitive Programmer's Handbook",
+      "title": "Competitive Programmer’s Handbook",
+      "url": "https://cses.fi/book/book.pdf",
+      "section": "15.1 Kruskal’s algorithm",
+      "chapter": "15 Spanning trees",
+      "pages": null,
+      "edition": "Draft July 3, 2018",
+      "min_step": 4,
+      "note": "Building a minimum spanning tree by adding edges in increasing weight order when they join components."
+    },
+    {
+      "id": "cphb-9-2-binary-indexed-tree",
+      "techniques": [
+        "fenwick-tree"
+      ],
+      "kind": "web",
+      "source": "Competitive Programmer's Handbook",
+      "title": "Competitive Programmer’s Handbook",
+      "url": "https://cses.fi/book/book.pdf",
+      "section": "9.2 Binary indexed tree",
+      "chapter": "9 Range queries",
+      "pages": null,
+      "edition": "Draft July 3, 2018",
+      "min_step": 4,
+      "note": "The binary indexed tree: prefix sums with point updates in O(log n)."
+    },
+    {
+      "id": "cphb-9-1-static-array-queries",
+      "techniques": [
+        "prefix-sums",
+        "sparse-table"
+      ],
+      "kind": "web",
+      "source": "Competitive Programmer's Handbook",
+      "title": "Competitive Programmer’s Handbook",
+      "url": "https://cses.fi/book/book.pdf",
+      "section": "9.1 Static array queries",
+      "chapter": "9 Range queries",
+      "pages": null,
+      "edition": "Draft July 3, 2018",
+      "min_step": 4,
+      "note": "Prefix sum arrays (also 2D) for sum queries and the sparse table for O(1) minimum queries."
+    },
+    {
+      "id": "cphb-9-4-additional-techniques",
+      "techniques": [
+        "difference-array"
+      ],
+      "kind": "web",
+      "source": "Competitive Programmer's Handbook",
+      "title": "Competitive Programmer’s Handbook",
+      "url": "https://cses.fi/book/book.pdf",
+      "section": "9.4 Additional techniques",
+      "chapter": "9 Range queries",
+      "pages": null,
+      "edition": "Draft July 3, 2018",
+      "min_step": 4,
+      "note": "Index compression and range updates through a difference array whose prefix sums give the values."
+    },
+    {
+      "id": "cphb-28-1-lazy-propagation",
+      "techniques": [
+        "segment-tree-lazy"
+      ],
+      "kind": "web",
+      "source": "Competitive Programmer's Handbook",
+      "title": "Competitive Programmer’s Handbook",
+      "url": "https://cses.fi/book/book.pdf",
+      "section": "28.1 Lazy propagation",
+      "chapter": "28 Segment trees revisited",
+      "pages": null,
+      "edition": "Draft July 3, 2018",
+      "min_step": 4,
+      "note": "A segment tree that supports range updates and range queries by storing lazy updates in nodes."
+    },
+    {
+      "id": "cphb-27-square-root-algorithms",
+      "techniques": [
+        "sqrt-decomposition"
+      ],
+      "kind": "web",
+      "source": "Competitive Programmer's Handbook",
+      "title": "Competitive Programmer’s Handbook",
+      "url": "https://cses.fi/book/book.pdf",
+      "section": null,
+      "chapter": "27 Square root algorithms",
+      "pages": null,
+      "edition": "Draft July 3, 2018",
+      "min_step": 4,
+      "note": "Splitting data into sqrt(n) blocks, combining algorithms by a sqrt threshold, and Mo's algorithm."
+    },
+    {
+      "id": "cphb-4-3-map-structures",
+      "techniques": [
+        "hash-map-lookup"
+      ],
+      "kind": "web",
+      "source": "Competitive Programmer's Handbook",
+      "title": "Competitive Programmer’s Handbook",
+      "url": "https://cses.fi/book/book.pdf",
+      "section": "4.3 Map structures",
+      "chapter": "4 Data structures",
+      "pages": null,
+      "edition": "Draft July 3, 2018",
+      "min_step": 4,
+      "note": "C++ map and unordered_map as key-value indexes, ordered O(log n) versus hashed O(1) on average."
+    },
+    {
+      "id": "cphb-4-5-other-structures",
+      "techniques": [
+        "priority-queue"
+      ],
+      "kind": "web",
+      "source": "Competitive Programmer's Handbook",
+      "title": "Competitive Programmer’s Handbook",
+      "url": "https://cses.fi/book/book.pdf",
+      "section": "4.5 Other structures",
+      "chapter": "4 Data structures",
+      "pages": null,
+      "edition": "Draft July 3, 2018",
+      "min_step": 4,
+      "note": "Bitsets, deques, stacks, queues and the priority queue (heap) in C++."
+    },
+    {
+      "id": "cphb-13-2-dijkstras-algorithm",
+      "techniques": [
+        "dijkstra"
+      ],
+      "kind": "web",
+      "source": "Competitive Programmer's Handbook",
+      "title": "Competitive Programmer’s Handbook",
+      "url": "https://cses.fi/book/book.pdf",
+      "section": "13.2 Dijkstra’s algorithm",
+      "chapter": "13 Shortest paths",
+      "pages": null,
+      "edition": "Draft July 3, 2018",
+      "min_step": 4,
+      "note": "Dijkstra's algorithm with a priority queue and why negative edges break it."
+    },
+    {
+      "id": "cphb-16-1-topological-sorting",
+      "techniques": [
+        "topological-sort"
+      ],
+      "kind": "web",
+      "source": "Competitive Programmer's Handbook",
+      "title": "Competitive Programmer’s Handbook",
+      "url": "https://cses.fi/book/book.pdf",
+      "section": "16.1 Topological sorting",
+      "chapter": "16 Directed graphs",
+      "pages": null,
+      "edition": "Draft July 3, 2018",
+      "min_step": 4,
+      "note": "Topological sorting of a directed acyclic graph and detecting a cycle when none exists."
+    },
+    {
+      "id": "cphb-16-3-successor-paths",
+      "techniques": [
+        "functional-graph"
+      ],
+      "kind": "web",
+      "source": "Competitive Programmer's Handbook",
+      "title": "Competitive Programmer’s Handbook",
+      "url": "https://cses.fi/book/book.pdf",
+      "section": "16.3 Successor paths",
+      "chapter": "16 Directed graphs",
+      "pages": null,
+      "edition": "Draft July 3, 2018",
+      "min_step": 4,
+      "note": "Successor (functional) graphs and computing the k-th successor quickly."
+    },
+    {
+      "id": "cphb-16-4-cycle-detection",
+      "techniques": [
+        "functional-graph",
+        "periodicity"
+      ],
+      "kind": "web",
+      "source": "Competitive Programmer's Handbook",
+      "title": "Competitive Programmer’s Handbook",
+      "url": "https://cses.fi/book/book.pdf",
+      "section": "16.4 Cycle detection",
+      "chapter": "16 Directed graphs",
+      "pages": null,
+      "edition": "Draft July 3, 2018",
+      "min_step": 4,
+      "note": "Finding the first node of the cycle and the cycle length in a successor graph (Floyd's algorithm)."
+    },
+    {
+      "id": "cphb-12-3-applications",
+      "techniques": [
+        "connected-components"
+      ],
+      "kind": "web",
+      "source": "Competitive Programmer's Handbook",
+      "title": "Competitive Programmer’s Handbook",
+      "url": "https://cses.fi/book/book.pdf",
+      "section": "12.3 Applications",
+      "chapter": "12 Graph traversal",
+      "pages": null,
+      "edition": "Draft July 3, 2018",
+      "min_step": 4,
+      "note": "Using graph traversal for connectivity checks, cycle finding and bipartiteness."
+    },
+    {
+      "id": "cphb-14-1-tree-traversal",
+      "techniques": [
+        "tree-traversal"
+      ],
+      "kind": "web",
+      "source": "Competitive Programmer's Handbook",
+      "title": "Competitive Programmer’s Handbook",
+      "url": "https://cses.fi/book/book.pdf",
+      "section": "14.1 Tree traversal",
+      "chapter": "14 Tree algorithms",
+      "pages": null,
+      "edition": "Draft July 3, 2018",
+      "min_step": 4,
+      "note": "DFS on a rooted tree and dynamic programming over subtrees, such as subtree sizes."
+    },
+    {
+      "id": "cphb-14-3-all-longest-paths",
+      "techniques": [
+        "tree-rerooting"
+      ],
+      "kind": "web",
+      "source": "Competitive Programmer's Handbook",
+      "title": "Competitive Programmer’s Handbook",
+      "url": "https://cses.fi/book/book.pdf",
+      "section": "14.3 All longest paths",
+      "chapter": "14 Tree algorithms",
+      "pages": null,
+      "edition": "Draft July 3, 2018",
+      "min_step": 4,
+      "note": "Computing a value for every node as root with a downward pass followed by an upward pass."
+    },
+    {
+      "id": "cphb-18-3-lowest-common-ancestor",
+      "techniques": [
+        "lca"
+      ],
+      "kind": "web",
+      "source": "Competitive Programmer's Handbook",
+      "title": "Competitive Programmer’s Handbook",
+      "url": "https://cses.fi/book/book.pdf",
+      "section": "18.3 Lowest common ancestor",
+      "chapter": "18 Tree queries",
+      "pages": null,
+      "edition": "Draft July 3, 2018",
+      "min_step": 4,
+      "note": "Lowest common ancestor by binary lifting and by an Euler tour with range minimum queries."
+    },
+    {
+      "id": "cphb-18-2-subtrees-and-paths",
+      "techniques": [
+        "euler-tour-flattening"
+      ],
+      "kind": "web",
+      "source": "Competitive Programmer's Handbook",
+      "title": "Competitive Programmer’s Handbook",
+      "url": "https://cses.fi/book/book.pdf",
+      "section": "18.2 Subtrees and paths",
+      "chapter": "18 Tree queries",
+      "pages": null,
+      "edition": "Draft July 3, 2018",
+      "min_step": 4,
+      "note": "The tree traversal array: every subtree is a contiguous range, which turns subtree queries into range queries."
+    },
+    {
+      "id": "cphb-19-1-eulerian-paths",
+      "techniques": [
+        "eulerian-path"
+      ],
+      "kind": "web",
+      "source": "Competitive Programmer's Handbook",
+      "title": "Competitive Programmer’s Handbook",
+      "url": "https://cses.fi/book/book.pdf",
+      "section": "19.1 Eulerian paths",
+      "chapter": "19 Paths and circuits",
+      "pages": null,
+      "edition": "Draft July 3, 2018",
+      "min_step": 4,
+      "note": "Existence conditions for Eulerian paths and circuits and Hierholzer's algorithm."
+    },
+    {
+      "id": "cphb-7-4-knapsack-problems",
+      "techniques": [
+        "knapsack-dp"
+      ],
+      "kind": "web",
+      "source": "Competitive Programmer's Handbook",
+      "title": "Competitive Programmer’s Handbook",
+      "url": "https://cses.fi/book/book.pdf",
+      "section": "7.4 Knapsack problems",
+      "chapter": "7 Dynamic programming",
+      "pages": null,
+      "edition": "Draft July 3, 2018",
+      "min_step": 4,
+      "note": "Knapsack-style DP: which sums can be formed with a set of weights, and the 0/1 knapsack."
+    },
+    {
+      "id": "cphb-7-1-coin-problem",
+      "techniques": [
+        "linear-dp"
+      ],
+      "kind": "web",
+      "source": "Competitive Programmer's Handbook",
+      "title": "Competitive Programmer’s Handbook",
+      "url": "https://cses.fi/book/book.pdf",
+      "section": "7.1 Coin problem",
+      "chapter": "7 Dynamic programming",
+      "pages": null,
+      "edition": "Draft July 3, 2018",
+      "min_step": 3,
+      "note": "The first DP example: minimum coins and number of ways, recursion, memoization and iteration."
+    },
+    {
+      "id": "cphb-7-3-paths-in-a-grid",
+      "techniques": [
+        "grid-dp"
+      ],
+      "kind": "web",
+      "source": "Competitive Programmer's Handbook",
+      "title": "Competitive Programmer’s Handbook",
+      "url": "https://cses.fi/book/book.pdf",
+      "section": "7.3 Paths in a grid",
+      "chapter": "7 Dynamic programming",
+      "pages": null,
+      "edition": "Draft July 3, 2018",
+      "min_step": 4,
+      "note": "The best path from the upper-left to the lower-right corner of a grid with a DP over cells."
+    },
+    {
+      "id": "cphb-7-5-edit-distance",
+      "techniques": [
+        "sequence-alignment-dp"
+      ],
+      "kind": "web",
+      "source": "Competitive Programmer's Handbook",
+      "title": "Competitive Programmer’s Handbook",
+      "url": "https://cses.fi/book/book.pdf",
+      "section": "7.5 Edit distance",
+      "chapter": "7 Dynamic programming",
+      "pages": null,
+      "edition": "Draft July 3, 2018",
+      "min_step": 4,
+      "note": "The edit distance between two strings with a DP over pairs of prefixes."
+    },
+    {
+      "id": "cphb-10-5-dynamic-programming",
+      "techniques": [
+        "bitmask-dp"
+      ],
+      "kind": "web",
+      "source": "Competitive Programmer's Handbook",
+      "title": "Competitive Programmer’s Handbook",
+      "url": "https://cses.fi/book/book.pdf",
+      "section": "10.5 Dynamic programming",
+      "chapter": "10 Bit manipulation",
+      "pages": null,
+      "edition": "Draft July 3, 2018",
+      "min_step": 4,
+      "note": "Dynamic programming over subsets represented as bitmasks, from permutations to subsets."
+    },
+    {
+      "id": "cphb-2-4-maximum-subarray-sum",
+      "techniques": [
+        "kadane"
+      ],
+      "kind": "web",
+      "source": "Competitive Programmer's Handbook",
+      "title": "Competitive Programmer’s Handbook",
+      "url": "https://cses.fi/book/book.pdf",
+      "section": "2.4 Maximum subarray sum",
+      "chapter": "2 Time complexity",
+      "pages": null,
+      "edition": "Draft July 3, 2018",
+      "min_step": 4,
+      "note": "The maximum subarray sum improved from O(n^3) to O(n) (Kadane's algorithm)."
+    },
+    {
+      "id": "cphb-22-2-catalan-numbers",
+      "techniques": [
+        "ballot-path-dp"
+      ],
+      "kind": "web",
+      "source": "Competitive Programmer's Handbook",
+      "title": "Competitive Programmer’s Handbook",
+      "url": "https://cses.fi/book/book.pdf",
+      "section": "22.2 Catalan numbers",
+      "chapter": "22 Combinatorics",
+      "pages": null,
+      "edition": "Draft July 3, 2018",
+      "min_step": 4,
+      "note": "Catalan numbers counting valid parenthesis expressions, their recurrence and formula."
+    },
+    {
+      "id": "cphb-25-1-game-states",
+      "techniques": [
+        "game-minimax-dp"
+      ],
+      "kind": "web",
+      "source": "Competitive Programmer's Handbook",
+      "title": "Competitive Programmer’s Handbook",
+      "url": "https://cses.fi/book/book.pdf",
+      "section": "25.1 Game states",
+      "chapter": "25 Game theory",
+      "pages": null,
+      "edition": "Draft July 3, 2018",
+      "min_step": 3,
+      "note": "Classifying game states as winning or losing from the end of the game backwards."
+    },
+    {
+      "id": "cphb-6-2-scheduling",
+      "techniques": [
+        "greedy-exchange-argument"
+      ],
+      "kind": "web",
+      "source": "Competitive Programmer's Handbook",
+      "title": "Competitive Programmer’s Handbook",
+      "url": "https://cses.fi/book/book.pdf",
+      "section": "6.2 Scheduling",
+      "chapter": "6 Greedy algorithms",
+      "pages": null,
+      "edition": "Draft July 3, 2018",
+      "min_step": 4,
+      "note": "Choosing the most non-overlapping events and arguing why the earliest-ending choice is safe."
+    },
+    {
+      "id": "cphb-6-3-tasks-and-deadlines",
+      "techniques": [
+        "greedy-exchange-argument"
+      ],
+      "kind": "web",
+      "source": "Competitive Programmer's Handbook",
+      "title": "Competitive Programmer’s Handbook",
+      "url": "https://cses.fi/book/book.pdf",
+      "section": "6.3 Tasks and deadlines",
+      "chapter": "6 Greedy algorithms",
+      "pages": null,
+      "edition": "Draft July 3, 2018",
+      "min_step": 4,
+      "note": "Proving a greedy order optimal by showing that swapping two adjacent tasks out of order improves it."
+    },
+    {
+      "id": "cphb-3-3-binary-search",
+      "techniques": [
+        "binary-search-on-answer"
+      ],
+      "kind": "web",
+      "source": "Competitive Programmer's Handbook",
+      "title": "Competitive Programmer’s Handbook",
+      "url": "https://cses.fi/book/book.pdf",
+      "section": "3.3 Binary search",
+      "chapter": "3 Sorting",
+      "pages": null,
+      "edition": "Draft July 3, 2018",
+      "min_step": 4,
+      "note": "Binary search in sorted arrays and finding the smallest value for which a monotone condition holds."
+    },
+    {
+      "id": "cphb-8-1-two-pointers-method",
+      "techniques": [
+        "two-pointers"
+      ],
+      "kind": "web",
+      "source": "Competitive Programmer's Handbook",
+      "title": "Competitive Programmer’s Handbook",
+      "url": "https://cses.fi/book/book.pdf",
+      "section": "8.1 Two pointers method",
+      "chapter": "8 Amortized analysis",
+      "pages": null,
+      "edition": "Draft July 3, 2018",
+      "min_step": 4,
+      "note": "Moving two pointers in one direction for subarray sum and 2SUM problems in O(n)."
+    },
+    {
+      "id": "cphb-5-3-backtracking",
+      "techniques": [
+        "backtracking"
+      ],
+      "kind": "web",
+      "source": "Competitive Programmer's Handbook",
+      "title": "Competitive Programmer’s Handbook",
+      "url": "https://cses.fi/book/book.pdf",
+      "section": "5.3 Backtracking",
+      "chapter": "5 Complete search",
+      "pages": null,
+      "edition": "Draft July 3, 2018",
+      "min_step": 4,
+      "note": "Building solutions step by step and undoing choices, with the n queens problem."
+    },
+    {
+      "id": "cphb-5-4-pruning-the-search",
+      "techniques": [
+        "backtracking"
+      ],
+      "kind": "web",
+      "source": "Competitive Programmer's Handbook",
+      "title": "Competitive Programmer’s Handbook",
+      "url": "https://cses.fi/book/book.pdf",
+      "section": "5.4 Pruning the search",
+      "chapter": "5 Complete search",
+      "pages": null,
+      "edition": "Draft July 3, 2018",
+      "min_step": 4,
+      "note": "How pruning dead branches and using symmetry speed up a backtracking search dramatically."
+    },
+    {
+      "id": "cphb-5-1-generating-subsets",
+      "techniques": [
+        "complete-search"
+      ],
+      "kind": "web",
+      "source": "Competitive Programmer's Handbook",
+      "title": "Competitive Programmer’s Handbook",
+      "url": "https://cses.fi/book/book.pdf",
+      "section": "5.1 Generating subsets",
+      "chapter": "5 Complete search",
+      "pages": null,
+      "edition": "Draft July 3, 2018",
+      "min_step": 3,
+      "note": "Enumerating every subset of a set recursively or with bit representations."
+    },
+    {
+      "id": "cphb-3-2-sorting-in-cpp",
+      "techniques": [
+        "sorting"
+      ],
+      "kind": "web",
+      "source": "Competitive Programmer's Handbook",
+      "title": "Competitive Programmer’s Handbook",
+      "url": "https://cses.fi/book/book.pdf",
+      "section": "3.2 Sorting in C++",
+      "chapter": "3 Sorting",
+      "pages": null,
+      "edition": "Draft July 3, 2018",
+      "min_step": 4,
+      "note": "Sorting with the standard library, comparison operators and user-defined comparison functions."
+    },
+    {
+      "id": "cphb-21-2-modular-arithmetic",
+      "techniques": [
+        "modular-arithmetic"
+      ],
+      "kind": "web",
+      "source": "Competitive Programmer's Handbook",
+      "title": "Competitive Programmer’s Handbook",
+      "url": "https://cses.fi/book/book.pdf",
+      "section": "21.2 Modular arithmetic",
+      "chapter": "21 Number theory",
+      "pages": null,
+      "edition": "Draft July 3, 2018",
+      "min_step": 4,
+      "note": "Modular exponentiation, Fermat's and Euler's theorems and the modular inverse."
+    },
+    {
+      "id": "cphb-21-1-primes-and-factors",
+      "techniques": [
+        "number-theory-primes"
+      ],
+      "kind": "web",
+      "source": "Competitive Programmer's Handbook",
+      "title": "Competitive Programmer’s Handbook",
+      "url": "https://cses.fi/book/book.pdf",
+      "section": "21.1 Primes and factors",
+      "chapter": "21 Number theory",
+      "pages": null,
+      "edition": "Draft July 3, 2018",
+      "min_step": 4,
+      "note": "Primality testing, factorization, number of divisors and the sieve of Eratosthenes."
+    },
+    {
+      "id": "cphb-22-1-binomial-coefficients",
+      "techniques": [
+        "combinatorics-counting"
+      ],
+      "kind": "web",
+      "source": "Competitive Programmer's Handbook",
+      "title": "Competitive Programmer’s Handbook",
+      "url": "https://cses.fi/book/book.pdf",
+      "section": "22.1 Binomial coefficients",
+      "chapter": "22 Combinatorics",
+      "pages": null,
+      "edition": "Draft July 3, 2018",
+      "min_step": 4,
+      "note": "Binomial coefficients: formulas, properties, and counting multisets and arrangements with them."
+    },
+    {
+      "id": "cphb-22-3-inclusion-exclusion",
+      "techniques": [
+        "inclusion-exclusion"
+      ],
+      "kind": "web",
+      "source": "Competitive Programmer's Handbook",
+      "title": "Competitive Programmer’s Handbook",
+      "url": "https://cses.fi/book/book.pdf",
+      "section": "22.3 Inclusion-exclusion",
+      "chapter": "22 Combinatorics",
+      "pages": null,
+      "edition": "Draft July 3, 2018",
+      "min_step": 4,
+      "note": "The inclusion-exclusion principle, with derangements as the worked example."
+    },
+    {
+      "id": "cphb-23-2-linear-recurrences",
+      "techniques": [
+        "linear-recurrence"
+      ],
+      "kind": "web",
+      "source": "Competitive Programmer's Handbook",
+      "title": "Competitive Programmer’s Handbook",
+      "url": "https://cses.fi/book/book.pdf",
+      "section": "23.2 Linear recurrences",
+      "chapter": "23 Matrices",
+      "pages": null,
+      "edition": "Draft July 3, 2018",
+      "min_step": 4,
+      "note": "Computing terms of a linear recurrence with matrix exponentiation in O(k^3 log n)."
+    },
+    {
+      "id": "cphb-24-1-calculation",
+      "techniques": [
+        "probability"
+      ],
+      "kind": "web",
+      "source": "Competitive Programmer's Handbook",
+      "title": "Competitive Programmer’s Handbook",
+      "url": "https://cses.fi/book/book.pdf",
+      "section": "24.1 Calculation",
+      "chapter": "24 Probability",
+      "pages": null,
+      "edition": "Draft July 3, 2018",
+      "min_step": 3,
+      "note": "The two basic ways to compute a probability: counting outcomes or combining step probabilities."
+    },
+    {
+      "id": "cphb-10-2-bit-operations",
+      "techniques": [
+        "bitwise-reasoning"
+      ],
+      "kind": "web",
+      "source": "Competitive Programmer's Handbook",
+      "title": "Competitive Programmer’s Handbook",
+      "url": "https://cses.fi/book/book.pdf",
+      "section": "10.2 Bit operations",
+      "chapter": "10 Bit manipulation",
+      "pages": null,
+      "edition": "Draft July 3, 2018",
+      "min_step": 3,
+      "note": "And, or, xor, not and shifts, and the identities used to reason about single bits."
+    },
+    {
+      "id": "cphb-29-2-points-and-lines",
+      "techniques": [
+        "geometry-basics"
+      ],
+      "kind": "web",
+      "source": "Competitive Programmer's Handbook",
+      "title": "Competitive Programmer’s Handbook",
+      "url": "https://cses.fi/book/book.pdf",
+      "section": "29.2 Points and lines",
+      "chapter": "29 Geometry",
+      "pages": null,
+      "edition": "Draft July 3, 2018",
+      "min_step": 4,
+      "note": "Cross products for point orientation, segment intersection and point-to-line distance."
+    },
+    {
+      "id": "cphb-1-2-input-and-output",
+      "techniques": [
+        "fast-io"
+      ],
+      "kind": "web",
+      "source": "Competitive Programmer's Handbook",
+      "title": "Competitive Programmer’s Handbook",
+      "url": "https://cses.fi/book/book.pdf",
+      "section": "1.2 Input and output",
+      "chapter": "1 Introduction",
+      "pages": null,
+      "edition": "Draft July 3, 2018",
+      "min_step": 3,
+      "note": "Reading and writing efficiently in C++ (sync_with_stdio, scanf/printf) and reading whole lines."
+    },
+    {
+      "id": "cphb-1-3-working-with-numbers",
+      "techniques": [
+        "big-integer-arithmetic"
+      ],
+      "kind": "web",
+      "source": "Competitive Programmer's Handbook",
+      "title": "Competitive Programmer’s Handbook",
+      "url": "https://cses.fi/book/book.pdf",
+      "section": "1.3 Working with numbers",
+      "chapter": "1 Introduction",
+      "pages": null,
+      "edition": "Draft July 3, 2018",
+      "min_step": 3,
+      "note": "Integer type limits, overflow, the __int128_t type, modular arithmetic and floating point pitfalls."
+    },
+    {
+      "id": "cphb-1-5-mathematics",
+      "techniques": [
+        "closed-form-math"
+      ],
+      "kind": "web",
+      "source": "Competitive Programmer's Handbook",
+      "title": "Competitive Programmer’s Handbook",
+      "url": "https://cses.fi/book/book.pdf",
+      "section": "1.5 Mathematics",
+      "chapter": "1 Introduction",
+      "pages": null,
+      "edition": "Draft July 3, 2018",
+      "min_step": 3,
+      "note": "Sum formulas, sets, logic and logarithms: the basic math behind most closed-form observations."
+    },
+    {
+      "id": "usaco-stacks",
+      "techniques": [
+        "monotonic-stack"
+      ],
+      "kind": "web",
+      "source": "USACO Guide",
+      "title": "Stacks",
+      "url": "https://usaco.guide/gold/stacks",
+      "section": "Application - Nearest Smaller Element",
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "The nearest smaller element of every position with a monotonic stack, with code."
+    },
+    {
+      "id": "usaco-sliding-window",
+      "techniques": [
+        "monotonic-queue"
+      ],
+      "kind": "web",
+      "source": "USACO Guide",
+      "title": "Sliding Window",
+      "url": "https://usaco.guide/gold/sliding-window",
+      "section": "Method 1 - Deque",
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "The sliding window maximum in O(n) with a monotonic deque."
+    },
+    {
+      "id": "usaco-dsu",
+      "techniques": [
+        "dsu"
+      ],
+      "kind": "web",
+      "source": "USACO Guide",
+      "title": "Disjoint Set Union",
+      "url": "https://usaco.guide/gold/dsu",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Union-find with path compression and union by size, its implementation and practice problems."
+    },
+    {
+      "id": "usaco-purs-bit",
+      "techniques": [
+        "fenwick-tree"
+      ],
+      "kind": "web",
+      "source": "USACO Guide",
+      "title": "Point Update Range Sum",
+      "url": "https://usaco.guide/gold/PURS",
+      "section": "Binary Indexed Tree",
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "The binary indexed tree for point updates and range sums, with implementations."
+    },
+    {
+      "id": "usaco-rurq-lazy",
+      "techniques": [
+        "segment-tree-lazy"
+      ],
+      "kind": "web",
+      "source": "USACO Guide",
+      "title": "Range Update Range Query",
+      "url": "https://usaco.guide/plat/RURQ",
+      "section": "Lazy Segment Tree",
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "A lazy segment tree for range updates with range queries, with a full implementation."
+    },
+    {
+      "id": "usaco-sqrt",
+      "techniques": [
+        "sqrt-decomposition"
+      ],
+      "kind": "web",
+      "source": "USACO Guide",
+      "title": "Square Root Decomposition",
+      "url": "https://usaco.guide/plat/sqrt",
+      "section": "Blocking",
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Splitting an array into blocks of size sqrt(n) to answer queries, and other sqrt techniques."
+    },
+    {
+      "id": "usaco-sparse-table",
+      "techniques": [
+        "sparse-table"
+      ],
+      "kind": "web",
+      "source": "USACO Guide",
+      "title": "(Optional) LCA with Euler Tour",
+      "url": "https://usaco.guide/gold/lca-euler",
+      "section": "Sparse Tables",
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "The sparse table for O(1) static range minimum queries."
+    },
+    {
+      "id": "usaco-difference-arrays",
+      "techniques": [
+        "difference-array"
+      ],
+      "kind": "web",
+      "source": "USACO Guide",
+      "title": "More on Prefix Sums",
+      "url": "https://usaco.guide/silver/more-prefix-sums",
+      "section": "Difference Arrays",
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Applying many range additions in O(1) each with a difference array and one prefix pass."
+    },
+    {
+      "id": "usaco-max-subarray-sum",
+      "techniques": [
+        "kadane"
+      ],
+      "kind": "web",
+      "source": "USACO Guide",
+      "title": "More on Prefix Sums",
+      "url": "https://usaco.guide/silver/more-prefix-sums",
+      "section": "Max Subarray Sum",
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "The maximum subarray sum with prefix sums and a running minimum."
+    },
+    {
+      "id": "usaco-prefix-sums",
+      "techniques": [
+        "prefix-sums"
+      ],
+      "kind": "web",
+      "source": "USACO Guide",
+      "title": "Introduction to Prefix Sums",
+      "url": "https://usaco.guide/silver/prefix-sums",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Prefix sum arrays for O(1) range sum queries."
+    },
+    {
+      "id": "usaco-hashmaps",
+      "techniques": [
+        "hash-map-lookup"
+      ],
+      "kind": "web",
+      "source": "USACO Guide",
+      "title": "(Optional) Hashmaps",
+      "url": "https://usaco.guide/gold/hashmaps",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "How hash maps work, custom hashes, anti-hash tests and faster hash tables in C++."
+    },
+    {
+      "id": "usaco-priority-queues",
+      "techniques": [
+        "priority-queue"
+      ],
+      "kind": "web",
+      "source": "USACO Guide",
+      "title": "Priority Queues",
+      "url": "https://usaco.guide/silver/priority-queues",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Using a priority queue (heap) to repeatedly take the best element, in C++, Java and Python."
+    },
+    {
+      "id": "usaco-mst-kruskal",
+      "techniques": [
+        "kruskal-dsu"
+      ],
+      "kind": "web",
+      "source": "USACO Guide",
+      "title": "Minimum Spanning Trees",
+      "url": "https://usaco.guide/gold/mst",
+      "section": "Kruskal's",
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Kruskal's algorithm with union-find, solved on a CSES problem."
+    },
+    {
+      "id": "usaco-dijkstra",
+      "techniques": [
+        "dijkstra"
+      ],
+      "kind": "web",
+      "source": "USACO Guide",
+      "title": "Shortest Paths with Non-Negative Edge Weights",
+      "url": "https://usaco.guide/gold/shortest-paths",
+      "section": "Dijkstra",
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Dijkstra's algorithm with a priority queue, implementation and problems."
+    },
+    {
+      "id": "usaco-toposort-bfs",
+      "techniques": [
+        "topological-sort"
+      ],
+      "kind": "web",
+      "source": "USACO Guide",
+      "title": "Topological Sort",
+      "url": "https://usaco.guide/gold/toposort",
+      "section": "BFS",
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Kahn's algorithm: repeatedly remove vertices with in-degree zero (BFS topological sort)."
+    },
+    {
+      "id": "usaco-func-graphs",
+      "techniques": [
+        "functional-graph"
+      ],
+      "kind": "web",
+      "source": "USACO Guide",
+      "title": "Introduction to Functional Graphs",
+      "url": "https://usaco.guide/silver/func-graphs",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Graphs where every vertex has one outgoing edge: cycles with trees, Floyd's algorithm, k-th successor."
+    },
+    {
+      "id": "usaco-graph-traversal",
+      "techniques": [
+        "connected-components"
+      ],
+      "kind": "web",
+      "source": "USACO Guide",
+      "title": "Graph Traversal",
+      "url": "https://usaco.guide/silver/graph-traversal",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "DFS and BFS, with connected components and two-coloring as the main applications."
+    },
+    {
+      "id": "usaco-flood-fill",
+      "techniques": [
+        "connected-components"
+      ],
+      "kind": "web",
+      "source": "USACO Guide",
+      "title": "Flood Fill",
+      "url": "https://usaco.guide/silver/flood-fill",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Finding connected regions of a grid with DFS or BFS."
+    },
+    {
+      "id": "usaco-intro-tree",
+      "techniques": [
+        "tree-traversal"
+      ],
+      "kind": "web",
+      "source": "USACO Guide",
+      "title": "Introduction to Tree Algorithms",
+      "url": "https://usaco.guide/silver/intro-tree",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Rooted trees, traversal orders and computing subtree values with a DFS."
+    },
+    {
+      "id": "usaco-all-roots",
+      "techniques": [
+        "tree-rerooting"
+      ],
+      "kind": "web",
+      "source": "USACO Guide",
+      "title": "DP on Trees - Solving For All Roots",
+      "url": "https://usaco.guide/gold/all-roots",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Rerooting: computing a tree DP for every root with a down pass and an up pass."
+    },
+    {
+      "id": "usaco-binary-jump-lca",
+      "techniques": [
+        "lca"
+      ],
+      "kind": "web",
+      "source": "USACO Guide",
+      "title": "Binary Jumping",
+      "url": "https://usaco.guide/plat/binary-jump",
+      "section": "Lowest Common Ancestor",
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Lowest common ancestor with binary jumping (binary lifting), several approaches."
+    },
+    {
+      "id": "usaco-tree-euler",
+      "techniques": [
+        "euler-tour-flattening"
+      ],
+      "kind": "web",
+      "source": "USACO Guide",
+      "title": "(Optional) Euler Tour Technique",
+      "url": "https://usaco.guide/gold/tree-euler",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Flattening a tree with entry and exit times so that subtrees become ranges."
+    },
+    {
+      "id": "usaco-hld",
+      "techniques": [
+        "heavy-light-decomposition"
+      ],
+      "kind": "web",
+      "source": "USACO Guide",
+      "title": "Heavy-Light Decomposition",
+      "url": "https://usaco.guide/plat/hld",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Heavy-light decomposition with a segment tree for path queries."
+    },
+    {
+      "id": "usaco-eulerian-tours",
+      "techniques": [
+        "eulerian-path"
+      ],
+      "kind": "web",
+      "source": "USACO Guide",
+      "title": "Eulerian Tours",
+      "url": "https://usaco.guide/adv/eulerian-tours",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Existence conditions and Hierholzer's algorithm for Eulerian tours, plus De Bruijn sequences."
+    },
+    {
+      "id": "usaco-knapsack",
+      "techniques": [
+        "knapsack-dp"
+      ],
+      "kind": "web",
+      "source": "USACO Guide",
+      "title": "Knapsack DP",
+      "url": "https://usaco.guide/gold/knapsack",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Knapsack-type DPs (0/1, unbounded, counting ways) with many practice problems."
+    },
+    {
+      "id": "usaco-grid-paths",
+      "techniques": [
+        "grid-dp"
+      ],
+      "kind": "web",
+      "source": "USACO Guide",
+      "title": "Paths on Grids",
+      "url": "https://usaco.guide/gold/paths-grids",
+      "section": "Solution - Grid Paths",
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Counting paths in a grid with a DP over cells."
+    },
+    {
+      "id": "usaco-lcs",
+      "techniques": [
+        "sequence-alignment-dp"
+      ],
+      "kind": "web",
+      "source": "USACO Guide",
+      "title": "Paths on Grids",
+      "url": "https://usaco.guide/gold/paths-grids",
+      "section": "Solution - Longest Common Subsequence",
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "The longest common subsequence as a DP over pairs of prefixes, seen as a path in a grid."
+    },
+    {
+      "id": "usaco-digit-dp",
+      "techniques": [
+        "digit-dp"
+      ],
+      "kind": "web",
+      "source": "USACO Guide",
+      "title": "Digit DP",
+      "url": "https://usaco.guide/gold/digit-dp",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Counting numbers up to N with a property by a DP over digits with a tight flag."
+    },
+    {
+      "id": "usaco-dp-bitmasks",
+      "techniques": [
+        "bitmask-dp"
+      ],
+      "kind": "web",
+      "source": "USACO Guide",
+      "title": "Bitmask DP",
+      "url": "https://usaco.guide/gold/dp-bitmasks",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "DP over subsets encoded as bitmasks, including merging subsets."
+    },
+    {
+      "id": "usaco-cht",
+      "techniques": [
+        "convex-hull-trick"
+      ],
+      "kind": "web",
+      "source": "USACO Guide",
+      "title": "Convex Hull Trick",
+      "url": "https://usaco.guide/plat/convex-hull-trick",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "The convex hull trick for DP transitions of the form min over j of (a_j * x + b_j)."
+    },
+    {
+      "id": "usaco-intro-dp",
+      "techniques": [
+        "linear-dp"
+      ],
+      "kind": "web",
+      "source": "USACO Guide",
+      "title": "Introduction to DP",
+      "url": "https://usaco.guide/gold/intro-dp",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 3,
+      "note": "First DP problems, states and transitions, with classical problem sets."
+    },
+    {
+      "id": "usaco-binary-search",
+      "techniques": [
+        "binary-search-on-answer"
+      ],
+      "kind": "web",
+      "source": "USACO Guide",
+      "title": "Binary Search",
+      "url": "https://usaco.guide/silver/binary-search",
+      "section": "Binary Search on Monotonic Functions",
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Finding the largest or smallest x for which a monotone predicate is true, with common mistakes."
+    },
+    {
+      "id": "usaco-two-pointers",
+      "techniques": [
+        "two-pointers"
+      ],
+      "kind": "web",
+      "source": "USACO Guide",
+      "title": "Two Pointers",
+      "url": "https://usaco.guide/silver/two-pointers",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "The two pointers method and sliding windows, with worked CSES problems."
+    },
+    {
+      "id": "usaco-sorting-custom",
+      "techniques": [
+        "sorting"
+      ],
+      "kind": "web",
+      "source": "USACO Guide",
+      "title": "Custom Comparators and Coordinate Compression",
+      "url": "https://usaco.guide/silver/sorting-custom",
+      "section": "Comparators",
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Sorting by key functions and custom comparators, including multiple criteria."
+    },
+    {
+      "id": "usaco-greedy-sorting",
+      "techniques": [
+        "greedy-exchange-argument"
+      ],
+      "kind": "web",
+      "source": "USACO Guide",
+      "title": "Greedy Algorithms with Sorting",
+      "url": "https://usaco.guide/silver/greedy-sorting",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Greedy choices after sorting, why earliest-ending scheduling works and when greedy fails."
+    },
+    {
+      "id": "usaco-intro-greedy",
+      "techniques": [
+        "greedy-sweep"
+      ],
+      "kind": "web",
+      "source": "USACO Guide",
+      "title": "Introduction to Greedy Algorithms",
+      "url": "https://usaco.guide/bronze/intro-greedy",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 3,
+      "note": "What a greedy algorithm is, on a problem where scanning and fixing positions in order is optimal."
+    },
+    {
+      "id": "usaco-complete-rec-backtracking",
+      "techniques": [
+        "backtracking"
+      ],
+      "kind": "web",
+      "source": "USACO Guide",
+      "title": "Complete Search with Recursion",
+      "url": "https://usaco.guide/bronze/complete-rec",
+      "section": "Backtracking",
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Recursive backtracking with the chessboard queens problem."
+    },
+    {
+      "id": "usaco-complete-rec-subsets",
+      "techniques": [
+        "complete-search"
+      ],
+      "kind": "web",
+      "source": "USACO Guide",
+      "title": "Complete Search with Recursion",
+      "url": "https://usaco.guide/bronze/complete-rec",
+      "section": "Subsets",
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 3,
+      "note": "Generating all subsets recursively to try every candidate."
+    },
+    {
+      "id": "usaco-intro-complete",
+      "techniques": [
+        "complete-search"
+      ],
+      "kind": "web",
+      "source": "USACO Guide",
+      "title": "Basic Complete Search",
+      "url": "https://usaco.guide/bronze/intro-complete",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 3,
+      "note": "Trying every candidate with loops when the search space is small enough."
+    },
+    {
+      "id": "usaco-simulation",
+      "techniques": [
+        "simulation"
+      ],
+      "kind": "web",
+      "source": "USACO Guide",
+      "title": "Simulation",
+      "url": "https://usaco.guide/bronze/simulation",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 3,
+      "note": "Carrying out the process described by the statement step by step, with worked examples."
+    },
+    {
+      "id": "usaco-modular",
+      "techniques": [
+        "modular-arithmetic"
+      ],
+      "kind": "web",
+      "source": "USACO Guide",
+      "title": "Modular Arithmetic",
+      "url": "https://usaco.guide/gold/modular",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Arithmetic modulo m, fast modular exponentiation and modular inverses, with templates."
+    },
+    {
+      "id": "usaco-divisibility",
+      "techniques": [
+        "number-theory-primes"
+      ],
+      "kind": "web",
+      "source": "USACO Guide",
+      "title": "Divisibility",
+      "url": "https://usaco.guide/gold/divisibility",
+      "section": "Prime Factorization",
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Prime factorization by trial division and counting divisors from it."
+    },
+    {
+      "id": "usaco-combo",
+      "techniques": [
+        "combinatorics-counting"
+      ],
+      "kind": "web",
+      "source": "USACO Guide",
+      "title": "Combinatorics",
+      "url": "https://usaco.guide/gold/combo",
+      "section": "Binomial Coefficients",
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Computing binomial coefficients with Pascal's triangle or factorials and modular inverses."
+    },
+    {
+      "id": "usaco-pie",
+      "techniques": [
+        "inclusion-exclusion"
+      ],
+      "kind": "web",
+      "source": "USACO Guide",
+      "title": "Inclusion-Exclusion Principle",
+      "url": "https://usaco.guide/plat/PIE",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "The inclusion-exclusion principle and the Mobius function, with applications."
+    },
+    {
+      "id": "usaco-matrix-expo",
+      "techniques": [
+        "linear-recurrence"
+      ],
+      "kind": "web",
+      "source": "USACO Guide",
+      "title": "Matrix Exponentiation",
+      "url": "https://usaco.guide/plat/matrix-expo",
+      "section": "Finding the Right Matrix - Generalized Linear Recurrences",
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Building the transition matrix of a linear recurrence and powering it."
+    },
+    {
+      "id": "usaco-intro-bitwise",
+      "techniques": [
+        "bitwise-reasoning"
+      ],
+      "kind": "web",
+      "source": "USACO Guide",
+      "title": "Intro to Bitwise Operators",
+      "url": "https://usaco.guide/silver/intro-bitwise",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 3,
+      "note": "Bitwise operators, reasoning bit by bit and properties of xor."
+    },
+    {
+      "id": "usaco-fast-io",
+      "techniques": [
+        "fast-io"
+      ],
+      "kind": "web",
+      "source": "USACO Guide",
+      "title": "Fast Input & Output",
+      "url": "https://usaco.guide/general/fast-io",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 3,
+      "note": "Why I/O can be the bottleneck and how to read and write fast in C++, Java and Python."
+    },
+    {
+      "id": "usaco-geo-pri",
+      "techniques": [
+        "geometry-basics"
+      ],
+      "kind": "web",
+      "source": "USACO Guide",
+      "title": "Geometry Primitives",
+      "url": "https://usaco.guide/plat/geo-pri",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Point location with cross products, segment intersection and polygon area."
+    },
+    {
+      "id": "usaco-rect-geo",
+      "techniques": [
+        "geometry-basics"
+      ],
+      "kind": "web",
+      "source": "USACO Guide",
+      "title": "Rectangle Geometry",
+      "url": "https://usaco.guide/bronze/rect-geo",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Axis-aligned rectangles: intersection, overlap area and the common coordinate formulas."
+    },
+    {
+      "id": "usaco-catalan",
+      "techniques": [
+        "ballot-path-dp"
+      ],
+      "kind": "web",
+      "source": "USACO Guide",
+      "title": "Catalan Numbers",
+      "url": "https://usaco.guide/adv/catalan",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Catalan numbers, the reflection argument for lattice paths and bracket sequence counting."
+    },
+    {
+      "id": "usaco-manacher",
+      "techniques": [
+        "manacher"
+      ],
+      "kind": "web",
+      "source": "USACO Guide",
+      "title": "String Searching",
+      "url": "https://usaco.guide/adv/string-search",
+      "section": "Manacher",
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Manacher's algorithm for all palindromic substrings in O(n)."
+    },
+    {
+      "id": "cses-1645-nearest-smaller-values",
+      "techniques": [
+        "monotonic-stack"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Nearest Smaller Values",
+      "url": "https://cses.fi/problemset/task/1645",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "For every position, the nearest smaller value to its left."
+    },
+    {
+      "id": "cses-3221-sliding-window-minimum",
+      "techniques": [
+        "monotonic-queue"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Sliding Window Minimum",
+      "url": "https://cses.fi/problemset/task/3221",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "The minimum of every window of fixed size."
+    },
+    {
+      "id": "cses-1676-road-construction",
+      "techniques": [
+        "dsu"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Road Construction",
+      "url": "https://cses.fi/problemset/task/1676",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Number of components and the largest one after each added edge."
+    },
+    {
+      "id": "cses-1668-building-teams",
+      "techniques": [
+        "dsu-parity"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Building Teams",
+      "url": "https://cses.fi/problemset/task/1668",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Split into two teams with no friends together: a bipartiteness check (BFS coloring or union-find with parity)."
+    },
+    {
+      "id": "cses-1648-dynamic-range-sum-queries",
+      "techniques": [
+        "fenwick-tree"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Dynamic Range Sum Queries",
+      "url": "https://cses.fi/problemset/task/1648",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Point updates and range sum queries."
+    },
+    {
+      "id": "cses-1735-range-updates-and-sums",
+      "techniques": [
+        "segment-tree-lazy"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Range Updates and Sums",
+      "url": "https://cses.fi/problemset/task/1735",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Range add, range assign and range sum queries."
+    },
+    {
+      "id": "cses-1647-static-range-minimum-queries",
+      "techniques": [
+        "sparse-table"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Static Range Minimum Queries",
+      "url": "https://cses.fi/problemset/task/1647",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Range minimum queries on a fixed array."
+    },
+    {
+      "id": "cses-1651-range-update-queries",
+      "techniques": [
+        "difference-array"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Range Update Queries",
+      "url": "https://cses.fi/problemset/task/1651",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Range additions and point queries."
+    },
+    {
+      "id": "cses-1646-static-range-sum-queries",
+      "techniques": [
+        "prefix-sums"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Static Range Sum Queries",
+      "url": "https://cses.fi/problemset/task/1646",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Range sums on a fixed array."
+    },
+    {
+      "id": "cses-1652-forest-queries",
+      "techniques": [
+        "prefix-sums"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Forest Queries",
+      "url": "https://cses.fi/problemset/task/1652",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Rectangle sums on a fixed grid (2D prefix sums)."
+    },
+    {
+      "id": "cses-1640-sum-of-two-values",
+      "techniques": [
+        "two-pointers",
+        "hash-map-lookup"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Sum of Two Values",
+      "url": "https://cses.fi/problemset/task/1640",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Find two positions whose values add up to x (sorting with two pointers, or a hash map)."
+    },
+    {
+      "id": "cses-1661-subarray-sums-ii",
+      "techniques": [
+        "prefix-sums",
+        "hash-map-lookup"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Subarray Sums II",
+      "url": "https://cses.fi/problemset/task/1661",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Count subarrays with sum x when values can be negative."
+    },
+    {
+      "id": "cses-1164-room-allocation",
+      "techniques": [
+        "priority-queue"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Room Allocation",
+      "url": "https://cses.fi/problemset/task/1164",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Assign customers to the fewest rooms over time."
+    },
+    {
+      "id": "cses-1675-road-reparation",
+      "techniques": [
+        "kruskal-dsu"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Road Reparation",
+      "url": "https://cses.fi/problemset/task/1675",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Minimum spanning tree cost, or report that none exists."
+    },
+    {
+      "id": "cses-1671-shortest-routes-i",
+      "techniques": [
+        "dijkstra"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Shortest Routes I",
+      "url": "https://cses.fi/problemset/task/1671",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Shortest distances from one city in a weighted directed graph."
+    },
+    {
+      "id": "cses-1195-flight-discount",
+      "techniques": [
+        "dijkstra"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Flight Discount",
+      "url": "https://cses.fi/problemset/task/1195",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Shortest route when one flight may be taken at half price."
+    },
+    {
+      "id": "cses-1679-course-schedule",
+      "techniques": [
+        "topological-sort"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Course Schedule",
+      "url": "https://cses.fi/problemset/task/1679",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Order courses so that prerequisites come first."
+    },
+    {
+      "id": "cses-1666-building-roads",
+      "techniques": [
+        "connected-components"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Building Roads",
+      "url": "https://cses.fi/problemset/task/1666",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Fewest roads to connect all cities."
+    },
+    {
+      "id": "cses-1192-counting-rooms",
+      "techniques": [
+        "connected-components"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Counting Rooms",
+      "url": "https://cses.fi/problemset/task/1192",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Count the rooms of a grid map."
+    },
+    {
+      "id": "cses-1674-subordinates",
+      "techniques": [
+        "tree-traversal"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Subordinates",
+      "url": "https://cses.fi/problemset/task/1674",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Subtree sizes of every employee."
+    },
+    {
+      "id": "cses-1132-tree-distances-i",
+      "techniques": [
+        "tree-rerooting"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Tree Distances I",
+      "url": "https://cses.fi/problemset/task/1132",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "For every node, the distance to the farthest node."
+    },
+    {
+      "id": "cses-1133-tree-distances-ii",
+      "techniques": [
+        "tree-rerooting"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Tree Distances II",
+      "url": "https://cses.fi/problemset/task/1133",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "For every node, the sum of distances to all nodes."
+    },
+    {
+      "id": "cses-1688-company-queries-ii",
+      "techniques": [
+        "lca"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Company Queries II",
+      "url": "https://cses.fi/problemset/task/1688",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Lowest common boss of two employees."
+    },
+    {
+      "id": "cses-1135-distance-queries",
+      "techniques": [
+        "lca"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Distance Queries",
+      "url": "https://cses.fi/problemset/task/1135",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Distances between pairs of nodes in a tree."
+    },
+    {
+      "id": "cses-1137-subtree-queries",
+      "techniques": [
+        "euler-tour-flattening"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Subtree Queries",
+      "url": "https://cses.fi/problemset/task/1137",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Point updates and subtree sums."
+    },
+    {
+      "id": "cses-2134-path-queries-ii",
+      "techniques": [
+        "heavy-light-decomposition"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Path Queries II",
+      "url": "https://cses.fi/problemset/task/2134",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Point updates and path maximum queries."
+    },
+    {
+      "id": "cses-1691-mail-delivery",
+      "techniques": [
+        "eulerian-path"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Mail Delivery",
+      "url": "https://cses.fi/problemset/task/1691",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "A route that uses every street exactly once (undirected)."
+    },
+    {
+      "id": "cses-1693-teleporters-path",
+      "techniques": [
+        "eulerian-path"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Teleporters Path",
+      "url": "https://cses.fi/problemset/task/1693",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "A path that uses every teleporter exactly once (directed)."
+    },
+    {
+      "id": "cses-1158-book-shop",
+      "techniques": [
+        "knapsack-dp"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Book Shop",
+      "url": "https://cses.fi/problemset/task/1158",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "0/1 knapsack: maximum pages within a budget."
+    },
+    {
+      "id": "cses-1636-coin-combinations-ii",
+      "techniques": [
+        "knapsack-dp"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Coin Combinations II",
+      "url": "https://cses.fi/problemset/task/1636",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Count ordered-irrelevant ways to form a sum with coins."
+    },
+    {
+      "id": "cses-1745-money-sums",
+      "techniques": [
+        "knapsack-dp"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Money Sums",
+      "url": "https://cses.fi/problemset/task/1745",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "All sums that can be formed with a set of coins."
+    },
+    {
+      "id": "cses-1638-grid-paths-i",
+      "techniques": [
+        "grid-dp"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Grid Paths I",
+      "url": "https://cses.fi/problemset/task/1638",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Count right/down paths in a grid with traps."
+    },
+    {
+      "id": "cses-1639-edit-distance",
+      "techniques": [
+        "sequence-alignment-dp"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Edit Distance",
+      "url": "https://cses.fi/problemset/task/1639",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "The edit distance between two strings."
+    },
+    {
+      "id": "cses-3403-longest-common-subsequence",
+      "techniques": [
+        "sequence-alignment-dp"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Longest Common Subsequence",
+      "url": "https://cses.fi/problemset/task/3403",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "The longest common subsequence of two arrays."
+    },
+    {
+      "id": "cses-2220-counting-numbers",
+      "techniques": [
+        "digit-dp"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Counting Numbers",
+      "url": "https://cses.fi/problemset/task/2220",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Count numbers in a range with no two equal adjacent digits."
+    },
+    {
+      "id": "cses-1653-elevator-rides",
+      "techniques": [
+        "bitmask-dp"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Elevator Rides",
+      "url": "https://cses.fi/problemset/task/1653",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Fewest elevator rides for people with weights."
+    },
+    {
+      "id": "cses-1690-hamiltonian-flights",
+      "techniques": [
+        "bitmask-dp"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Hamiltonian Flights",
+      "url": "https://cses.fi/problemset/task/1690",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Count routes that visit every city exactly once."
+    },
+    {
+      "id": "cses-1643-maximum-subarray-sum",
+      "techniques": [
+        "kadane"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Maximum Subarray Sum",
+      "url": "https://cses.fi/problemset/task/1643",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "The maximum sum of a non-empty subarray."
+    },
+    {
+      "id": "cses-2064-bracket-sequences-i",
+      "techniques": [
+        "ballot-path-dp"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Bracket Sequences I",
+      "url": "https://cses.fi/problemset/task/2064",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Count valid bracket sequences of a given length."
+    },
+    {
+      "id": "cses-2187-bracket-sequences-ii",
+      "techniques": [
+        "ballot-path-dp"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Bracket Sequences II",
+      "url": "https://cses.fi/problemset/task/2187",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Count valid bracket sequences with a fixed prefix."
+    },
+    {
+      "id": "cses-1097-removal-game",
+      "techniques": [
+        "game-minimax-dp"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Removal Game",
+      "url": "https://cses.fi/problemset/task/1097",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Two players take numbers from either end; the first player's best score against optimal play."
+    },
+    {
+      "id": "cses-2084-monster-game-i",
+      "techniques": [
+        "convex-hull-trick"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Monster Game I",
+      "url": "https://cses.fi/problemset/task/2084",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "A DP whose transition is a minimum over lines."
+    },
+    {
+      "id": "cses-1630-tasks-and-deadlines",
+      "techniques": [
+        "greedy-exchange-argument"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Tasks and Deadlines",
+      "url": "https://cses.fi/problemset/task/1630",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Order tasks to maximize the total reward."
+    },
+    {
+      "id": "cses-1629-movie-festival",
+      "techniques": [
+        "greedy-exchange-argument"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Movie Festival",
+      "url": "https://cses.fi/problemset/task/1629",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Maximum number of non-overlapping movies."
+    },
+    {
+      "id": "cses-1620-factory-machines",
+      "techniques": [
+        "binary-search-on-answer"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Factory Machines",
+      "url": "https://cses.fi/problemset/task/1620",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Shortest time for machines to make t products."
+    },
+    {
+      "id": "cses-1085-array-division",
+      "techniques": [
+        "binary-search-on-answer"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Array Division",
+      "url": "https://cses.fi/problemset/task/1085",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Split an array into k parts minimizing the largest sum."
+    },
+    {
+      "id": "cses-1141-playlist",
+      "techniques": [
+        "two-pointers"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Playlist",
+      "url": "https://cses.fi/problemset/task/1141",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "The longest stretch of consecutive distinct songs."
+    },
+    {
+      "id": "cses-1624-chessboard-and-queens",
+      "techniques": [
+        "backtracking"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Chessboard and Queens",
+      "url": "https://cses.fi/problemset/task/1624",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Place eight queens on a board with blocked squares."
+    },
+    {
+      "id": "cses-1625-grid-path-description",
+      "techniques": [
+        "backtracking"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Grid Path Description",
+      "url": "https://cses.fi/problemset/task/1625",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Count grid paths matching a partial description (needs pruning)."
+    },
+    {
+      "id": "cses-1623-apple-division",
+      "techniques": [
+        "complete-search"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Apple Division",
+      "url": "https://cses.fi/problemset/task/1623",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 3,
+      "note": "Split apples into two groups with the smallest weight difference."
+    },
+    {
+      "id": "cses-1095-exponentiation",
+      "techniques": [
+        "modular-arithmetic"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Exponentiation",
+      "url": "https://cses.fi/problemset/task/1095",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "a^b modulo 10^9+7 for many queries."
+    },
+    {
+      "id": "cses-1713-counting-divisors",
+      "techniques": [
+        "number-theory-primes"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Counting Divisors",
+      "url": "https://cses.fi/problemset/task/1713",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "The number of divisors of many integers."
+    },
+    {
+      "id": "cses-1079-binomial-coefficients",
+      "techniques": [
+        "combinatorics-counting"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Binomial Coefficients",
+      "url": "https://cses.fi/problemset/task/1079",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Many binomial coefficients modulo a prime."
+    },
+    {
+      "id": "cses-1716-distributing-apples",
+      "techniques": [
+        "combinatorics-counting"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Distributing Apples",
+      "url": "https://cses.fi/problemset/task/1716",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Ways to distribute apples among children (stars and bars)."
+    },
+    {
+      "id": "cses-2185-prime-multiples",
+      "techniques": [
+        "inclusion-exclusion"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Prime Multiples",
+      "url": "https://cses.fi/problemset/task/2185",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Count numbers up to n divisible by at least one given prime."
+    },
+    {
+      "id": "cses-2417-counting-coprime-pairs",
+      "techniques": [
+        "inclusion-exclusion"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Counting Coprime Pairs",
+      "url": "https://cses.fi/problemset/task/2417",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Count coprime pairs in an array."
+    },
+    {
+      "id": "cses-1146-counting-bits",
+      "techniques": [
+        "bitwise-reasoning"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Counting Bits",
+      "url": "https://cses.fi/problemset/task/1146",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Total number of one bits in the numbers 1..n."
+    },
+    {
+      "id": "cses-1111-longest-palindrome",
+      "techniques": [
+        "manacher"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Longest Palindrome",
+      "url": "https://cses.fi/problemset/task/1111",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "The longest palindromic substring."
+    },
+    {
+      "id": "cses-2189-point-location-test",
+      "techniques": [
+        "geometry-basics"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Point Location Test",
+      "url": "https://cses.fi/problemset/task/2189",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Is a point left of, right of or on a line?"
+    },
+    {
+      "id": "cses-2190-line-segment-intersection",
+      "techniques": [
+        "geometry-basics"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Line Segment Intersection",
+      "url": "https://cses.fi/problemset/task/2190",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Do two segments intersect?"
+    },
+    {
+      "id": "cses-1722-fibonacci-numbers",
+      "techniques": [
+        "linear-recurrence"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Fibonacci Numbers",
+      "url": "https://cses.fi/problemset/task/1722",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "The n-th Fibonacci number modulo 10^9+7 for huge n."
+    },
+    {
+      "id": "cses-1096-throwing-dice",
+      "techniques": [
+        "linear-recurrence"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Throwing Dice",
+      "url": "https://cses.fi/problemset/task/1096",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Ways to reach a sum with dice for huge sums."
+    },
+    {
+      "id": "cses-1750-planets-queries-i",
+      "techniques": [
+        "functional-graph"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Planets Queries I",
+      "url": "https://cses.fi/problemset/task/1750",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "The k-th successor of a node in a functional graph."
+    },
+    {
+      "id": "cses-1751-planets-cycles",
+      "techniques": [
+        "functional-graph"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Planets Cycles",
+      "url": "https://cses.fi/problemset/task/1751",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "For every node, the number of steps until a node repeats."
+    },
+    {
+      "id": "cses-1733-finding-periods",
+      "techniques": [
+        "periodicity"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Finding Periods",
+      "url": "https://cses.fi/problemset/task/1733",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "All periods of a string."
+    },
+    {
+      "id": "cses-1743-string-reorder",
+      "techniques": [
+        "greedy-lexicographic"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "String Reorder",
+      "url": "https://cses.fi/problemset/task/1743",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "The lexicographically smallest reordering with no two equal adjacent characters."
+    },
+    {
+      "id": "cses-1094-increasing-array",
+      "techniques": [
+        "greedy-sweep"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Increasing Array",
+      "url": "https://cses.fi/problemset/task/1094",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 3,
+      "note": "Fewest increments to make an array non-decreasing."
+    },
+    {
+      "id": "cses-1633-dice-combinations",
+      "techniques": [
+        "linear-dp"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Dice Combinations",
+      "url": "https://cses.fi/problemset/task/1633",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 3,
+      "note": "Ways to form a sum by throwing dice."
+    },
+    {
+      "id": "cses-1637-removing-digits",
+      "techniques": [
+        "linear-dp"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Removing Digits",
+      "url": "https://cses.fi/problemset/task/1637",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 3,
+      "note": "Fewest steps to reach zero by subtracting digits."
+    },
+    {
+      "id": "cses-1082-sum-of-divisors",
+      "techniques": [
+        "contribution-technique"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Sum of Divisors",
+      "url": "https://cses.fi/problemset/task/1082",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "The sum of sigma(i) for i up to 10^12: count each divisor's total contribution."
+    },
+    {
+      "id": "numpy-ufuncs-basics",
+      "techniques": [
+        "numpy-vectorization"
+      ],
+      "kind": "web",
+      "source": "NumPy documentation",
+      "title": "Universal functions (ufunc) basics",
+      "url": "https://numpy.org/doc/2.2/user/basics.ufuncs.html",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 3,
+      "note": "Element-wise operations on whole arrays, and the reduce and accumulate methods that replace Python loops."
+    },
+    {
+      "id": "numpy-broadcasting",
+      "techniques": [
+        "numpy-vectorization"
+      ],
+      "kind": "web",
+      "source": "NumPy documentation",
+      "title": "Broadcasting",
+      "url": "https://numpy.org/doc/2.2/user/basics.broadcasting.html",
+      "section": "General broadcasting rules",
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 3,
+      "note": "How arrays of different shapes combine in one operation without copying."
+    },
+    {
+      "id": "pdsh-ufuncs-slowness-of-loops",
+      "techniques": [
+        "numpy-vectorization"
+      ],
+      "kind": "web",
+      "source": "Python Data Science Handbook",
+      "title": "Computation on NumPy Arrays: Universal Functions",
+      "url": "https://jakevdp.github.io/PythonDataScienceHandbook/02.03-computation-on-arrays-ufuncs.html",
+      "section": "The Slowness of Loops",
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 3,
+      "note": "Why element-by-element Python loops are slow and how vectorized ufuncs avoid them."
+    },
+    {
+      "id": "pdsh-broadcasting",
+      "techniques": [
+        "numpy-vectorization"
+      ],
+      "kind": "web",
+      "source": "Python Data Science Handbook",
+      "title": "Computation on Arrays: Broadcasting",
+      "url": "https://jakevdp.github.io/PythonDataScienceHandbook/02.05-computation-on-arrays-broadcasting.html",
+      "section": "Rules of Broadcasting",
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 3,
+      "note": "The broadcasting rules with worked examples."
+    },
+    {
+      "id": "paper-manacher-1975",
+      "techniques": [
+        "manacher"
+      ],
+      "kind": "paper",
+      "source": "Journal of the ACM",
+      "title": "A New Linear-Time ``On-Line'' Algorithm for Finding the Smallest Initial Palindrome of a String",
+      "url": "https://doi.org/10.1145/321892.321896",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": "Glenn Manacher, vol. 22, no. 3, pp. 346-351, July 1975",
+      "min_step": 4,
+      "note": "The 1975 paper behind Manacher's algorithm: finding the leftmost initial palindrome on-line in linear time, by reusing the matches around a tentative center."
+    },
+    {
+      "id": "paper-baeza-yates-1991",
+      "techniques": [
+        "next-occurrence-table"
+      ],
+      "kind": "paper",
+      "source": "Theoretical Computer Science",
+      "title": "Searching subsequences",
+      "url": "https://doi.org/10.1016/0304-3975(91)90358-9",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": "Ricardo A. Baeza-Yates, vol. 78, no. 2, pp. 363-376, 1991",
+      "min_step": 4,
+      "note": "The directed acyclic subsequence graph: an automaton built from the text that tells whether a string is a subsequence of it, one transition per character."
+    },
+    {
+      "id": "gcp3-8-2-2-nearest-smaller-elements",
+      "techniques": [
+        "monotonic-stack"
+      ],
+      "kind": "book",
+      "source": "Guide to Competitive Programming",
+      "title": "Guide to Competitive Programming",
+      "url": null,
+      "section": "8.2.2 Nearest Smaller Elements",
+      "chapter": "8 Algorithm Design Topics",
+      "pages": null,
+      "edition": "3rd edition, Springer 2024, ISBN 978-3-031-61793-5",
+      "min_step": 4,
+      "note": "Finding the nearest smaller element of every position with a stack in amortized O(n)."
+    },
+    {
+      "id": "gcp3-8-2-3-sliding-window-minimum",
+      "techniques": [
+        "monotonic-queue"
+      ],
+      "kind": "book",
+      "source": "Guide to Competitive Programming",
+      "title": "Guide to Competitive Programming",
+      "url": null,
+      "section": "8.2.3 Sliding Window Minimum",
+      "chapter": "8 Algorithm Design Topics",
+      "pages": null,
+      "edition": "3rd edition, Springer 2024, ISBN 978-3-031-61793-5",
+      "min_step": 4,
+      "note": "The minimum of every fixed-length window with a queue that keeps candidates in order."
+    },
+    {
+      "id": "cp4-9-2-sliding-window",
+      "techniques": [
+        "monotonic-queue",
+        "two-pointers"
+      ],
+      "kind": "book",
+      "source": "Competitive Programming 4",
+      "title": "Competitive Programming 4",
+      "url": null,
+      "section": "9.2 Sliding Window",
+      "chapter": "9 Rare Topics",
+      "pages": null,
+      "edition": "4th edition (Book 1 and Book 2), 19 July 2020",
+      "min_step": 4,
+      "note": "Variants of sliding windows: fixed and variable length, sums and window minimum with a deque."
+    },
+    {
+      "id": "gcp3-8-2-1-two-pointers-method",
+      "techniques": [
+        "two-pointers"
+      ],
+      "kind": "book",
+      "source": "Guide to Competitive Programming",
+      "title": "Guide to Competitive Programming",
+      "url": null,
+      "section": "8.2.1 Two Pointers Method",
+      "chapter": "8 Algorithm Design Topics",
+      "pages": null,
+      "edition": "3rd edition, Springer 2024, ISBN 978-3-031-61793-5",
+      "min_step": 4,
+      "note": "Two indices that only move forward, and why the total work is linear."
+    },
+    {
+      "id": "gcp3-7-6-2-union-find-structure",
+      "techniques": [
+        "dsu"
+      ],
+      "kind": "book",
+      "source": "Guide to Competitive Programming",
+      "title": "Guide to Competitive Programming",
+      "url": null,
+      "section": "7.6.2 Union-Find Structure",
+      "chapter": "7 Graph Algorithms",
+      "pages": null,
+      "edition": "3rd edition, Springer 2024, ISBN 978-3-031-61793-5",
+      "min_step": 4,
+      "note": "Union-find with union by size and path compression."
+    },
+    {
+      "id": "cp4-2-4-2-union-find-disjoint-sets",
+      "techniques": [
+        "dsu"
+      ],
+      "kind": "book",
+      "source": "Competitive Programming 4",
+      "title": "Competitive Programming 4",
+      "url": null,
+      "section": "2.4.2 Union-Find Disjoint Sets",
+      "chapter": "2 Data Structures and Libraries",
+      "pages": null,
+      "edition": "4th edition (Book 1 and Book 2), 19 July 2020",
+      "min_step": 4,
+      "note": "Union-find disjoint sets and their operations."
+    },
+    {
+      "id": "clrs3-21-3-disjoint-set-forests",
+      "techniques": [
+        "dsu"
+      ],
+      "kind": "book",
+      "source": "Introduction to Algorithms",
+      "title": "Introduction to Algorithms",
+      "url": null,
+      "section": "21.3 Disjoint-set forests",
+      "chapter": "21 Data Structures for Disjoint Sets",
+      "pages": null,
+      "edition": "3rd edition, MIT Press 2009, ISBN 978-0-262-03384-8",
+      "min_step": 4,
+      "note": "Disjoint-set forests with union by rank and path compression, and their cost."
+    },
+    {
+      "id": "gcp3-7-6-1-kruskals-algorithm",
+      "techniques": [
+        "kruskal-dsu"
+      ],
+      "kind": "book",
+      "source": "Guide to Competitive Programming",
+      "title": "Guide to Competitive Programming",
+      "url": null,
+      "section": "7.6.1 Kruskal's Algorithm",
+      "chapter": "7 Graph Algorithms",
+      "pages": null,
+      "edition": "3rd edition, Springer 2024, ISBN 978-3-031-61793-5",
+      "min_step": 4,
+      "note": "Processing edges in sorted order and joining components with union-find."
+    },
+    {
+      "id": "cp4-4-3-2-kruskals-algorithm",
+      "techniques": [
+        "kruskal-dsu"
+      ],
+      "kind": "book",
+      "source": "Competitive Programming 4",
+      "title": "Competitive Programming 4",
+      "url": null,
+      "section": "4.3.2 Kruskal’s Algorithm",
+      "chapter": "4 Graph",
+      "pages": null,
+      "edition": "4th edition (Book 1 and Book 2), 19 July 2020",
+      "min_step": 4,
+      "note": "Kruskal's algorithm for minimum spanning trees."
+    },
+    {
+      "id": "clrs3-23-2-the-algorithms-of-kruskal-and-prim",
+      "techniques": [
+        "kruskal-dsu"
+      ],
+      "kind": "book",
+      "source": "Introduction to Algorithms",
+      "title": "Introduction to Algorithms",
+      "url": null,
+      "section": "23.2 The algorithms of Kruskal and Prim",
+      "chapter": "23 Minimum Spanning Trees",
+      "pages": null,
+      "edition": "3rd edition, MIT Press 2009, ISBN 978-0-262-03384-8",
+      "min_step": 4,
+      "note": "Kruskal's and Prim's algorithms and why they are correct."
+    },
+    {
+      "id": "gcp3-9-2-1-binary-indexed-trees",
+      "techniques": [
+        "fenwick-tree"
+      ],
+      "kind": "book",
+      "source": "Guide to Competitive Programming",
+      "title": "Guide to Competitive Programming",
+      "url": null,
+      "section": "9.2.1 Binary Indexed Trees",
+      "chapter": "9 Range Queries",
+      "pages": null,
+      "edition": "3rd edition, Springer 2024, ISBN 978-3-031-61793-5",
+      "min_step": 4,
+      "note": "Binary indexed (Fenwick) trees for prefix sums with point updates."
+    },
+    {
+      "id": "cp4-2-4-3-fenwick-binary-indexed-tree",
+      "techniques": [
+        "fenwick-tree"
+      ],
+      "kind": "book",
+      "source": "Competitive Programming 4",
+      "title": "Competitive Programming 4",
+      "url": null,
+      "section": "2.4.3 Fenwick (Binary Indexed) Tree",
+      "chapter": "2 Data Structures and Libraries",
+      "pages": null,
+      "edition": "4th edition (Book 1 and Book 2), 19 July 2020",
+      "min_step": 4,
+      "note": "Fenwick trees: point update, range query and their variants."
+    },
+    {
+      "id": "gcp3-15-2-1-lazy-propagation",
+      "techniques": [
+        "segment-tree-lazy"
+      ],
+      "kind": "book",
+      "source": "Guide to Competitive Programming",
+      "title": "Guide to Competitive Programming",
+      "url": null,
+      "section": "15.2.1 Lazy Propagation",
+      "chapter": "15  Additional Topics",
+      "pages": null,
+      "edition": "3rd edition, Springer 2024, ISBN 978-3-031-61793-5",
+      "min_step": 4,
+      "note": "Segment trees that support range updates with lazy propagation."
+    },
+    {
+      "id": "cp4-2-4-4-segment-tree",
+      "techniques": [
+        "segment-tree-lazy"
+      ],
+      "kind": "book",
+      "source": "Competitive Programming 4",
+      "title": "Competitive Programming 4",
+      "url": null,
+      "section": "2.4.4 Segment Tree",
+      "chapter": "2 Data Structures and Libraries",
+      "pages": null,
+      "edition": "4th edition (Book 1 and Book 2), 19 July 2020",
+      "min_step": 4,
+      "note": "Segment trees for range queries, including range updates."
+    },
+    {
+      "id": "gcp3-15-1-1-data-structures",
+      "techniques": [
+        "sqrt-decomposition"
+      ],
+      "kind": "book",
+      "source": "Guide to Competitive Programming",
+      "title": "Guide to Competitive Programming",
+      "url": null,
+      "section": "15.1.1 Data Structures",
+      "chapter": "15  Additional Topics",
+      "pages": null,
+      "edition": "3rd edition, Springer 2024, ISBN 978-3-031-61793-5",
+      "min_step": 4,
+      "note": "Splitting an array into blocks of size about sqrt(n)."
+    },
+    {
+      "id": "cp4-9-4-square-root-decomposition",
+      "techniques": [
+        "sqrt-decomposition"
+      ],
+      "kind": "book",
+      "source": "Competitive Programming 4",
+      "title": "Competitive Programming 4",
+      "url": null,
+      "section": "9.4 Square Root Decomposition",
+      "chapter": "9 Rare Topics",
+      "pages": null,
+      "edition": "4th edition (Book 1 and Book 2), 19 July 2020",
+      "min_step": 4,
+      "note": "Square root decomposition of arrays and queries."
+    },
+    {
+      "id": "gcp3-9-1-2-minimum-queries",
+      "techniques": [
+        "sparse-table"
+      ],
+      "kind": "book",
+      "source": "Guide to Competitive Programming",
+      "title": "Guide to Competitive Programming",
+      "url": null,
+      "section": "9.1.2 Minimum Queries",
+      "chapter": "9 Range Queries",
+      "pages": null,
+      "edition": "3rd edition, Springer 2024, ISBN 978-3-031-61793-5",
+      "min_step": 4,
+      "note": "Static range minimum queries in O(1) after O(n log n) preprocessing."
+    },
+    {
+      "id": "cp4-9-3-sparse-table-data-structure",
+      "techniques": [
+        "sparse-table"
+      ],
+      "kind": "book",
+      "source": "Competitive Programming 4",
+      "title": "Competitive Programming 4",
+      "url": null,
+      "section": "9.3 Sparse Table Data Structure",
+      "chapter": "9 Rare Topics",
+      "pages": null,
+      "edition": "4th edition (Book 1 and Book 2), 19 July 2020",
+      "min_step": 4,
+      "note": "The sparse table for static range minimum queries."
+    },
+    {
+      "id": "gcp3-9-2-3-additional-techniques",
+      "techniques": [
+        "difference-array"
+      ],
+      "kind": "book",
+      "source": "Guide to Competitive Programming",
+      "title": "Guide to Competitive Programming",
+      "url": null,
+      "section": "9.2.3 Additional Techniques",
+      "chapter": "9 Range Queries",
+      "pages": null,
+      "edition": "3rd edition, Springer 2024, ISBN 978-3-031-61793-5",
+      "min_step": 4,
+      "note": "The part on range updates: a difference array turns a range update into two point updates."
+    },
+    {
+      "id": "gcp3-9-1-1-sum-queries",
+      "techniques": [
+        "prefix-sums"
+      ],
+      "kind": "book",
+      "source": "Guide to Competitive Programming",
+      "title": "Guide to Competitive Programming",
+      "url": null,
+      "section": "9.1.1 Sum Queries",
+      "chapter": "9 Range Queries",
+      "pages": null,
+      "edition": "3rd edition, Springer 2024, ISBN 978-3-031-61793-5",
+      "min_step": 4,
+      "note": "Prefix sum arrays in one and two dimensions."
+    },
+    {
+      "id": "cp4-2-3-2-hash-table",
+      "techniques": [
+        "hash-map-lookup"
+      ],
+      "kind": "book",
+      "source": "Competitive Programming 4",
+      "title": "Competitive Programming 4",
+      "url": null,
+      "section": "2.3.2 Hash Table",
+      "chapter": "2 Data Structures and Libraries",
+      "pages": null,
+      "edition": "4th edition (Book 1 and Book 2), 19 July 2020",
+      "min_step": 4,
+      "note": "Hash tables and when to use them instead of a balanced tree."
+    },
+    {
+      "id": "gcp3-5-2-2-maps",
+      "techniques": [
+        "hash-map-lookup"
+      ],
+      "kind": "book",
+      "source": "Guide to Competitive Programming",
+      "title": "Guide to Competitive Programming",
+      "url": null,
+      "section": "5.2.2 Maps",
+      "chapter": "5 Data Structures",
+      "pages": null,
+      "edition": "3rd edition, Springer 2024, ISBN 978-3-031-61793-5",
+      "min_step": 3,
+      "note": "Ordered and unordered maps from keys to values."
+    },
+    {
+      "id": "gcp3-5-2-3-priority-queues",
+      "techniques": [
+        "priority-queue"
+      ],
+      "kind": "book",
+      "source": "Guide to Competitive Programming",
+      "title": "Guide to Competitive Programming",
+      "url": null,
+      "section": "5.2.3 Priority Queues",
+      "chapter": "5 Data Structures",
+      "pages": null,
+      "edition": "3rd edition, Springer 2024, ISBN 978-3-031-61793-5",
+      "min_step": 4,
+      "note": "Priority queues and their operations."
+    },
+    {
+      "id": "cp4-2-3-1-binary-heap-priority-queue",
+      "techniques": [
+        "priority-queue"
+      ],
+      "kind": "book",
+      "source": "Competitive Programming 4",
+      "title": "Competitive Programming 4",
+      "url": null,
+      "section": "2.3.1 Binary Heap (Priority Queue)",
+      "chapter": "2 Data Structures and Libraries",
+      "pages": null,
+      "edition": "4th edition (Book 1 and Book 2), 19 July 2020",
+      "min_step": 4,
+      "note": "Binary heaps as priority queues."
+    },
+    {
+      "id": "clrs3-6-5-priority-queues",
+      "techniques": [
+        "priority-queue"
+      ],
+      "kind": "book",
+      "source": "Introduction to Algorithms",
+      "title": "Introduction to Algorithms",
+      "url": null,
+      "section": "6.5 Priority queues",
+      "chapter": "6 Heapsort",
+      "pages": null,
+      "edition": "3rd edition, MIT Press 2009, ISBN 978-0-262-03384-8",
+      "min_step": 4,
+      "note": "How a heap implements a priority queue, and the cost of each operation."
+    },
+    {
+      "id": "gcp3-7-3-2-dijkstras-algorithm",
+      "techniques": [
+        "dijkstra"
+      ],
+      "kind": "book",
+      "source": "Guide to Competitive Programming",
+      "title": "Guide to Competitive Programming",
+      "url": null,
+      "section": "7.3.2 Dijkstra's Algorithm",
+      "chapter": "7 Graph Algorithms",
+      "pages": null,
+      "edition": "3rd edition, Springer 2024, ISBN 978-3-031-61793-5",
+      "min_step": 4,
+      "note": "Dijkstra's algorithm with a priority queue."
+    },
+    {
+      "id": "cp4-4-4-3-on-weighted-graph-dijkstras",
+      "techniques": [
+        "dijkstra"
+      ],
+      "kind": "book",
+      "source": "Competitive Programming 4",
+      "title": "Competitive Programming 4",
+      "url": null,
+      "section": "4.4.3 On Weighted Graph: Dijkstra’s",
+      "chapter": "4 Graph",
+      "pages": null,
+      "edition": "4th edition (Book 1 and Book 2), 19 July 2020",
+      "min_step": 4,
+      "note": "Dijkstra's algorithm and its implementation variants."
+    },
+    {
+      "id": "clrs3-24-3-dijkstras-algorithm",
+      "techniques": [
+        "dijkstra"
+      ],
+      "kind": "book",
+      "source": "Introduction to Algorithms",
+      "title": "Introduction to Algorithms",
+      "url": null,
+      "section": "24.3 Dijkstra’s algorithm",
+      "chapter": "24 Single-Source Shortest Paths",
+      "pages": null,
+      "edition": "3rd edition, MIT Press 2009, ISBN 978-0-262-03384-8",
+      "min_step": 4,
+      "note": "Dijkstra's algorithm and its proof of correctness."
+    },
+    {
+      "id": "gcp3-7-4-1-topological-sorting",
+      "techniques": [
+        "topological-sort"
+      ],
+      "kind": "book",
+      "source": "Guide to Competitive Programming",
+      "title": "Guide to Competitive Programming",
+      "url": null,
+      "section": "7.4.1 Topological Sorting",
+      "chapter": "7 Graph Algorithms",
+      "pages": null,
+      "edition": "3rd edition, Springer 2024, ISBN 978-3-031-61793-5",
+      "min_step": 4,
+      "note": "Ordering the nodes of a directed acyclic graph."
+    },
+    {
+      "id": "cp4-4-2-6-topological-sort-directed-acyclic-graph",
+      "techniques": [
+        "topological-sort"
+      ],
+      "kind": "book",
+      "source": "Competitive Programming 4",
+      "title": "Competitive Programming 4",
+      "url": null,
+      "section": "4.2.6 Topological Sort (Directed Acyclic Graph)",
+      "chapter": "4 Graph",
+      "pages": null,
+      "edition": "4th edition (Book 1 and Book 2), 19 July 2020",
+      "min_step": 4,
+      "note": "Topological sort with DFS and with Kahn's algorithm."
+    },
+    {
+      "id": "clrs3-22-4-topological-sort",
+      "techniques": [
+        "topological-sort"
+      ],
+      "kind": "book",
+      "source": "Introduction to Algorithms",
+      "title": "Introduction to Algorithms",
+      "url": null,
+      "section": "22.4 Topological sort",
+      "chapter": "22 Elementary Graph Algorithms",
+      "pages": null,
+      "edition": "3rd edition, MIT Press 2009, ISBN 978-0-262-03384-8",
+      "min_step": 4,
+      "note": "Topological sort from depth-first search finishing times."
+    },
+    {
+      "id": "gcp3-7-5-1-finding-successors",
+      "techniques": [
+        "functional-graph"
+      ],
+      "kind": "book",
+      "source": "Guide to Competitive Programming",
+      "title": "Guide to Competitive Programming",
+      "url": null,
+      "section": "7.5.1 Finding Successors",
+      "chapter": "7 Graph Algorithms",
+      "pages": null,
+      "edition": "3rd edition, Springer 2024, ISBN 978-3-031-61793-5",
+      "min_step": 4,
+      "note": "Graphs where every node has one successor, and jumping k steps fast."
+    },
+    {
+      "id": "gcp3-7-5-2-cycle-detection",
+      "techniques": [
+        "periodicity",
+        "functional-graph"
+      ],
+      "kind": "book",
+      "source": "Guide to Competitive Programming",
+      "title": "Guide to Competitive Programming",
+      "url": null,
+      "section": "7.5.2 Cycle Detection",
+      "chapter": "7 Graph Algorithms",
+      "pages": null,
+      "edition": "3rd edition, Springer 2024, ISBN 978-3-031-61793-5",
+      "min_step": 4,
+      "note": "Finding the cycle that a walk in a successor graph enters, and where it starts."
+    },
+    {
+      "id": "cp4-5-6-cycle-finding",
+      "techniques": [
+        "periodicity"
+      ],
+      "kind": "book",
+      "source": "Competitive Programming 4",
+      "title": "Competitive Programming 4",
+      "url": null,
+      "section": "5.6 Cycle-Finding",
+      "chapter": "5 Mathematics",
+      "pages": null,
+      "edition": "4th edition (Book 1 and Book 2), 19 July 2020",
+      "min_step": 4,
+      "note": "Finding the cycle of an iterated function, with a table or with Floyd's algorithm."
+    },
+    {
+      "id": "gcp3-7-2-3-applications",
+      "techniques": [
+        "connected-components"
+      ],
+      "kind": "book",
+      "source": "Guide to Competitive Programming",
+      "title": "Guide to Competitive Programming",
+      "url": null,
+      "section": "7.2.3 Applications",
+      "chapter": "7 Graph Algorithms",
+      "pages": null,
+      "edition": "3rd edition, Springer 2024, ISBN 978-3-031-61793-5",
+      "min_step": 4,
+      "note": "Uses of graph traversal: connectivity, cycles and bipartiteness."
+    },
+    {
+      "id": "cp4-4-2-4-finding-connected-components-undirected-graph",
+      "techniques": [
+        "connected-components"
+      ],
+      "kind": "book",
+      "source": "Competitive Programming 4",
+      "title": "Competitive Programming 4",
+      "url": null,
+      "section": "4.2.4 Finding Connected Components (Undirected Graph)",
+      "chapter": "4 Graph",
+      "pages": null,
+      "edition": "4th edition (Book 1 and Book 2), 19 July 2020",
+      "min_step": 4,
+      "note": "Counting and labeling connected components with DFS or BFS."
+    },
+    {
+      "id": "gcp3-10-1-1-tree-traversal",
+      "techniques": [
+        "tree-traversal"
+      ],
+      "kind": "book",
+      "source": "Guide to Competitive Programming",
+      "title": "Guide to Competitive Programming",
+      "url": null,
+      "section": "10.1.1 Tree Traversal",
+      "chapter": "10 Tree Algorithms",
+      "pages": null,
+      "edition": "3rd edition, Springer 2024, ISBN 978-3-031-61793-5",
+      "min_step": 4,
+      "note": "Depth-first traversal of a tree and computing values for every subtree."
+    },
+    {
+      "id": "gcp3-10-1-3-all-longest-paths",
+      "techniques": [
+        "tree-rerooting"
+      ],
+      "kind": "book",
+      "source": "Guide to Competitive Programming",
+      "title": "Guide to Competitive Programming",
+      "url": null,
+      "section": "10.1.3 All Longest Paths",
+      "chapter": "10 Tree Algorithms",
+      "pages": null,
+      "edition": "3rd edition, Springer 2024, ISBN 978-3-031-61793-5",
+      "min_step": 4,
+      "note": "Computing a value for every node as the root, from a down pass and an up pass."
+    },
+    {
+      "id": "gcp3-10-2-3-lowest-common-ancestors",
+      "techniques": [
+        "lca"
+      ],
+      "kind": "book",
+      "source": "Guide to Competitive Programming",
+      "title": "Guide to Competitive Programming",
+      "url": null,
+      "section": "10.2.3 Lowest Common Ancestors",
+      "chapter": "10 Tree Algorithms",
+      "pages": null,
+      "edition": "3rd edition, Springer 2024, ISBN 978-3-031-61793-5",
+      "min_step": 4,
+      "note": "Lowest common ancestors with binary lifting or a traversal array."
+    },
+    {
+      "id": "cp4-9-8-lowest-common-ancestor",
+      "techniques": [
+        "lca"
+      ],
+      "kind": "book",
+      "source": "Competitive Programming 4",
+      "title": "Competitive Programming 4",
+      "url": null,
+      "section": "9.8 Lowest Common Ancestor",
+      "chapter": "9 Rare Topics",
+      "pages": null,
+      "edition": "4th edition (Book 1 and Book 2), 19 July 2020",
+      "min_step": 4,
+      "note": "Lowest common ancestor queries."
+    },
+    {
+      "id": "gcp3-10-2-2-subtrees-and-paths",
+      "techniques": [
+        "euler-tour-flattening"
+      ],
+      "kind": "book",
+      "source": "Guide to Competitive Programming",
+      "title": "Guide to Competitive Programming",
+      "url": null,
+      "section": "10.2.2 Subtrees and Paths",
+      "chapter": "10 Tree Algorithms",
+      "pages": null,
+      "edition": "3rd edition, Springer 2024, ISBN 978-3-031-61793-5",
+      "min_step": 4,
+      "note": "A tree traversal array, where every subtree is a contiguous subarray."
+    },
+    {
+      "id": "gcp3-10-3-2-heavy-light-decomposition",
+      "techniques": [
+        "heavy-light-decomposition"
+      ],
+      "kind": "book",
+      "source": "Guide to Competitive Programming",
+      "title": "Guide to Competitive Programming",
+      "url": null,
+      "section": "10.3.2 Heavy-Light Decomposition",
+      "chapter": "10 Tree Algorithms",
+      "pages": null,
+      "edition": "3rd edition, Springer 2024, ISBN 978-3-031-61793-5",
+      "min_step": 4,
+      "note": "Splitting a tree into heavy paths for path queries."
+    },
+    {
+      "id": "cp4-9-5-heavy-light-decomposition",
+      "techniques": [
+        "heavy-light-decomposition"
+      ],
+      "kind": "book",
+      "source": "Competitive Programming 4",
+      "title": "Competitive Programming 4",
+      "url": null,
+      "section": "9.5 Heavy-Light Decomposition",
+      "chapter": "9 Rare Topics",
+      "pages": null,
+      "edition": "4th edition (Book 1 and Book 2), 19 July 2020",
+      "min_step": 4,
+      "note": "Heavy-light decomposition of a tree."
+    },
+    {
+      "id": "gcp3-12-2-1-eulerian-paths",
+      "techniques": [
+        "eulerian-path"
+      ],
+      "kind": "book",
+      "source": "Guide to Competitive Programming",
+      "title": "Guide to Competitive Programming",
+      "url": null,
+      "section": "12.2.1 Eulerian Paths",
+      "chapter": "12 Advanced Graph Algorithms",
+      "pages": null,
+      "edition": "3rd edition, Springer 2024, ISBN 978-3-031-61793-5",
+      "min_step": 4,
+      "note": "When an Eulerian path exists, and Hierholzer's algorithm."
+    },
+    {
+      "id": "cp4-4-6-4-eulerian-graph",
+      "techniques": [
+        "eulerian-path"
+      ],
+      "kind": "book",
+      "source": "Competitive Programming 4",
+      "title": "Competitive Programming 4",
+      "url": null,
+      "section": "4.6.4 Eulerian Graph",
+      "chapter": "4 Graph",
+      "pages": null,
+      "edition": "4th edition (Book 1 and Book 2), 19 July 2020",
+      "min_step": 4,
+      "note": "Eulerian graphs, the degree conditions and finding the tour."
+    },
+    {
+      "id": "gcp3-6-2-3-knapsack-problems",
+      "techniques": [
+        "knapsack-dp"
+      ],
+      "kind": "book",
+      "source": "Guide to Competitive Programming",
+      "title": "Guide to Competitive Programming",
+      "url": null,
+      "section": "6.2.3 Knapsack Problems",
+      "chapter": "6 Dynamic Programming",
+      "pages": null,
+      "edition": "3rd edition, Springer 2024, ISBN 978-3-031-61793-5",
+      "min_step": 4,
+      "note": "Knapsack-style DP over sums and weights."
+    },
+    {
+      "id": "cp4-8-6-2-pseudo-polynomial-knapsack-subset-sum-coin-change",
+      "techniques": [
+        "knapsack-dp"
+      ],
+      "kind": "book",
+      "source": "Competitive Programming 4",
+      "title": "Competitive Programming 4",
+      "url": null,
+      "section": "8.6.2 Pseudo-Polynomial: Knapsack, Subset-Sum, Coin-Change",
+      "chapter": "8 More Advanced Topics",
+      "pages": null,
+      "edition": "4th edition (Book 1 and Book 2), 19 July 2020",
+      "min_step": 4,
+      "note": "Knapsack, subset sum and coin change in pseudo-polynomial time."
+    },
+    {
+      "id": "gcp3-6-1-basic-concepts",
+      "techniques": [
+        "linear-dp"
+      ],
+      "kind": "book",
+      "source": "Guide to Competitive Programming",
+      "title": "Guide to Competitive Programming",
+      "url": null,
+      "section": "6.1 Basic Concepts",
+      "chapter": "6 Dynamic Programming",
+      "pages": null,
+      "edition": "3rd edition, Springer 2024, ISBN 978-3-031-61793-5",
+      "min_step": 3,
+      "note": "What dynamic programming is: states, transitions, optimizing and counting."
+    },
+    {
+      "id": "cp4-3-5-dynamic-programming",
+      "techniques": [
+        "linear-dp"
+      ],
+      "kind": "book",
+      "source": "Competitive Programming 4",
+      "title": "Competitive Programming 4",
+      "url": null,
+      "section": "3.5 Dynamic Programming",
+      "chapter": "3 Problem Solving Paradigms",
+      "pages": null,
+      "edition": "4th edition (Book 1 and Book 2), 19 July 2020",
+      "min_step": 3,
+      "note": "Dynamic programming from complete search, with classical and non-classical examples."
+    },
+    {
+      "id": "clrs3-15-3-elements-of-dynamic-programming",
+      "techniques": [
+        "linear-dp"
+      ],
+      "kind": "book",
+      "source": "Introduction to Algorithms",
+      "title": "Introduction to Algorithms",
+      "url": null,
+      "section": "15.3 Elements of dynamic programming",
+      "chapter": "15 Dynamic Programming",
+      "pages": null,
+      "edition": "3rd edition, MIT Press 2009, ISBN 978-0-262-03384-8",
+      "min_step": 3,
+      "note": "Optimal substructure and overlapping subproblems: when DP applies."
+    },
+    {
+      "id": "gcp3-6-2-2-paths-in-a-grid",
+      "techniques": [
+        "grid-dp"
+      ],
+      "kind": "book",
+      "source": "Guide to Competitive Programming",
+      "title": "Guide to Competitive Programming",
+      "url": null,
+      "section": "6.2.2 Paths in a Grid",
+      "chapter": "6 Dynamic Programming",
+      "pages": null,
+      "edition": "3rd edition, Springer 2024, ISBN 978-3-031-61793-5",
+      "min_step": 4,
+      "note": "DP over the cells of a grid, moving right and down."
+    },
+    {
+      "id": "gcp3-6-2-4-from-permutations-to-subsets",
+      "techniques": [
+        "bitmask-dp"
+      ],
+      "kind": "book",
+      "source": "Guide to Competitive Programming",
+      "title": "Guide to Competitive Programming",
+      "url": null,
+      "section": "6.2.4 From Permutations to Subsets",
+      "chapter": "6 Dynamic Programming",
+      "pages": null,
+      "edition": "3rd edition, Springer 2024, ISBN 978-3-031-61793-5",
+      "min_step": 4,
+      "note": "Replacing a search over permutations by DP over subsets."
+    },
+    {
+      "id": "cp4-8-3-1-dp-with-bitmask",
+      "techniques": [
+        "bitmask-dp"
+      ],
+      "kind": "book",
+      "source": "Competitive Programming 4",
+      "title": "Competitive Programming 4",
+      "url": null,
+      "section": "8.3.1 DP with Bitmask",
+      "chapter": "8 More Advanced Topics",
+      "pages": null,
+      "edition": "4th edition (Book 1 and Book 2), 19 July 2020",
+      "min_step": 4,
+      "note": "Dynamic programming whose state includes a bitmask of a set."
+    },
+    {
+      "id": "gcp3-3-2-1-maximum-subarray-sum",
+      "techniques": [
+        "kadane"
+      ],
+      "kind": "book",
+      "source": "Guide to Competitive Programming",
+      "title": "Guide to Competitive Programming",
+      "url": null,
+      "section": "3.2.1 Maximum Subarray Sum",
+      "chapter": "3 Efficiency",
+      "pages": null,
+      "edition": "3rd edition, Springer 2024, ISBN 978-3-031-61793-5",
+      "min_step": 4,
+      "note": "From O(n^3) to O(n): the maximum subarray sum."
+    },
+    {
+      "id": "gcp3-11-5-1-game-states",
+      "techniques": [
+        "game-minimax-dp"
+      ],
+      "kind": "book",
+      "source": "Guide to Competitive Programming",
+      "title": "Guide to Competitive Programming",
+      "url": null,
+      "section": "11.5.1 Game States",
+      "chapter": "11 Mathematics",
+      "pages": null,
+      "edition": "3rd edition, Springer 2024, ISBN 978-3-031-61793-5",
+      "min_step": 4,
+      "note": "Winning and losing states of a game, computed over the states."
+    },
+    {
+      "id": "cp4-5-7-game-theory-basic",
+      "techniques": [
+        "game-minimax-dp"
+      ],
+      "kind": "book",
+      "source": "Competitive Programming 4",
+      "title": "Competitive Programming 4",
+      "url": null,
+      "section": "5.7 Game Theory (Basic)",
+      "chapter": "5 Mathematics",
+      "pages": null,
+      "edition": "4th edition (Book 1 and Book 2), 19 July 2020",
+      "min_step": 4,
+      "note": "Two-player games solved by searching or DP over the game states."
+    },
+    {
+      "id": "cp4-6-3-1-string-alignment-edit-distance",
+      "techniques": [
+        "sequence-alignment-dp"
+      ],
+      "kind": "book",
+      "source": "Competitive Programming 4",
+      "title": "Competitive Programming 4",
+      "url": null,
+      "section": "6.3.1 String Alignment (Edit Distance)",
+      "chapter": "6 String Processing",
+      "pages": null,
+      "edition": "4th edition (Book 1 and Book 2), 19 July 2020",
+      "min_step": 4,
+      "note": "Aligning two strings with DP (edit distance)."
+    },
+    {
+      "id": "cp4-6-3-2-longest-common-subsequence",
+      "techniques": [
+        "sequence-alignment-dp"
+      ],
+      "kind": "book",
+      "source": "Competitive Programming 4",
+      "title": "Competitive Programming 4",
+      "url": null,
+      "section": "6.3.2 Longest Common Subsequence",
+      "chapter": "6 String Processing",
+      "pages": null,
+      "edition": "4th edition (Book 1 and Book 2), 19 July 2020",
+      "min_step": 4,
+      "note": "The longest common subsequence of two strings."
+    },
+    {
+      "id": "clrs3-15-4-longest-common-subsequence",
+      "techniques": [
+        "sequence-alignment-dp"
+      ],
+      "kind": "book",
+      "source": "Introduction to Algorithms",
+      "title": "Introduction to Algorithms",
+      "url": null,
+      "section": "15.4 Longest common subsequence",
+      "chapter": "15 Dynamic Programming",
+      "pages": null,
+      "edition": "3rd edition, MIT Press 2009, ISBN 978-0-262-03384-8",
+      "min_step": 4,
+      "note": "The LCS recurrence, its table and reconstructing the answer."
+    },
+    {
+      "id": "gcp3-15-4-1-convex-hull-trick",
+      "techniques": [
+        "convex-hull-trick"
+      ],
+      "kind": "book",
+      "source": "Guide to Competitive Programming",
+      "title": "Guide to Competitive Programming",
+      "url": null,
+      "section": "15.4.1 Convex Hull Trick",
+      "chapter": "15  Additional Topics",
+      "pages": null,
+      "edition": "3rd edition, Springer 2024, ISBN 978-3-031-61793-5",
+      "min_step": 4,
+      "note": "Speeding up DP transitions that minimize over lines."
+    },
+    {
+      "id": "cp4-9-23-dynamic-programming-optimization",
+      "techniques": [
+        "convex-hull-trick"
+      ],
+      "kind": "book",
+      "source": "Competitive Programming 4",
+      "title": "Competitive Programming 4",
+      "url": null,
+      "section": "9.23 Dynamic Programming Optimization",
+      "chapter": "9 Rare Topics",
+      "pages": null,
+      "edition": "4th edition (Book 1 and Book 2), 19 July 2020",
+      "min_step": 4,
+      "note": "Optimizations of DP transitions, including the convex hull trick."
+    },
+    {
+      "id": "gcp3-14-4-3-lcp-arrays",
+      "techniques": [
+        "lcp-dp"
+      ],
+      "kind": "book",
+      "source": "Guide to Competitive Programming",
+      "title": "Guide to Competitive Programming",
+      "url": null,
+      "section": "14.4.3 LCP Arrays",
+      "chapter": "14 String Algorithms",
+      "pages": null,
+      "edition": "3rd edition, Springer 2024, ISBN 978-3-031-61793-5",
+      "min_step": 4,
+      "note": "Longest common prefixes of suffixes and what they count."
+    },
+    {
+      "id": "cp4-6-5-4-suffix-array",
+      "techniques": [
+        "lcp-dp"
+      ],
+      "kind": "book",
+      "source": "Competitive Programming 4",
+      "title": "Competitive Programming 4",
+      "url": null,
+      "section": "6.5.4 Suffix Array",
+      "chapter": "6 String Processing",
+      "pages": null,
+      "edition": "4th edition (Book 1 and Book 2), 19 July 2020",
+      "min_step": 4,
+      "note": "The suffix array and the longest common prefix of consecutive sorted suffixes."
+    },
+    {
+      "id": "cp4-3-4-greedy",
+      "techniques": [
+        "greedy-exchange-argument"
+      ],
+      "kind": "book",
+      "source": "Competitive Programming 4",
+      "title": "Competitive Programming 4",
+      "url": null,
+      "section": "3.4 Greedy",
+      "chapter": "3 Problem Solving Paradigms",
+      "pages": null,
+      "edition": "4th edition (Book 1 and Book 2), 19 July 2020",
+      "min_step": 3,
+      "note": "Greedy algorithms: when they work and classic examples."
+    },
+    {
+      "id": "clrs3-16-2-elements-of-the-greedy-strategy",
+      "techniques": [
+        "greedy-exchange-argument"
+      ],
+      "kind": "book",
+      "source": "Introduction to Algorithms",
+      "title": "Introduction to Algorithms",
+      "url": null,
+      "section": "16.2 Elements of the greedy strategy",
+      "chapter": "16 Greedy Algorithms",
+      "pages": null,
+      "edition": "3rd edition, MIT Press 2009, ISBN 978-0-262-03384-8",
+      "min_step": 3,
+      "note": "Greedy-choice property and optimal substructure: how a greedy is proved correct."
+    },
+    {
+      "id": "gcp3-4-2-3-tasks-and-deadlines",
+      "techniques": [
+        "greedy-exchange-argument"
+      ],
+      "kind": "book",
+      "source": "Guide to Competitive Programming",
+      "title": "Guide to Competitive Programming",
+      "url": null,
+      "section": "4.2.3 Tasks and Deadlines",
+      "chapter": "4 Sorting and Searching",
+      "pages": null,
+      "edition": "3rd edition, Springer 2024, ISBN 978-3-031-61793-5",
+      "min_step": 4,
+      "note": "Proving a greedy order by swapping two adjacent tasks."
+    },
+    {
+      "id": "gcp3-4-2-1-sweep-line-algorithms",
+      "techniques": [
+        "greedy-sweep"
+      ],
+      "kind": "book",
+      "source": "Guide to Competitive Programming",
+      "title": "Guide to Competitive Programming",
+      "url": null,
+      "section": "4.2.1 Sweep Line Algorithms",
+      "chapter": "4 Sorting and Searching",
+      "pages": null,
+      "edition": "3rd edition, Springer 2024, ISBN 978-3-031-61793-5",
+      "min_step": 4,
+      "note": "Processing events in sorted order with a sweep line."
+    },
+    {
+      "id": "gcp3-4-2-2-scheduling-events",
+      "techniques": [
+        "greedy-sweep"
+      ],
+      "kind": "book",
+      "source": "Guide to Competitive Programming",
+      "title": "Guide to Competitive Programming",
+      "url": null,
+      "section": "4.2.2 Scheduling Events",
+      "chapter": "4 Sorting and Searching",
+      "pages": null,
+      "edition": "3rd edition, Springer 2024, ISBN 978-3-031-61793-5",
+      "min_step": 4,
+      "note": "Choosing the most events by sorting by end time."
+    },
+    {
+      "id": "gcp3-4-3-2-finding-optimal-solutions",
+      "techniques": [
+        "binary-search-on-answer"
+      ],
+      "kind": "book",
+      "source": "Guide to Competitive Programming",
+      "title": "Guide to Competitive Programming",
+      "url": null,
+      "section": "4.3.2 Finding Optimal Solutions",
+      "chapter": "4 Sorting and Searching",
+      "pages": null,
+      "edition": "3rd edition, Springer 2024, ISBN 978-3-031-61793-5",
+      "min_step": 4,
+      "note": "Binary searching the answer over a monotone condition."
+    },
+    {
+      "id": "cp4-3-3-1-interesting-usages-of-binary-search",
+      "techniques": [
+        "binary-search-on-answer"
+      ],
+      "kind": "book",
+      "source": "Competitive Programming 4",
+      "title": "Competitive Programming 4",
+      "url": null,
+      "section": "3.3.1 Interesting Usages of Binary Search",
+      "chapter": "3 Problem Solving Paradigms",
+      "pages": null,
+      "edition": "4th edition (Book 1 and Book 2), 19 July 2020",
+      "min_step": 4,
+      "note": "Binary search beyond sorted arrays, including binary search the answer."
+    },
+    {
+      "id": "cp4-8-7-1-two-components-binary-search-the-answer-and-other",
+      "techniques": [
+        "binary-search-on-answer"
+      ],
+      "kind": "book",
+      "source": "Competitive Programming 4",
+      "title": "Competitive Programming 4",
+      "url": null,
+      "section": "8.7.1 Two Components: Binary Search the Answer and Other",
+      "chapter": "8 More Advanced Topics",
+      "pages": null,
+      "edition": "4th edition (Book 1 and Book 2), 19 July 2020",
+      "min_step": 4,
+      "note": "Combining binary search the answer with another check."
+    },
+    {
+      "id": "gcp3-2-2-3-backtracking",
+      "techniques": [
+        "backtracking"
+      ],
+      "kind": "book",
+      "source": "Guide to Competitive Programming",
+      "title": "Guide to Competitive Programming",
+      "url": null,
+      "section": "2.2.3 Backtracking",
+      "chapter": "2 Programming Techniques",
+      "pages": null,
+      "edition": "3rd edition, Springer 2024, ISBN 978-3-031-61793-5",
+      "min_step": 4,
+      "note": "Building solutions step by step and abandoning partial ones."
+    },
+    {
+      "id": "gcp3-15-5-1-pruning-the-search-tree",
+      "techniques": [
+        "backtracking"
+      ],
+      "kind": "book",
+      "source": "Guide to Competitive Programming",
+      "title": "Guide to Competitive Programming",
+      "url": null,
+      "section": "15.5.1 Pruning the Search Tree",
+      "chapter": "15  Additional Topics",
+      "pages": null,
+      "edition": "3rd edition, Springer 2024, ISBN 978-3-031-61793-5",
+      "min_step": 4,
+      "note": "Pruning a backtracking search to make it fast enough."
+    },
+    {
+      "id": "cp4-3-2-2-recursive-complete-search",
+      "techniques": [
+        "backtracking"
+      ],
+      "kind": "book",
+      "source": "Competitive Programming 4",
+      "title": "Competitive Programming 4",
+      "url": null,
+      "section": "3.2.2 Recursive Complete Search",
+      "chapter": "3 Problem Solving Paradigms",
+      "pages": null,
+      "edition": "4th edition (Book 1 and Book 2), 19 July 2020",
+      "min_step": 4,
+      "note": "Recursive backtracking and pruning."
+    },
+    {
+      "id": "gcp3-2-2-1-generating-subsets",
+      "techniques": [
+        "complete-search"
+      ],
+      "kind": "book",
+      "source": "Guide to Competitive Programming",
+      "title": "Guide to Competitive Programming",
+      "url": null,
+      "section": "2.2.1 Generating Subsets",
+      "chapter": "2 Programming Techniques",
+      "pages": null,
+      "edition": "3rd edition, Springer 2024, ISBN 978-3-031-61793-5",
+      "min_step": 3,
+      "note": "Going through all subsets of a set."
+    },
+    {
+      "id": "gcp3-2-2-2-generating-permutations",
+      "techniques": [
+        "complete-search"
+      ],
+      "kind": "book",
+      "source": "Guide to Competitive Programming",
+      "title": "Guide to Competitive Programming",
+      "url": null,
+      "section": "2.2.2 Generating Permutations",
+      "chapter": "2 Programming Techniques",
+      "pages": null,
+      "edition": "3rd edition, Springer 2024, ISBN 978-3-031-61793-5",
+      "min_step": 3,
+      "note": "Going through all permutations."
+    },
+    {
+      "id": "cp4-3-2-complete-search",
+      "techniques": [
+        "complete-search"
+      ],
+      "kind": "book",
+      "source": "Competitive Programming 4",
+      "title": "Competitive Programming 4",
+      "url": null,
+      "section": "3.2 Complete Search",
+      "chapter": "3 Problem Solving Paradigms",
+      "pages": null,
+      "edition": "4th edition (Book 1 and Book 2), 19 July 2020",
+      "min_step": 3,
+      "note": "Complete search: iterative and recursive, and tips to make it fast enough."
+    },
+    {
+      "id": "gcp3-4-1-5-sorting-in-practice",
+      "techniques": [
+        "sorting"
+      ],
+      "kind": "book",
+      "source": "Guide to Competitive Programming",
+      "title": "Guide to Competitive Programming",
+      "url": null,
+      "section": "4.1.5 Sorting in Practice",
+      "chapter": "4 Sorting and Searching",
+      "pages": null,
+      "edition": "3rd edition, Springer 2024, ISBN 978-3-031-61793-5",
+      "min_step": 3,
+      "note": "Sorting with library functions and custom comparison."
+    },
+    {
+      "id": "cp4-2-2-2-special-sorting-problems",
+      "techniques": [
+        "sorting"
+      ],
+      "kind": "book",
+      "source": "Competitive Programming 4",
+      "title": "Competitive Programming 4",
+      "url": null,
+      "section": "2.2.2 Special Sorting Problems",
+      "chapter": "2 Data Structures and Libraries",
+      "pages": null,
+      "edition": "4th edition (Book 1 and Book 2), 19 July 2020",
+      "min_step": 3,
+      "note": "Problems solved by sorting, such as the inversion index."
+    },
+    {
+      "id": "gcp3-11-1-4-modular-exponentiation",
+      "techniques": [
+        "modular-arithmetic"
+      ],
+      "kind": "book",
+      "source": "Guide to Competitive Programming",
+      "title": "Guide to Competitive Programming",
+      "url": null,
+      "section": "11.1.4 Modular Exponentiation",
+      "chapter": "11 Mathematics",
+      "pages": null,
+      "edition": "3rd edition, Springer 2024, ISBN 978-3-031-61793-5",
+      "min_step": 4,
+      "note": "Computing x^n mod m in O(log n)."
+    },
+    {
+      "id": "cp4-5-3-9-modular-arithmetic",
+      "techniques": [
+        "modular-arithmetic"
+      ],
+      "kind": "book",
+      "source": "Competitive Programming 4",
+      "title": "Competitive Programming 4",
+      "url": null,
+      "section": "5.3.9 Modular Arithmetic",
+      "chapter": "5 Mathematics",
+      "pages": null,
+      "edition": "4th edition (Book 1 and Book 2), 19 July 2020",
+      "min_step": 4,
+      "note": "Modular arithmetic and the modular inverse."
+    },
+    {
+      "id": "clrs3-31-3-modular-arithmetic",
+      "techniques": [
+        "modular-arithmetic"
+      ],
+      "kind": "book",
+      "source": "Introduction to Algorithms",
+      "title": "Introduction to Algorithms",
+      "url": null,
+      "section": "31.3 Modular arithmetic",
+      "chapter": "31 Number-Theoretic Algorithms",
+      "pages": null,
+      "edition": "3rd edition, MIT Press 2009, ISBN 978-0-262-03384-8",
+      "min_step": 4,
+      "note": "Groups modulo n and the rules of modular arithmetic."
+    },
+    {
+      "id": "gcp3-11-1-1-primes-and-factors",
+      "techniques": [
+        "number-theory-primes"
+      ],
+      "kind": "book",
+      "source": "Guide to Competitive Programming",
+      "title": "Guide to Competitive Programming",
+      "url": null,
+      "section": "11.1.1 Primes and Factors",
+      "chapter": "11 Mathematics",
+      "pages": null,
+      "edition": "3rd edition, Springer 2024, ISBN 978-3-031-61793-5",
+      "min_step": 4,
+      "note": "Primes, factorization and the number and sum of divisors."
+    },
+    {
+      "id": "gcp3-11-1-2-sieve-of-eratosthenes",
+      "techniques": [
+        "number-theory-primes"
+      ],
+      "kind": "book",
+      "source": "Guide to Competitive Programming",
+      "title": "Guide to Competitive Programming",
+      "url": null,
+      "section": "11.1.2 Sieve of Eratosthenes",
+      "chapter": "11 Mathematics",
+      "pages": null,
+      "edition": "3rd edition, Springer 2024, ISBN 978-3-031-61793-5",
+      "min_step": 4,
+      "note": "The sieve of Eratosthenes."
+    },
+    {
+      "id": "cp4-5-3-1-prime-numbers",
+      "techniques": [
+        "number-theory-primes"
+      ],
+      "kind": "book",
+      "source": "Competitive Programming 4",
+      "title": "Competitive Programming 4",
+      "url": null,
+      "section": "5.3.1 Prime Numbers",
+      "chapter": "5 Mathematics",
+      "pages": null,
+      "edition": "4th edition (Book 1 and Book 2), 19 July 2020",
+      "min_step": 4,
+      "note": "Primality and the sieve."
+    },
+    {
+      "id": "gcp3-11-2-1-binomial-coefficients",
+      "techniques": [
+        "combinatorics-counting"
+      ],
+      "kind": "book",
+      "source": "Guide to Competitive Programming",
+      "title": "Guide to Competitive Programming",
+      "url": null,
+      "section": "11.2.1 Binomial Coefficients",
+      "chapter": "11 Mathematics",
+      "pages": null,
+      "edition": "3rd edition, Springer 2024, ISBN 978-3-031-61793-5",
+      "min_step": 4,
+      "note": "Binomial coefficients and counting with them."
+    },
+    {
+      "id": "cp4-5-4-2-binomial-coefficients",
+      "techniques": [
+        "combinatorics-counting"
+      ],
+      "kind": "book",
+      "source": "Competitive Programming 4",
+      "title": "Competitive Programming 4",
+      "url": null,
+      "section": "5.4.2 Binomial Coefficients",
+      "chapter": "5 Mathematics",
+      "pages": null,
+      "edition": "4th edition (Book 1 and Book 2), 19 July 2020",
+      "min_step": 4,
+      "note": "Computing binomial coefficients."
+    },
+    {
+      "id": "clrs3-c-1-counting",
+      "techniques": [
+        "combinatorics-counting"
+      ],
+      "kind": "book",
+      "source": "Introduction to Algorithms",
+      "title": "Introduction to Algorithms",
+      "url": null,
+      "section": "C.1 Counting",
+      "chapter": "C Counting and Probability",
+      "pages": null,
+      "edition": "3rd edition, MIT Press 2009, ISBN 978-0-262-03384-8",
+      "min_step": 3,
+      "note": "Counting rules: permutations, combinations and the binomial theorem."
+    },
+    {
+      "id": "gcp3-11-2-3-inclusion-exclusion",
+      "techniques": [
+        "inclusion-exclusion"
+      ],
+      "kind": "book",
+      "source": "Guide to Competitive Programming",
+      "title": "Guide to Competitive Programming",
+      "url": null,
+      "section": "11.2.3 Inclusion-Exclusion",
+      "chapter": "11 Mathematics",
+      "pages": null,
+      "edition": "3rd edition, Springer 2024, ISBN 978-3-031-61793-5",
+      "min_step": 4,
+      "note": "Counting the size of a union with inclusion-exclusion."
+    },
+    {
+      "id": "gcp3-11-3-2-linear-recurrences",
+      "techniques": [
+        "linear-recurrence"
+      ],
+      "kind": "book",
+      "source": "Guide to Competitive Programming",
+      "title": "Guide to Competitive Programming",
+      "url": null,
+      "section": "11.3.2 Linear Recurrences",
+      "chapter": "11 Mathematics",
+      "pages": null,
+      "edition": "3rd edition, Springer 2024, ISBN 978-3-031-61793-5",
+      "min_step": 4,
+      "note": "Computing terms of a linear recurrence with matrix powers."
+    },
+    {
+      "id": "cp4-5-8-4-dp-speed-up-with-matrix-power",
+      "techniques": [
+        "linear-recurrence"
+      ],
+      "kind": "book",
+      "source": "Competitive Programming 4",
+      "title": "Competitive Programming 4",
+      "url": null,
+      "section": "5.8.4 DP Speed-up with Matrix Power",
+      "chapter": "5 Mathematics",
+      "pages": null,
+      "edition": "4th edition (Book 1 and Book 2), 19 July 2020",
+      "min_step": 4,
+      "note": "Speeding up a linear DP with matrix exponentiation."
+    },
+    {
+      "id": "gcp3-11-4-2-random-variables",
+      "techniques": [
+        "probability"
+      ],
+      "kind": "book",
+      "source": "Guide to Competitive Programming",
+      "title": "Guide to Competitive Programming",
+      "url": null,
+      "section": "11.4.2 Random Variables",
+      "chapter": "11 Mathematics",
+      "pages": null,
+      "edition": "3rd edition, Springer 2024, ISBN 978-3-031-61793-5",
+      "min_step": 4,
+      "note": "Random variables, expected values and distributions."
+    },
+    {
+      "id": "cp4-5-5-probability-theory",
+      "techniques": [
+        "probability"
+      ],
+      "kind": "book",
+      "source": "Competitive Programming 4",
+      "title": "Competitive Programming 4",
+      "url": null,
+      "section": "5.5 Probability Theory",
+      "chapter": "5 Mathematics",
+      "pages": null,
+      "edition": "4th edition (Book 1 and Book 2), 19 July 2020",
+      "min_step": 4,
+      "note": "Probability problems as they appear in contests."
+    },
+    {
+      "id": "clrs3-c-2-probability",
+      "techniques": [
+        "probability"
+      ],
+      "kind": "book",
+      "source": "Introduction to Algorithms",
+      "title": "Introduction to Algorithms",
+      "url": null,
+      "section": "C.2 Probability",
+      "chapter": "C Counting and Probability",
+      "pages": null,
+      "edition": "3rd edition, MIT Press 2009, ISBN 978-0-262-03384-8",
+      "min_step": 3,
+      "note": "The axioms of probability, conditional probability and independence."
+    },
+    {
+      "id": "cp4-2-2-4-big-integer-python-java",
+      "techniques": [
+        "big-integer-arithmetic"
+      ],
+      "kind": "book",
+      "source": "Competitive Programming 4",
+      "title": "Competitive Programming 4",
+      "url": null,
+      "section": "2.2.4 Big Integer (Python & Java)",
+      "chapter": "2 Data Structures and Libraries",
+      "pages": null,
+      "edition": "4th edition (Book 1 and Book 2), 19 July 2020",
+      "min_step": 4,
+      "note": "Big integers in the languages that have them built in."
+    },
+    {
+      "id": "gcp3-2-3-1-bit-operations",
+      "techniques": [
+        "bitwise-reasoning"
+      ],
+      "kind": "book",
+      "source": "Guide to Competitive Programming",
+      "title": "Guide to Competitive Programming",
+      "url": null,
+      "section": "2.3.1 Bit Operations",
+      "chapter": "2 Programming Techniques",
+      "pages": null,
+      "edition": "3rd edition, Springer 2024, ISBN 978-3-031-61793-5",
+      "min_step": 4,
+      "note": "And, or, xor, shifts and bit tricks."
+    },
+    {
+      "id": "cp4-2-2-3-bitmask",
+      "techniques": [
+        "bitwise-reasoning"
+      ],
+      "kind": "book",
+      "source": "Competitive Programming 4",
+      "title": "Competitive Programming 4",
+      "url": null,
+      "section": "2.2.3 Bitmask",
+      "chapter": "2 Data Structures and Libraries",
+      "pages": null,
+      "edition": "4th edition (Book 1 and Book 2), 19 July 2020",
+      "min_step": 4,
+      "note": "Bit manipulation with integers as bitmasks."
+    },
+    {
+      "id": "gcp3-13-1-2-points-and-lines",
+      "techniques": [
+        "geometry-basics"
+      ],
+      "kind": "book",
+      "source": "Guide to Competitive Programming",
+      "title": "Guide to Competitive Programming",
+      "url": null,
+      "section": "13.1.2 Points and Lines",
+      "chapter": "13 Geometry",
+      "pages": null,
+      "edition": "3rd edition, Springer 2024, ISBN 978-3-031-61793-5",
+      "min_step": 4,
+      "note": "Points and lines with the cross product: orientation and intersections."
+    },
+    {
+      "id": "cp4-7-2-basic-geometry-objects-with-libraries",
+      "techniques": [
+        "geometry-basics"
+      ],
+      "kind": "book",
+      "source": "Competitive Programming 4",
+      "title": "Competitive Programming 4",
+      "url": null,
+      "section": "7.2 Basic Geometry Objects with Libraries",
+      "chapter": "7 (Computational) Geometry",
+      "pages": null,
+      "edition": "4th edition (Book 1 and Book 2), 19 July 2020",
+      "min_step": 4,
+      "note": "Points, lines, circles, triangles and quadrilaterals."
+    },
+    {
+      "id": "clrs3-33-1-line-segment-properties",
+      "techniques": [
+        "geometry-basics"
+      ],
+      "kind": "book",
+      "source": "Introduction to Algorithms",
+      "title": "Introduction to Algorithms",
+      "url": null,
+      "section": "33.1 Line-segment properties",
+      "chapter": "33 Computational Geometry",
+      "pages": null,
+      "edition": "3rd edition, MIT Press 2009, ISBN 978-0-262-03384-8",
+      "min_step": 4,
+      "note": "Cross products and deciding whether two segments intersect."
+    },
+    {
+      "id": "gcp3-2-1-1-input-and-output",
+      "techniques": [
+        "fast-io"
+      ],
+      "kind": "book",
+      "source": "Guide to Competitive Programming",
+      "title": "Guide to Competitive Programming",
+      "url": null,
+      "section": "2.1.1 Input and Output",
+      "chapter": "2 Programming Techniques",
+      "pages": null,
+      "edition": "3rd edition, Springer 2024, ISBN 978-3-031-61793-5",
+      "min_step": 3,
+      "note": "Reading and writing efficiently in C++."
+    },
+    {
+      "id": "gcp3-16-1-1-input-and-output",
+      "techniques": [
+        "fast-io"
+      ],
+      "kind": "book",
+      "source": "Guide to Competitive Programming",
+      "title": "Guide to Competitive Programming",
+      "url": null,
+      "section": "16.1.1 Input and Output",
+      "chapter": "16 Python in Competitive Programming",
+      "pages": null,
+      "edition": "3rd edition, Springer 2024, ISBN 978-3-031-61793-5",
+      "min_step": 3,
+      "note": "Reading and writing efficiently in Python."
+    },
+    {
+      "id": "cp4-1-4-2-typical-input-output-routines",
+      "techniques": [
+        "fast-io"
+      ],
+      "kind": "book",
+      "source": "Competitive Programming 4",
+      "title": "Competitive Programming 4",
+      "url": null,
+      "section": "1.4.2 Typical Input/Output Routines",
+      "chapter": "1 Introduction",
+      "pages": null,
+      "edition": "4th edition (Book 1 and Book 2), 19 July 2020",
+      "min_step": 3,
+      "note": "The usual input formats and how to read them."
+    },
+    {
+      "id": "cp4-1-6-the-ad-hoc-problems",
+      "techniques": [
+        "simulation",
+        "careful-implementation"
+      ],
+      "kind": "book",
+      "source": "Competitive Programming 4",
+      "title": "Competitive Programming 4",
+      "url": null,
+      "section": "1.6 The Ad Hoc Problems",
+      "chapter": "1 Introduction",
+      "pages": null,
+      "edition": "4th edition (Book 1 and Book 2), 19 July 2020",
+      "min_step": 3,
+      "note": "Problems that need no specific algorithm, only careful simulation and implementation."
+    },
+    {
+      "id": "cp4-5-2-ad-hoc-mathematical-problems",
+      "techniques": [
+        "closed-form-math"
+      ],
+      "kind": "book",
+      "source": "Competitive Programming 4",
+      "title": "Competitive Programming 4",
+      "url": null,
+      "section": "5.2 Ad Hoc Mathematical Problems",
+      "chapter": "5 Mathematics",
+      "pages": null,
+      "edition": "4th edition (Book 1 and Book 2), 19 July 2020",
+      "min_step": 3,
+      "note": "Mathematical problems solved by finding a pattern or a formula."
+    },
+    {
+      "id": "gcp3-11-7-guessing-formulas",
+      "techniques": [
+        "closed-form-math"
+      ],
+      "kind": "book",
+      "source": "Guide to Competitive Programming",
+      "title": "Guide to Competitive Programming",
+      "url": null,
+      "section": "11.7 Guessing Formulas",
+      "chapter": "11 Mathematics",
+      "pages": null,
+      "edition": "3rd edition, Springer 2024, ISBN 978-3-031-61793-5",
+      "min_step": 4,
+      "note": "Guessing a formula from small cases and checking it."
+    },
+    {
+      "id": "gcp3-11-2-2-catalan-numbers",
+      "techniques": [
+        "ballot-path-dp"
+      ],
+      "kind": "book",
+      "source": "Guide to Competitive Programming",
+      "title": "Guide to Competitive Programming",
+      "url": null,
+      "section": "11.2.2 Catalan Numbers",
+      "chapter": "11 Mathematics",
+      "pages": null,
+      "edition": "3rd edition, Springer 2024, ISBN 978-3-031-61793-5",
+      "min_step": 5,
+      "note": "Catalan numbers: balanced parentheses and paths that never cross the diagonal."
+    },
+    {
+      "id": "kt-4-1-interval-scheduling-the-greedy-algorithm-stays-ahead",
+      "techniques": [
+        "lower-bound-argument"
+      ],
+      "kind": "book",
+      "source": "Algorithm Design",
+      "title": "Algorithm Design",
+      "url": null,
+      "section": "4.1 Interval Scheduling: The Greedy Algorithm Stays Ahead",
+      "chapter": "4 Greedy Algorithms",
+      "pages": null,
+      "edition": "Pearson New International Edition, 2014, ISBN 978-1-292-02394-6",
+      "min_step": 4,
+      "note": "Its part on scheduling all intervals: the depth is a lower bound on any solution, and a greedy reaches it."
+    },
+    {
+      "id": "kt-4-2-scheduling-to-minimize-lateness-an-exchange-argument",
+      "techniques": [
+        "greedy-exchange-argument"
+      ],
+      "kind": "book",
+      "source": "Algorithm Design",
+      "title": "Algorithm Design",
+      "url": null,
+      "section": "4.2 Scheduling to Minimize Lateness: An Exchange Argument",
+      "chapter": "4 Greedy Algorithms",
+      "pages": null,
+      "edition": "Pearson New International Edition, 2014, ISBN 978-1-292-02394-6",
+      "min_step": 4,
+      "note": "Proving a greedy order optimal by swapping adjacent elements of any other solution."
+    },
+    {
+      "id": "kt-4-4-shortest-paths-in-a-graph",
+      "techniques": [
+        "dijkstra"
+      ],
+      "kind": "book",
+      "source": "Algorithm Design",
+      "title": "Algorithm Design",
+      "url": null,
+      "section": "4.4 Shortest Paths in a Graph",
+      "chapter": "4 Greedy Algorithms",
+      "pages": null,
+      "edition": "Pearson New International Edition, 2014, ISBN 978-1-292-02394-6",
+      "min_step": 4,
+      "note": "Dijkstra's algorithm as a greedy, with its proof."
+    },
+    {
+      "id": "kt-4-6-implementing-kruskals-algorithm-the-union-find-data-structure",
+      "techniques": [
+        "kruskal-dsu",
+        "dsu"
+      ],
+      "kind": "book",
+      "source": "Algorithm Design",
+      "title": "Algorithm Design",
+      "url": null,
+      "section": "4.6 Implementing Kruskal’s Algorithm: The Union-Find Data Structure",
+      "chapter": "4 Greedy Algorithms",
+      "pages": null,
+      "edition": "Pearson New International Edition, 2014, ISBN 978-1-292-02394-6",
+      "min_step": 4,
+      "note": "Kruskal's algorithm and the union-find structure that makes it fast."
+    },
+    {
+      "id": "kt-3-6-directed-acyclic-graphs-and-topological-ordering",
+      "techniques": [
+        "topological-sort"
+      ],
+      "kind": "book",
+      "source": "Algorithm Design",
+      "title": "Algorithm Design",
+      "url": null,
+      "section": "3.6 Directed Acyclic Graphs and Topological Ordering",
+      "chapter": "3 Graphs",
+      "pages": null,
+      "edition": "Pearson New International Edition, 2014, ISBN 978-1-292-02394-6",
+      "min_step": 4,
+      "note": "Directed acyclic graphs and computing a topological order."
+    },
+    {
+      "id": "kt-6-2-principles-of-dynamic-programming-memoization-or-iteration-over-subproble",
+      "techniques": [
+        "linear-dp"
+      ],
+      "kind": "book",
+      "source": "Algorithm Design",
+      "title": "Algorithm Design",
+      "url": null,
+      "section": "6.2 Principles of Dynamic Programming: Memoization or Iteration over Subproblems",
+      "chapter": "6 Dynamic Programming",
+      "pages": null,
+      "edition": "Pearson New International Edition, 2014, ISBN 978-1-292-02394-6",
+      "min_step": 3,
+      "note": "The principles of dynamic programming: memoized recursion or iterating over subproblems."
+    },
+    {
+      "id": "kt-6-4-subset-sums-and-knapsacks-adding-a-variable",
+      "techniques": [
+        "knapsack-dp"
+      ],
+      "kind": "book",
+      "source": "Algorithm Design",
+      "title": "Algorithm Design",
+      "url": null,
+      "section": "6.4 Subset Sums and Knapsacks: Adding a Variable",
+      "chapter": "6 Dynamic Programming",
+      "pages": null,
+      "edition": "Pearson New International Edition, 2014, ISBN 978-1-292-02394-6",
+      "min_step": 4,
+      "note": "Subset sum and knapsack, by adding the capacity to the state."
+    },
+    {
+      "id": "kt-6-6-sequence-alignment",
+      "techniques": [
+        "sequence-alignment-dp"
+      ],
+      "kind": "book",
+      "source": "Algorithm Design",
+      "title": "Algorithm Design",
+      "url": null,
+      "section": "6.6 Sequence Alignment",
+      "chapter": "6 Dynamic Programming",
+      "pages": null,
+      "edition": "Pearson New International Edition, 2014, ISBN 978-1-292-02394-6",
+      "min_step": 4,
+      "note": "Aligning two sequences with gap and mismatch costs."
+    },
+    {
+      "id": "kt-13-3-random-variables-and-their-expectations",
+      "techniques": [
+        "probability",
+        "contribution-technique"
+      ],
+      "kind": "book",
+      "source": "Algorithm Design",
+      "title": "Algorithm Design",
+      "url": null,
+      "section": "13.3 Random Variables and Their Expectations",
+      "chapter": "13 Randomized Algorithms",
+      "pages": null,
+      "edition": "Pearson New International Edition, 2014, ISBN 978-1-292-02394-6",
+      "min_step": 4,
+      "note": "Expectations and linearity of expectation: summing simple indicator variables instead of the whole distribution."
+    },
+    {
+      "id": "erickson-storing-files-on-tape",
+      "techniques": [
+        "greedy-exchange-argument"
+      ],
+      "kind": "book",
+      "source": "Algorithms",
+      "title": "Algorithms",
+      "url": null,
+      "section": "Storing Files on Tape",
+      "chapter": "Greedy Algorithms",
+      "pages": null,
+      "edition": "1st paperback edition, June 13, 2019, ISBN 978-1-792-64483-2",
+      "min_step": 4,
+      "note": "Proving a greedy order optimal by swapping two adjacent files."
+    },
+    {
+      "id": "erickson-general-pattern",
+      "techniques": [
+        "greedy-exchange-argument"
+      ],
+      "kind": "book",
+      "source": "Algorithms",
+      "title": "Algorithms",
+      "url": null,
+      "section": "General Pattern",
+      "chapter": "Greedy Algorithms",
+      "pages": null,
+      "edition": "1st paperback edition, June 13, 2019, ISBN 978-1-792-64483-2",
+      "min_step": 3,
+      "note": "The general pattern of greedy correctness proofs."
+    },
+    {
+      "id": "erickson-the-general-pattern",
+      "techniques": [
+        "backtracking"
+      ],
+      "kind": "book",
+      "source": "Algorithms",
+      "title": "Algorithms",
+      "url": null,
+      "section": "The General Pattern",
+      "chapter": "Backtracking",
+      "pages": null,
+      "edition": "1st paperback edition, June 13, 2019, ISBN 978-1-792-64483-2",
+      "min_step": 4,
+      "note": "The general pattern of backtracking algorithms."
+    },
+    {
+      "id": "erickson-the-pattern-smart-recursion",
+      "techniques": [
+        "linear-dp"
+      ],
+      "kind": "book",
+      "source": "Algorithms",
+      "title": "Algorithms",
+      "url": null,
+      "section": "The Pattern: Smart Recursion",
+      "chapter": "Dynamic Programming",
+      "pages": null,
+      "edition": "1st paperback edition, June 13, 2019, ISBN 978-1-792-64483-2",
+      "min_step": 3,
+      "note": "Dynamic programming as recursion that remembers its subproblems."
+    },
+    {
+      "id": "erickson-edit-distance",
+      "techniques": [
+        "sequence-alignment-dp"
+      ],
+      "kind": "book",
+      "source": "Algorithms",
+      "title": "Algorithms",
+      "url": null,
+      "section": "Edit Distance",
+      "chapter": "Dynamic Programming",
+      "pages": null,
+      "edition": "1st paperback edition, June 13, 2019, ISBN 978-1-792-64483-2",
+      "min_step": 4,
+      "note": "Edit distance by dynamic programming."
+    },
+    {
+      "id": "erickson-subset-sum",
+      "techniques": [
+        "knapsack-dp"
+      ],
+      "kind": "book",
+      "source": "Algorithms",
+      "title": "Algorithms",
+      "url": null,
+      "section": "Subset Sum",
+      "chapter": "Dynamic Programming",
+      "pages": null,
+      "edition": "1st paperback edition, June 13, 2019, ISBN 978-1-792-64483-2",
+      "min_step": 4,
+      "note": "Subset sum by dynamic programming."
+    },
+    {
+      "id": "erickson-topological-sort",
+      "techniques": [
+        "topological-sort"
+      ],
+      "kind": "book",
+      "source": "Algorithms",
+      "title": "Algorithms",
+      "url": null,
+      "section": "Topological Sort",
+      "chapter": "Depth-First Search",
+      "pages": null,
+      "edition": "1st paperback edition, June 13, 2019, ISBN 978-1-792-64483-2",
+      "min_step": 4,
+      "note": "Topological sort from depth-first search."
+    },
+    {
+      "id": "erickson-notes-expectation",
+      "techniques": [
+        "probability",
+        "contribution-technique"
+      ],
+      "kind": "book",
+      "source": "Algorithms lecture notes",
+      "title": "Algorithms lecture notes",
+      "url": null,
+      "section": "Expectation",
+      "chapter": "Discrete Probability",
+      "pages": null,
+      "edition": "notes as published with the 2019 book (each note is cited by its title as chapter)",
+      "min_step": 4,
+      "note": "Expectation, indicator variables and linearity of expectation (which needs no independence)."
+    },
+    {
+      "id": "erickson-notes-linear-recurrences-annihilators",
+      "techniques": [
+        "linear-recurrence"
+      ],
+      "kind": "book",
+      "source": "Algorithms lecture notes",
+      "title": "Algorithms lecture notes",
+      "url": null,
+      "section": "Linear Recurrences (Annihilators)",
+      "chapter": "Solving Recurrences",
+      "pages": null,
+      "edition": "notes as published with the 2019 book (each note is cited by its title as chapter)",
+      "min_step": 4,
+      "note": "Solving linear recurrences with the annihilator method."
+    },
+    {
+      "id": "erickson-notes-path-compression",
+      "techniques": [
+        "dsu"
+      ],
+      "kind": "book",
+      "source": "Algorithms lecture notes",
+      "title": "Algorithms lecture notes",
+      "url": null,
+      "section": "Path Compression",
+      "chapter": "Data Structures for Disjoint Sets",
+      "pages": null,
+      "edition": "notes as published with the 2019 book (each note is cited by its title as chapter)",
+      "min_step": 4,
+      "note": "Union-find with path compression, and why it is fast."
+    },
+    {
+      "id": "cm2-2-4-multiple-sums",
+      "techniques": [
+        "contribution-technique"
+      ],
+      "kind": "book",
+      "source": "Concrete Mathematics",
+      "title": "Concrete Mathematics",
+      "url": null,
+      "section": "2.4 Multiple Sums",
+      "chapter": "2. Sums",
+      "pages": null,
+      "edition": "2nd edition, Addison-Wesley 1994",
+      "min_step": 4,
+      "note": "Interchanging the order of summation: summing over pairs by what each element contributes."
+    },
+    {
+      "id": "cm2-2-5-general-methods",
+      "techniques": [
+        "closed-form-math"
+      ],
+      "kind": "book",
+      "source": "Concrete Mathematics",
+      "title": "Concrete Mathematics",
+      "url": null,
+      "section": "2.5 General Methods",
+      "chapter": "2. Sums",
+      "pages": null,
+      "edition": "2nd edition, Addison-Wesley 1994",
+      "min_step": 3,
+      "note": "Several general methods to find the closed form of a sum."
+    },
+    {
+      "id": "cm2-4-2-primes",
+      "techniques": [
+        "number-theory-primes"
+      ],
+      "kind": "book",
+      "source": "Concrete Mathematics",
+      "title": "Concrete Mathematics",
+      "url": null,
+      "section": "4.2 Primes",
+      "chapter": "4. Number Theory",
+      "pages": null,
+      "edition": "2nd edition, Addison-Wesley 1994",
+      "min_step": 4,
+      "note": "Primes and the fundamental theorem of arithmetic."
+    },
+    {
+      "id": "cm2-4-6-mod-the-congruence-relation",
+      "techniques": [
+        "modular-arithmetic"
+      ],
+      "kind": "book",
+      "source": "Concrete Mathematics",
+      "title": "Concrete Mathematics",
+      "url": null,
+      "section": "4.6 ‘MOD’: The Congruence Relation",
+      "chapter": "4. Number Theory",
+      "pages": null,
+      "edition": "2nd edition, Addison-Wesley 1994",
+      "min_step": 4,
+      "note": "Congruences and how to compute with them."
+    },
+    {
+      "id": "cm2-5-1-basic-identities",
+      "techniques": [
+        "combinatorics-counting"
+      ],
+      "kind": "book",
+      "source": "Concrete Mathematics",
+      "title": "Concrete Mathematics",
+      "url": null,
+      "section": "5.1 Basic Identities",
+      "chapter": "5. Binomial Coefficients",
+      "pages": null,
+      "edition": "2nd edition, Addison-Wesley 1994",
+      "min_step": 4,
+      "note": "The basic identities of binomial coefficients."
+    },
+    {
+      "id": "cm2-7-2-basic-maneuvers",
+      "techniques": [
+        "generating-functions"
+      ],
+      "kind": "book",
+      "source": "Concrete Mathematics",
+      "title": "Concrete Mathematics",
+      "url": null,
+      "section": "7.2 Basic Maneuvers",
+      "chapter": "7. Generating Functions",
+      "pages": null,
+      "edition": "2nd edition, Addison-Wesley 1994",
+      "min_step": 4,
+      "note": "The basic operations on generating functions and what they do to the sequence."
+    },
+    {
+      "id": "cm2-7-3-solving-recurrences",
+      "techniques": [
+        "generating-functions",
+        "linear-recurrence"
+      ],
+      "kind": "book",
+      "source": "Concrete Mathematics",
+      "title": "Concrete Mathematics",
+      "url": null,
+      "section": "7.3 Solving Recurrences",
+      "chapter": "7. Generating Functions",
+      "pages": null,
+      "edition": "2nd edition, Addison-Wesley 1994",
+      "min_step": 4,
+      "note": "Solving recurrences with generating functions."
+    },
+    {
+      "id": "cm2-7-5-convolutions",
+      "techniques": [
+        "generating-functions"
+      ],
+      "kind": "book",
+      "source": "Concrete Mathematics",
+      "title": "Concrete Mathematics",
+      "url": null,
+      "section": "7.5 Convolutions",
+      "chapter": "7. Generating Functions",
+      "pages": null,
+      "edition": "2nd edition, Addison-Wesley 1994",
+      "min_step": 4,
+      "note": "Products of generating functions as convolutions of sequences."
+    },
+    {
+      "id": "cm2-7-1-domino-theory-and-change",
+      "techniques": [
+        "generating-functions"
+      ],
+      "kind": "book",
+      "source": "Concrete Mathematics",
+      "title": "Concrete Mathematics",
+      "url": null,
+      "section": "7.1 Domino Theory and Change",
+      "chapter": "7. Generating Functions",
+      "pages": null,
+      "edition": "2nd edition, Addison-Wesley 1994",
+      "min_step": 5,
+      "note": "Counting tilings and ways to make change with generating functions."
+    },
+    {
+      "id": "cm2-8-2-mean-and-variance",
+      "techniques": [
+        "probability"
+      ],
+      "kind": "book",
+      "source": "Concrete Mathematics",
+      "title": "Concrete Mathematics",
+      "url": null,
+      "section": "8.2 Mean and Variance",
+      "chapter": "8. Discrete Probability",
+      "pages": null,
+      "edition": "2nd edition, Addison-Wesley 1994",
+      "min_step": 4,
+      "note": "Mean and variance of a random variable."
+    },
+    {
+      "id": "mcs-15-9-inclusion-exclusion",
+      "techniques": [
+        "inclusion-exclusion"
+      ],
+      "kind": "book",
+      "source": "Mathematics for Computer Science",
+      "title": "Mathematics for Computer Science",
+      "url": null,
+      "section": "15.9 Inclusion-Exclusion",
+      "chapter": "15 Cardinality Rules",
+      "pages": null,
+      "edition": "revised June 6, 2018",
+      "min_step": 4,
+      "note": "Inclusion-exclusion for two, three and n sets."
+    },
+    {
+      "id": "mcs-15-10-combinatorial-proofs",
+      "techniques": [
+        "contribution-technique",
+        "combinatorics-counting"
+      ],
+      "kind": "book",
+      "source": "Mathematics for Computer Science",
+      "title": "Mathematics for Computer Science",
+      "url": null,
+      "section": "15.10 Combinatorial Proofs",
+      "chapter": "15 Cardinality Rules",
+      "pages": null,
+      "edition": "revised June 6, 2018",
+      "min_step": 4,
+      "note": "Counting the same set in two ways."
+    },
+    {
+      "id": "mcs-15-5-counting-subsets",
+      "techniques": [
+        "combinatorics-counting"
+      ],
+      "kind": "book",
+      "source": "Mathematics for Computer Science",
+      "title": "Mathematics for Computer Science",
+      "url": null,
+      "section": "15.5 Counting Subsets",
+      "chapter": "15 Cardinality Rules",
+      "pages": null,
+      "edition": "revised June 6, 2018",
+      "min_step": 4,
+      "note": "Binomial coefficients as counts of subsets."
+    },
+    {
+      "id": "mcs-16-2-counting-with-generating-functions",
+      "techniques": [
+        "generating-functions"
+      ],
+      "kind": "book",
+      "source": "Mathematics for Computer Science",
+      "title": "Mathematics for Computer Science",
+      "url": null,
+      "section": "16.2 Counting with Generating Functions",
+      "chapter": "16 Generating Functions",
+      "pages": null,
+      "edition": "revised June 6, 2018",
+      "min_step": 4,
+      "note": "Counting selections with generating functions."
+    },
+    {
+      "id": "mcs-16-4-solving-linear-recurrences",
+      "techniques": [
+        "linear-recurrence",
+        "generating-functions"
+      ],
+      "kind": "book",
+      "source": "Mathematics for Computer Science",
+      "title": "Mathematics for Computer Science",
+      "url": null,
+      "section": "16.4 Solving Linear Recurrences",
+      "chapter": "16 Generating Functions",
+      "pages": null,
+      "edition": "revised June 6, 2018",
+      "min_step": 4,
+      "note": "Solving linear recurrences with generating functions."
+    },
+    {
+      "id": "mcs-22-3-linear-recurrences",
+      "techniques": [
+        "linear-recurrence"
+      ],
+      "kind": "book",
+      "source": "Mathematics for Computer Science",
+      "title": "Mathematics for Computer Science",
+      "url": null,
+      "section": "22.3 Linear Recurrences",
+      "chapter": "22 Recurrences",
+      "pages": null,
+      "edition": "revised June 6, 2018",
+      "min_step": 4,
+      "note": "Solving linear recurrences with the characteristic equation."
+    },
+    {
+      "id": "mcs-19-5-linearity-of-expectation",
+      "techniques": [
+        "probability",
+        "contribution-technique"
+      ],
+      "kind": "book",
+      "source": "Mathematics for Computer Science",
+      "title": "Mathematics for Computer Science",
+      "url": null,
+      "section": "19.5 Linearity of Expectation",
+      "chapter": "19 Random Variables",
+      "pages": null,
+      "edition": "revised June 6, 2018",
+      "min_step": 4,
+      "note": "Linearity of expectation and sums of indicator variables."
+    },
+    {
+      "id": "mcs-9-6-modular-arithmetic",
+      "techniques": [
+        "modular-arithmetic"
+      ],
+      "kind": "book",
+      "source": "Mathematics for Computer Science",
+      "title": "Mathematics for Computer Science",
+      "url": null,
+      "section": "9.6 Modular Arithmetic",
+      "chapter": "9 Number Theory",
+      "pages": null,
+      "edition": "revised June 6, 2018",
+      "min_step": 4,
+      "note": "Congruence modulo n."
+    },
+    {
+      "id": "mcs-9-9-multiplicative-inverses-and-cancelling",
+      "techniques": [
+        "modular-arithmetic"
+      ],
+      "kind": "book",
+      "source": "Mathematics for Computer Science",
+      "title": "Mathematics for Computer Science",
+      "url": null,
+      "section": "9.9 Multiplicative Inverses and Cancelling",
+      "chapter": "9 Number Theory",
+      "pages": null,
+      "edition": "revised June 6, 2018",
+      "min_step": 4,
+      "note": "When a number has an inverse modulo n and how to find it."
+    },
+    {
+      "id": "wilf2-1-1-an-easy-two-term-recurrence",
+      "techniques": [
+        "generating-functions"
+      ],
+      "kind": "book",
+      "source": "generatingfunctionology",
+      "title": "generatingfunctionology",
+      "url": null,
+      "section": "1.1 An easy two term recurrence",
+      "chapter": "Chapter 1: Introductory Ideas and Examples",
+      "pages": null,
+      "edition": "2nd edition, Academic Press 1994 (free download from the author's page)",
+      "min_step": 4,
+      "note": "A first recurrence solved with a generating function, step by step."
+    },
+    {
+      "id": "wilf2-2-2-the-calculus-of-formal-ordinary-power-series-generating-functions",
+      "techniques": [
+        "generating-functions"
+      ],
+      "kind": "book",
+      "source": "generatingfunctionology",
+      "title": "generatingfunctionology",
+      "url": null,
+      "section": "2.2 The calculus of formal ordinary power series generating functions",
+      "chapter": "Chapter 2: Series",
+      "pages": null,
+      "edition": "2nd edition, Academic Press 1994 (free download from the author's page)",
+      "min_step": 4,
+      "note": "Rules for manipulating ordinary generating functions."
+    },
+    {
+      "id": "wilf2-3-16-partitions-of-integers",
+      "techniques": [
+        "generating-functions"
+      ],
+      "kind": "book",
+      "source": "generatingfunctionology",
+      "title": "generatingfunctionology",
+      "url": null,
+      "section": "3.16 Partitions of integers",
+      "chapter": "Chapter 3: Cards, Decks, and Hands: The Exponential Formula",
+      "pages": null,
+      "edition": "2nd edition, Academic Press 1994 (free download from the author's page)",
+      "min_step": 5,
+      "note": "The generating function of integer partitions."
+    }
+  ],
+  "problem_overrides": {}
+}

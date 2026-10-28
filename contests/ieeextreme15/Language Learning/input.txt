@@ -1,0 +1,9 @@
+1
+7 1
+a
+abc
+abc
+a
+dac
+a
+a

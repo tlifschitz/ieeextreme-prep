@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(practice)",
+      "Skill(learn)",
+      "Skill(hint)",
+      "Skill(verify)",
+      "Skill(give-up)"
+    ]
+  }
+}
