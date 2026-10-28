@@ -239,11 +239,18 @@ def links(jobs, retries, timeout):
     found = sorted(set(urls(json.loads(REFERENCES.read_text()))))
     with ThreadPoolExecutor(max(1, jobs)) as pool:
         results = list(pool.map(lambda u: probe(u, retries, timeout), found))
-    bad = [(u, why) for u, ok, why in results if not ok]
+    # Publishers (ACM, Elsevier, MIT Press...) answer 403 to scripts, and some hosts are just slow:
+    # those links are unverified, not broken. Only a real error (404, 410, 5xx, DNS) fails the job.
+    unverified = [(u, why) for u, ok, why in results if not ok and (why == "HTTP 403" or "timed out" in why)]
+    bad = [(u, why) for u, ok, why in results if not ok and (u, why) not in unverified]
+    gha = os.environ.get("GITHUB_ACTIONS")
+    for u, why in unverified:
+        print(f"::notice::unverified reference link {u} ({why}: blocks scripts or is slow)" if gha else
+              f"UNVERIFIED {u} ({why})")
     for u, why in bad:
-        print(f"::warning::broken reference link {u} ({why})" if os.environ.get("GITHUB_ACTIONS") else
-              f"BROKEN {u} ({why})")
-    print(f"{len(found) - len(bad)}/{len(found)} reference links answer")
+        print(f"::warning::broken reference link {u} ({why})" if gha else f"BROKEN {u} ({why})")
+    print(f"{len(found) - len(bad) - len(unverified)}/{len(found)} reference links answer, "
+          f"{len(unverified)} unverified, {len(bad)} broken")
     return 1 if bad else 0
 
 

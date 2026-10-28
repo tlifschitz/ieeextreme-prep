@@ -96,7 +96,7 @@ jobs:
       - run: pip install numpy==2.4.6
       - name: Optimal solutions pass the local tests
         if: hashFiles('scripts/ci_verify_optimal.py') != ''
-        run: python3 scripts/ci_verify_optimal.py -j 4
+        run: python3 scripts/ci_verify_optimal.py -j 2 --time-factor 3
 
   # public: the spoilers decode, match the publication manifest, and every tracked file is a
   # manifest artifact; every practice problem has tests/ and its spoiler has hints.json.
@@ -114,6 +114,8 @@ jobs:
       - name: Tracked files are the manifest; practice problems have tests/ and hints
         run: python3 scripts/ci_public.py structure
 
+  # The runners are slower than a laptop and share cores between jobs: these jobs check that the
+  # optimals are correct, so they get a generous time factor (verify.py's local limits stay as they are).
   # public: the published tests agree with the published spoilers. Each spoiler is decoded
   # outside the checkout and its optimal is judged by verify.py --solution (checker and
   # interactive problems through reveal.py --validate / --interact).
@@ -130,7 +132,7 @@ jobs:
           python-version: "3.14"
       - run: pip install numpy==2.4.6
       - name: Every spoiler's optimal passes the published tests
-        run: python3 scripts/ci_public.py tests -j 4
+        run: python3 scripts/ci_public.py tests -j 2 --time-factor 3
 
   # Network dependent, so it never blocks: every URL of data/references.json, with retries.
   links:
