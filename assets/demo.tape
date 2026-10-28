@@ -55,3 +55,17 @@ Hide
 Wait+Screen@240s /(?m)to cycle\)\s*$/
 Show
 Sleep 9s
+
+# Learn mode: a topic instead of a problem, and curated reading first.
+Type "/clear"
+Sleep 600ms
+Enter
+Sleep 2s
+Type "Now I want to learn the contribution technique. What should I read?"
+Sleep 600ms
+Enter
+Sleep 3s
+Hide
+Wait+Screen@240s /(?m)to cycle\)\s*$/
+Show
+Sleep 12s

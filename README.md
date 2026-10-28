@@ -42,10 +42,11 @@ answer; this one is built around the friction that makes practice work:
 
 ## Demo
 
-<p align="center"><img src="assets/demo.gif" alt="A live practice session with the tutor in Claude Code: it asks before giving step 1 and refuses to show the code" width="820"></p>
+<p align="center"><img src="assets/demo.gif" alt="A live session with the tutor in Claude Code: it asks before giving step 1, refuses to show the code, then recommends book sections for a technique" width="820"></p>
 
 A live session, recorded with [VHS](https://github.com/charmbracelet/vhs) from [`assets/demo.tape`](assets/demo.tape);
-only the tutor's thinking time is cut.
+only the tutor's thinking time is cut. Practice mode first (hints one step at a time, no code), then
+learn mode (curated reading for a technique).
 
 ## Quick start
 
