@@ -3555,7 +3555,7 @@
       "section": null,
       "chapter": null,
       "pages": null,
-      "edition": "Glenn Manacher, vol. 22, no. 3, pp. 346-351, July 1975",
+      "edition": "Glenn Manacher, vol. 22, no. 3, July 1975",
       "min_step": 4,
       "note": "The 1975 paper behind Manacher's algorithm: finding the leftmost initial palindrome on-line in linear time, by reusing the matches around a tentative center."
     },
@@ -3571,7 +3571,7 @@
       "section": null,
       "chapter": null,
       "pages": null,
-      "edition": "Ricardo A. Baeza-Yates, vol. 78, no. 2, pp. 363-376, 1991",
+      "edition": "Ricardo A. Baeza-Yates, vol. 78, no. 2, 1991",
       "min_step": 4,
       "note": "The directed acyclic subsequence graph: an automaton built from the text that tells whether a string is a subsequence of it, one transition per character."
     },
