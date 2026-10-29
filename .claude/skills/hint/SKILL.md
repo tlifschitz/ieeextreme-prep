@@ -7,7 +7,7 @@ allowed-tools: Read, Bash(python3 scripts/tutor_catalog.py:*), Bash(python3 scri
 
 # Next hint
 
-Follow CLAUDE.md: never solution code, one step per consent, the disclosure budget of the step.
+Follow AGENTS.md: never solution code, one step per consent, the disclosure budget of the step.
 
 Problem: $ARGUMENTS (if empty, the problem being discussed; if unclear, ask).
 

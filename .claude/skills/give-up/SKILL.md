@@ -25,8 +25,9 @@ Never run `scripts/reveal.py` for this: the student runs it in their own termina
    python3 scripts/reveal.py "<problem>"
    ```
 
-   Run it in a real terminal: it asks for confirmation. From a non-interactive shell (e.g. Claude
-   Code's `!` prefix) it refuses unless the student adds `--yes` themselves.
+   Run it in a real terminal: it asks for confirmation. From a non-interactive shell (e.g. an
+   agent's shell passthrough, like Claude Code's `!` prefix) it refuses unless the student adds
+   `--yes` themselves.
    It needs a git identity (`git config user.name` / `user.email`); if it is missing, the script
    says how to set it. It never overwrites `attempt.*` and never pushes. Running it again after an
    interruption finishes the installation without a second record.

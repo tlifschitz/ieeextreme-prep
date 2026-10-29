@@ -4,7 +4,7 @@
 Usage:
   python3 scripts/reveal.py <problem> [--yes]            give up: record it, then install the solution
   python3 scripts/reveal.py --hint <problem> --step N    hint blocks up to ladder step N (no code)
-  python3 scripts/reveal.py --peek <problem>             solution code, for the tutor (Claude Code only)
+  python3 scripts/reveal.py --peek <problem>             solution code, for the tutor (coding agent only)
   python3 scripts/reveal.py --validate <problem> <test input> <output>
         checker verdict only: one line, OK or WA <reason>; the expected output is the
         sibling NN.out / NN.out.gz of the test input NN.in / NN.in.gz
@@ -284,8 +284,10 @@ def give_up(arg, yes):
 
 def peek(arg):
     entry = entry_for(arg)
-    if os.environ.get("CLAUDECODE") != "1" or sys.stdout.isatty():
-        print("--peek is only for the tutor (Claude Code), after you agree to it.\n"
+    # Coding agents run commands with a piped stdout, except Antigravity, which runs them in a
+    # terminal and marks them; any other terminal means a person asked.
+    if sys.stdout.isatty() and os.environ.get("ANTIGRAVITY_AGENT") != "1":
+        print("--peek is only for the tutor (your coding agent), after you agree to it.\n"
               "To see the solution yourself, give up: python3 scripts/reveal.py "
               f"{entry['id']}", file=sys.stderr)
         return 1
@@ -542,7 +544,7 @@ def main(argv):
     ap.add_argument("problem", nargs="?")
     g = ap.add_mutually_exclusive_group()
     g.add_argument("--hint", metavar="PROBLEM", help="hint blocks up to --step N (no code)")
-    g.add_argument("--peek", metavar="PROBLEM", help="solution code, for the tutor in Claude Code only")
+    g.add_argument("--peek", metavar="PROBLEM", help="solution code, for the tutor (coding agent) only")
     g.add_argument("--validate", nargs=3, metavar=("PROBLEM", "TEST", "OUTPUT"),
                    help="checker verdict of OUTPUT for the test input TEST: one line, OK or WA")
     g.add_argument("--interact", nargs=2, metavar=("PROBLEM", "TEST"),

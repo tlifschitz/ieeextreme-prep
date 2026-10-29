@@ -7,7 +7,7 @@
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT license"></a>
   <img src="https://img.shields.io/badge/problems-252-informational.svg" alt="252 problems">
   <img src="https://img.shields.io/badge/IEEEXtreme-10%E2%80%9319-00629B.svg" alt="IEEEXtreme 10 to 19">
-  <a href="https://docs.claude.com/en/docs/claude-code/overview"><img src="https://img.shields.io/badge/tutor-Claude%20Code-D97757.svg" alt="Tutor: Claude Code"></a>
+  <img src="https://img.shields.io/badge/tutor-any%20coding%20agent-D97757.svg" alt="Tutor: any coding agent">
 </p>
 
 # ieeextreme-prep
@@ -15,8 +15,8 @@
 **Practice for [IEEEXtreme](https://ieeextreme.org/) with an AI tutor that never writes your code.**
 
 The 252 problems of the CS Academy IEEEXtreme practice archive (editions 10 to 19), a local judge,
-a contest library in Python and C++, and a [Claude Code](https://docs.claude.com/en/docs/claude-code/overview)
-tutor that coaches you through competitive programming problems the way a good coach would: with
+a contest library in Python and C++, and a tutor for your coding agent (Claude Code, Codex, Antigravity,
+Copilot, Cursor...) that coaches you through competitive programming problems the way a good coach would: with
 questions first, then hints one step at a time, and only when you ask for them.
 
 ## Why
@@ -53,8 +53,12 @@ learn mode (curated reading for a technique).
 ```bash
 git clone https://github.com/tlifschitz/ieeextreme-prep.git
 cd ieeextreme-prep
-claude    # Claude Code
+claude    # Claude Code, or: codex, or open the folder in Antigravity / Copilot / Cursor
 ```
+
+The tutor's rules are in `AGENTS.md` (`CLAUDE.md` imports it), and its skills in
+`.claude/skills/` and `.agents/skills/`. Any agent that reads `AGENTS.md` and can run shell commands
+works; the tutor was tuned and tested mostly with Claude Code.
 
 Then just talk to it, in any language:
 
@@ -64,11 +68,11 @@ Then just talk to it, in any language:
 >
 > I'm stuck. · Is my solution right? · I give up.
 
-The first time you open the repository, accept Claude Code's workspace trust dialog: until you do,
+In Claude Code, the first time you open the repository, accept the workspace trust dialog: until you do,
 it ignores `.claude/settings.json`, which lets the tutor's skills (`/practice`, `/hint`, `/verify`,
 `/learn`, `/give-up`) run without asking for permission each time.
 
-## Practicing without Claude Code
+## Practicing without an agent
 
 Everything except the conversation works on its own (Python 3.10+, and a C++17 compiler for C++):
 
@@ -92,7 +96,7 @@ submit to the real judge.
 | `data/references.json` | curated reading per technique: book sections, papers, web pages, practice problems |
 | `lib/` | a contest library (graphs, trees, DP, data structures, strings, number theory, geometry, FFT/NTT...) in Python and C++, with tests |
 | `scripts/` | `verify.py` (local judge), `reveal.py` (hints, give-up), `bundle.py`, `tutor_state.py`, `tutor_catalog.py` |
-| `CLAUDE.md`, `.claude/skills/` | the tutor: its rules, the ladder, the disclosure budget and the skills |
+| `AGENTS.md`, `.claude/skills/`, `.agents/skills/` | the tutor: its rules, the ladder, the disclosure budget and the skills (`CLAUDE.md` imports `AGENTS.md`) |
 
 ## How it works
 

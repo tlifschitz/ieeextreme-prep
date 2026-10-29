@@ -9,7 +9,7 @@ allowed-tools: Read, Bash(python3 scripts/tutor_catalog.py:*), Bash(python3 scri
 
 Technique: $ARGUMENTS (if empty, ask which one).
 
-Follow CLAUDE.md. In this mode the technique is known, because the student chose it.
+Follow AGENTS.md. In this mode the technique is known, because the student chose it.
 
 1. Log the topic: `python3 scripts/tutor_state.py learner log topic_studied --topic "<technique>"`,
    and read `python3 scripts/tutor_state.py learner status` to see what they already read or declined.

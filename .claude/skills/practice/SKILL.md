@@ -7,7 +7,7 @@ allowed-tools: Read, Bash(python3 scripts/tutor_catalog.py:*), Glob, Bash(python
 
 # Practice a problem
 
-Follow the rules in CLAUDE.md (no solution code, the ladder, consent, the disclosure budget). The
+Follow the rules in AGENTS.md (no solution code, the ladder, consent, the disclosure budget). The
 technique stays hidden in this mode.
 
 Problem: $ARGUMENTS (if empty, ask which one; to suggest one, pick from `python3 scripts/tutor_catalog.py list`

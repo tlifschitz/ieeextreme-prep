@@ -19,11 +19,13 @@ Problem and options: $ARGUMENTS (if no problem is given, use the one being discu
 3. Report it like a judge, in the student's language: "passed X/Y local cases" and the verdicts
    (OK, WA, RE, TLE, CE, N/A). Never call it a contest score: the judge's tests are different. TLE
    is approximate, measured on this machine.
-4. Explain failures within the disclosure budget of CLAUDE.md:
+4. Explain failures within the disclosure budget of AGENTS.md:
    - CE and RE: explain the compiler message or the crash in their code. Always fine.
-   - WA: if they want to see a small failing case, rerun with `--show`. Help them find where their
-     code goes wrong on that case (their reasoning or their implementation), without telling them
-     the missing idea above the accepted step.
+   - WA: if they want to see a small failing case, rerun with `--show`. Say what you can observe:
+     which test fails, what their code outputs on the small case, which line produces it. If fixing
+     it needs a fact about the statement or an observation they do not have yet, do not explain it,
+     even when they ask "just tell me the bug": offer the step it belongs to (`hint` skill protocol)
+     and explain only after the yes.
    - TLE: compare the complexity of their approach with the limits (N, time limit). Saying "this is
      O(N^2) and N is 10^6" is fine; saying what faster approach to use is a hint and needs consent
      for its step (use the `hint` skill protocol).
