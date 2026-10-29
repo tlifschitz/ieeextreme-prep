@@ -3576,6 +3576,214 @@
       "note": "The directed acyclic subsequence graph: an automaton built from the text that tells whether a string is a subsequence of it, one transition per character."
     },
     {
+      "id": "cphb-5-5-meet-in-the-middle",
+      "techniques": [
+        "meet-in-the-middle"
+      ],
+      "kind": "web",
+      "source": "Competitive Programmer's Handbook",
+      "title": "Competitive Programmer’s Handbook",
+      "url": "https://cses.fi/book/book.pdf",
+      "section": "5.5 Meet in the middle",
+      "chapter": "5 Complete search",
+      "pages": null,
+      "edition": "Draft July 3, 2018",
+      "min_step": 4,
+      "note": "Splitting the search space into two halves, listing the subset sums of each half and combining them in O(2^(n/2))."
+    },
+    {
+      "id": "usaco-meet-in-the-middle",
+      "techniques": [
+        "meet-in-the-middle"
+      ],
+      "kind": "web",
+      "source": "USACO Guide",
+      "title": "(Optional) Meet In The Middle",
+      "url": "https://usaco.guide/gold/meet-in-the-middle",
+      "section": "Meet In The Middle",
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "From the naive 2^n search to enumerating two halves and combining their results, with code."
+    },
+    {
+      "id": "cses-1628-meet-in-the-middle",
+      "techniques": [
+        "meet-in-the-middle"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Meet in the Middle",
+      "url": "https://cses.fi/problemset/task/1628",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Count the subsets of up to 40 numbers whose sum is x."
+    },
+    {
+      "id": "cpalgo-broken-profile",
+      "techniques": [
+        "broken-profile-dp"
+      ],
+      "kind": "web",
+      "source": "cp-algorithms",
+      "title": "Dynamic Programming on Broken Profile. Problem \"Parquet\"",
+      "url": "https://cp-algorithms.com/dynamic_programming/profile-dynamics.html",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Filling a grid cell by cell with the frontier of the last cells as a bitmask state, on the domino tiling problem."
+    },
+    {
+      "id": "usaco-dp-broken-profile",
+      "techniques": [
+        "broken-profile-dp"
+      ],
+      "kind": "web",
+      "source": "USACO Guide",
+      "title": "DP on Broken Profile",
+      "url": "https://usaco.guide/adv/dp-broken-profile",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "DP over grid boundary states: resources, an implementation and practice problems."
+    },
+    {
+      "id": "cphb-7-6-counting-tilings",
+      "techniques": [
+        "broken-profile-dp"
+      ],
+      "kind": "web",
+      "source": "Competitive Programmer's Handbook",
+      "title": "Competitive Programmer’s Handbook",
+      "url": "https://cses.fi/book/book.pdf",
+      "section": "7.6 Counting tilings",
+      "chapter": "7 Dynamic programming",
+      "pages": null,
+      "edition": "Draft July 3, 2018",
+      "min_step": 4,
+      "note": "Counting domino tilings row by row with the shape of the previous row as the state, and how to make it faster."
+    },
+    {
+      "id": "cses-2181-counting-tilings",
+      "techniques": [
+        "broken-profile-dp"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Counting Tilings",
+      "url": "https://cses.fi/problemset/task/2181",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Count the ways to fill a narrow n x m grid with 1x2 and 2x1 tiles."
+    },
+    {
+      "id": "cpalgo-simulated-annealing",
+      "techniques": [
+        "heuristic-local-search"
+      ],
+      "kind": "web",
+      "source": "cp-algorithms",
+      "title": "Simulated Annealing",
+      "url": "https://cp-algorithms.com/num_methods/simulated_annealing.html",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "States, neighbors, an energy function and a cooling temperature that sometimes accepts a worse move, with a code template."
+    },
+    {
+      "id": "usaco-interactive",
+      "techniques": [
+        "interactive-queries"
+      ],
+      "kind": "web",
+      "source": "USACO Guide",
+      "title": "Interactive and Communication Problems",
+      "url": "https://usaco.guide/adv/interactive",
+      "section": "Interactive Problems",
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Using the query limit to guess the target complexity, and dividing the search space with each query."
+    },
+    {
+      "id": "cses-3112-hidden-integer",
+      "techniques": [
+        "interactive-queries"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Hidden Integer",
+      "url": "https://cses.fi/problemset/task/3112",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Find a hidden integer by asking whether a chosen value is smaller than it."
+    },
+    {
+      "id": "cses-3139-hidden-permutation",
+      "techniques": [
+        "interactive-queries"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Hidden Permutation",
+      "url": "https://cses.fi/problemset/task/3139",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Find a hidden permutation by asking whether one position's value is smaller than another's."
+    },
+    {
+      "id": "cses-2214-inverse-inversions",
+      "techniques": [
+        "constructive-pattern"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Inverse Inversions",
+      "url": "https://cses.fi/problemset/task/2214",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Construct a permutation of 1..n with exactly k inversions."
+    },
+    {
+      "id": "cses-2215-monotone-subsequences",
+      "techniques": [
+        "constructive-pattern"
+      ],
+      "kind": "practice",
+      "source": "CSES Problem Set",
+      "title": "Monotone Subsequences",
+      "url": "https://cses.fi/problemset/task/2215",
+      "section": null,
+      "chapter": null,
+      "pages": null,
+      "edition": null,
+      "min_step": 4,
+      "note": "Construct a permutation whose longest monotone subsequence has exactly k elements, or say it is impossible."
+    },
+    {
       "id": "gcp3-8-2-2-nearest-smaller-elements",
       "techniques": [
         "monotonic-stack"
@@ -5952,6 +6160,150 @@
       "edition": "2nd edition, Academic Press 1994 (free download from the author's page)",
       "min_step": 5,
       "note": "The generating function of integer partitions."
+    },
+    {
+      "id": "gcp3-15-6-1-meet-in-the-middle",
+      "techniques": [
+        "meet-in-the-middle"
+      ],
+      "kind": "book",
+      "source": "Guide to Competitive Programming",
+      "title": "Guide to Competitive Programming",
+      "url": null,
+      "section": "15.6.1 Meet in the Middle",
+      "chapter": "15  Additional Topics",
+      "pages": null,
+      "edition": "3rd edition, Springer 2024, ISBN 978-3-031-61793-5",
+      "min_step": 4,
+      "note": "Splitting a subset search into two halves of about n/2 elements and combining their sums: O(2^(n/2)) instead of O(2^n)."
+    },
+    {
+      "id": "cp4-8-2-3-meet-in-the-middle",
+      "techniques": [
+        "meet-in-the-middle"
+      ],
+      "kind": "book",
+      "source": "Competitive Programming 4",
+      "title": "Competitive Programming 4",
+      "url": null,
+      "section": "8.2.3 Meet in the Middle",
+      "chapter": "8 More Advanced Topics",
+      "pages": null,
+      "edition": "4th edition (Book 1 and Book 2), 19 July 2020",
+      "min_step": 4,
+      "note": "Meet in the middle as bidirectional search between a source and a target state, and as a general two-part strategy."
+    },
+    {
+      "id": "gcp3-6-2-5-counting-tilings",
+      "techniques": [
+        "broken-profile-dp"
+      ],
+      "kind": "book",
+      "source": "Guide to Competitive Programming",
+      "title": "Guide to Competitive Programming",
+      "url": null,
+      "section": "6.2.5 Counting Tilings",
+      "chapter": "6 Dynamic Programming",
+      "pages": null,
+      "edition": "3rd edition, Springer 2024, ISBN 978-3-031-61793-5",
+      "min_step": 4,
+      "note": "Counting domino tilings row by row, with the shape of the previous row as the state."
+    },
+    {
+      "id": "kt-12-1-the-landscape-of-an-optimization-problem",
+      "techniques": [
+        "heuristic-local-search"
+      ],
+      "kind": "book",
+      "source": "Algorithm Design",
+      "title": "Algorithm Design",
+      "url": null,
+      "section": "12.1 The Landscape of an Optimization Problem",
+      "chapter": "12 Local Search",
+      "pages": null,
+      "edition": "Pearson New International Edition, 2014, ISBN 978-1-292-02394-6",
+      "min_step": 3,
+      "note": "Local search as moving between neighboring solutions, and why it can get stuck in a local optimum."
+    },
+    {
+      "id": "kt-12-2-the-metropolis-algorithm-and-simulated-annealing",
+      "techniques": [
+        "heuristic-local-search"
+      ],
+      "kind": "book",
+      "source": "Algorithm Design",
+      "title": "Algorithm Design",
+      "url": null,
+      "section": "12.2 The Metropolis Algorithm and Simulated Annealing",
+      "chapter": "12 Local Search",
+      "pages": null,
+      "edition": "Pearson New International Edition, 2014, ISBN 978-1-292-02394-6",
+      "min_step": 4,
+      "note": "Escaping local optima by sometimes accepting worse moves, with a temperature that decreases over time."
+    },
+    {
+      "id": "cp4-9-33-gradient-descent",
+      "techniques": [
+        "heuristic-local-search"
+      ],
+      "kind": "book",
+      "source": "Competitive Programming 4",
+      "title": "Competitive Programming 4",
+      "url": null,
+      "section": "9.33 Gradient Descent",
+      "chapter": "9 Rare Topics",
+      "pages": null,
+      "edition": "4th edition (Book 1 and Book 2), 19 July 2020",
+      "min_step": 4,
+      "note": "A simple local search: move to a better neighbor while one exists, shrinking the step, on a continuous cost function."
+    },
+    {
+      "id": "cp4-9-31-interactive-problem",
+      "techniques": [
+        "interactive-queries"
+      ],
+      "kind": "book",
+      "source": "Competitive Programming 4",
+      "title": "Competitive Programming 4",
+      "url": null,
+      "section": "9.31 Interactive Problem",
+      "chapter": "9 Rare Topics",
+      "pages": null,
+      "edition": "4th edition (Book 1 and Book 2), 19 July 2020",
+      "min_step": 4,
+      "note": "Problems that talk to the judge: planning queries within the limit, starting from guessing a number by binary search."
+    },
+    {
+      "id": "cp4-9-30-constructive-problem",
+      "techniques": [
+        "constructive-pattern"
+      ],
+      "kind": "book",
+      "source": "Competitive Programming 4",
+      "title": "Competitive Programming 4",
+      "url": null,
+      "section": "9.30 Constructive Problem",
+      "chapter": "9 Rare Topics",
+      "pages": null,
+      "edition": "4th edition (Book 1 and Book 2), 19 July 2020",
+      "min_step": 4,
+      "note": "Problems whose answer is built directly by a known construction, such as a magic square of odd size."
+    },
+    {
+      "id": "clrs3-10-2-linked-lists",
+      "techniques": [
+        "offline-reverse-linked-list"
+      ],
+      "kind": "book",
+      "source": "Introduction to Algorithms",
+      "title": "Introduction to Algorithms",
+      "url": null,
+      "section": "10.2 Linked lists",
+      "chapter": "10 Elementary Data Structures",
+      "pages": null,
+      "edition": "3rd edition, MIT Press 2009, ISBN 978-0-262-03384-8",
+      "min_step": 3,
+      "note": "Doubly linked lists: deleting an element in O(1) by linking its predecessor and successor."
     }
   ],
   "problem_overrides": {}

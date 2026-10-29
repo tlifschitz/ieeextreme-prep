@@ -1,5 +1,6 @@
 class DSU:
-    """Disjoint sets on 0..n-1: union by size, path halving."""
+    """Disjoint sets on 0..n-1: union by size, path halving.
+    Next free slot >= x: when x is used set parent[x] = x + 1 (n + 1 slots), then find(x)."""
 
     def __init__(self, n):
         self.parent = list(range(n))

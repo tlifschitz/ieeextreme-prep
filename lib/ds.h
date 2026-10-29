@@ -5,6 +5,7 @@
 // Disjoint sets (union by size, path halving)
 // ============================================================================
 
+// Next free slot >= x: when x is used set parent[x] = x + 1 (size n + 1), then find(x).
 struct DSU {
     vi parent, size;
     int count;  // number of sets

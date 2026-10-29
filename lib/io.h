@@ -36,3 +36,26 @@ string read_token() {  // next whitespace-separated word, "" at EOF
     for (; c > ' '; c = gc()) s += char(c);
     return s;
 }
+
+// ============================================================================
+// Fast output: buffered fwrite writer (call flush_out() before returning from main)
+// ============================================================================
+
+static char obuf[1 << 16];
+int opos = 0;
+
+void flush_out() { fwrite(obuf, 1, opos, stdout), opos = 0; }
+
+void put_char(char c) {
+    if (opos == sizeof obuf) flush_out();
+    obuf[opos++] = c;
+}
+
+void write_int(ll x, char end = '\n') {
+    if (x < 0) put_char('-'), x = -x;
+    char s[20];
+    int n = 0;
+    do s[n++] = char('0' + x % 10), x /= 10; while (x);
+    while (n) put_char(s[--n]);
+    if (end) put_char(end);
+}

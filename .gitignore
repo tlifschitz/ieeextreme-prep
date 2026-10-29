@@ -27,6 +27,7 @@ refs/local/
 /contests/*/*/LEVELS.md
 /contests/*/*/levels/
 /contests/*/*/NOTES.md
+/contests/*/*/planner/
 /contests/*/*/reference.py
 /contests/*/*/solution*
 /contests/*/*/validate.py

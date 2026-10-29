@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>  // if the judge says "Compilation stopped: Time limit exceeded", use instead:
 // #include <algorithm>
 // #include <array>
+// #include <chrono>
 // #include <climits>
 // #include <cmath>
 // #include <cstring>
@@ -35,6 +36,10 @@ using vl = vector<ll>;
 #else
 #define dbg(...)
 #endif
+
+// Time budget for heuristics: if (elapsed() > 0.8) stop searching. Seconds since start.
+auto T0 = chrono::steady_clock::now();
+double elapsed() { return chrono::duration<double>(chrono::steady_clock::now() - T0).count(); }
 
 // #include "lib/<topic>.h" lines go here (modular, ntt, tree, segtree, ds, graphs, io)
 

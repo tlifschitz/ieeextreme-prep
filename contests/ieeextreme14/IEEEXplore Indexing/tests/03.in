@@ -1,0 +1,7 @@
+over;under;with;from;into
+alpha;beta's;gamma;delta;omega
+<doc>
+ <title>Alpha <b>Gamma</b> delta <i>x</i> OMEGA</title>
+ <abstract>alpha<p>beta's</p>beta's<p>gamma</p>Gamma.</abstract>
+ <body><sec><p>delta</p>delta</sec> omega <fig><caption>alpha</caption></fig>alpha</body>
+</doc>

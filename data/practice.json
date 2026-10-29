@@ -12,6 +12,28 @@
       "capability": "archive"
     },
     {
+      "id": "checkers-challenge",
+      "folder": "contests/ieeextreme10/Checkers Challenge",
+      "contest": "IEEEXtreme 10.0",
+      "longName": "Checkers Challenge",
+      "urlName": "checkers-challenge",
+      "contestTaskId": 15461,
+      "timeLimit": 2000,
+      "capability": "practice",
+      "judge": "tokens"
+    },
+    {
+      "id": "dog-walking",
+      "folder": "contests/ieeextreme10/Dog Walking",
+      "contest": "IEEEXtreme 10.0",
+      "longName": "Dog Walking",
+      "urlName": "dog-walking",
+      "contestTaskId": 15458,
+      "timeLimit": 2000,
+      "capability": "practice",
+      "judge": "tokens"
+    },
+    {
       "id": "ellipse-art",
       "folder": "contests/ieeextreme10/Ellipse Art",
       "contest": "IEEEXtreme 10.0",
@@ -20,6 +42,17 @@
       "contestTaskId": 15457,
       "timeLimit": 2000,
       "capability": "archive"
+    },
+    {
+      "id": "memory-management",
+      "folder": "contests/ieeextreme10/Memory Management",
+      "contest": "IEEEXtreme 10.0",
+      "longName": "Memory Management",
+      "urlName": "memory-management",
+      "contestTaskId": 15453,
+      "timeLimit": 2000,
+      "capability": "practice",
+      "judge": "tokens"
     },
     {
       "id": "n-palindromes",
@@ -42,6 +75,17 @@
       "capability": "archive"
     },
     {
+      "id": "painters-dilemma",
+      "folder": "contests/ieeextreme10/Painter's Dilemma",
+      "contest": "IEEEXtreme 10.0",
+      "longName": "Painter's Dilemma",
+      "urlName": "painters-dilemma",
+      "contestTaskId": 15452,
+      "timeLimit": 2000,
+      "capability": "practice",
+      "judge": "tokens"
+    },
+    {
       "id": "pirates",
       "folder": "contests/ieeextreme10/Pirates",
       "contest": "IEEEXtreme 10.0",
@@ -60,6 +104,17 @@
       "contestTaskId": 15455,
       "timeLimit": 2000,
       "capability": "archive"
+    },
+    {
+      "id": "weighty-decisions",
+      "folder": "contests/ieeextreme10/Weighty Decisions",
+      "contest": "IEEEXtreme 10.0",
+      "longName": "Weighty Decisions",
+      "urlName": "weighty-decisions",
+      "contestTaskId": 15454,
+      "timeLimit": 2000,
+      "capability": "practice",
+      "judge": "tokens"
     },
     {
       "id": "aeneas-cryptographic-disc-4th-c-b-c",
@@ -105,6 +160,17 @@
       "capability": "archive"
     },
     {
+      "id": "elementary",
+      "folder": "contests/ieeextreme11/Elementary",
+      "contest": "IEEEXtreme 11.0",
+      "longName": "Elementary",
+      "urlName": "c787255968c972c653677a52599ecc2f",
+      "contestTaskId": 15451,
+      "timeLimit": 1000,
+      "capability": "practice",
+      "judge": "tokens"
+    },
+    {
       "id": "fibonacci",
       "folder": "contests/ieeextreme11/Fibonacci",
       "contest": "IEEEXtreme 11.0",
@@ -124,6 +190,17 @@
       "contestTaskId": 15439,
       "timeLimit": 1000,
       "capability": "archive"
+    },
+    {
+      "id": "game-of-life",
+      "folder": "contests/ieeextreme11/Game of Life",
+      "contest": "IEEEXtreme 11.0",
+      "longName": "Game of Life",
+      "urlName": "d12a7784af1a3d3f6d88601c81a4bb81",
+      "contestTaskId": 15430,
+      "timeLimit": 1200,
+      "capability": "practice",
+      "judge": "tokens"
     },
     {
       "id": "gotta-catch-em-all-11",
@@ -167,6 +244,28 @@
       "capability": "archive"
     },
     {
+      "id": "lets-cheer-up-bob",
+      "folder": "contests/ieeextreme11/Let’s Cheer Up Bob",
+      "contest": "IEEEXtreme 11.0",
+      "longName": "Let’s Cheer Up Bob",
+      "urlName": "ca9bc49133da9c3c90df045f4ea8fdd3",
+      "contestTaskId": 15444,
+      "timeLimit": 1000,
+      "capability": "practice",
+      "judge": "tokens"
+    },
+    {
+      "id": "lion-territory",
+      "folder": "contests/ieeextreme11/Lion Territory",
+      "contest": "IEEEXtreme 11.0",
+      "longName": "Lion Territory",
+      "urlName": "15443fc9f89feb90bc30096f43b308af",
+      "contestTaskId": 15436,
+      "timeLimit": 1000,
+      "capability": "practice",
+      "judge": "tokens"
+    },
+    {
       "id": "math-challenge",
       "folder": "contests/ieeextreme11/Math Challenge",
       "contest": "IEEEXtreme 11.0",
@@ -177,6 +276,17 @@
       "capability": "archive"
     },
     {
+      "id": "maximum-sum",
+      "folder": "contests/ieeextreme11/Maximum Sum",
+      "contest": "IEEEXtreme 11.0",
+      "longName": "Maximum Sum",
+      "urlName": "04dfa70efd936271ae191cb1a97eb876",
+      "contestTaskId": 15424,
+      "timeLimit": 1000,
+      "capability": "practice",
+      "judge": "tokens"
+    },
+    {
       "id": "mister-counter",
       "folder": "contests/ieeextreme11/Mister Counter",
       "contest": "IEEEXtreme 11.0",
@@ -185,6 +295,17 @@
       "contestTaskId": 15438,
       "timeLimit": 1000,
       "capability": "archive"
+    },
+    {
+      "id": "octopuses-with-watches",
+      "folder": "contests/ieeextreme11/Octopuses with Watches",
+      "contest": "IEEEXtreme 11.0",
+      "longName": "Octopuses with Watches",
+      "urlName": "59d4aae501fe4ced9ffbf3737acd18a2",
+      "contestTaskId": 15434,
+      "timeLimit": 1000,
+      "capability": "practice",
+      "judge": "tokens"
     },
     {
       "id": "odd-cycle-check",
@@ -206,6 +327,17 @@
       "contestTaskId": 15450,
       "timeLimit": 3000,
       "capability": "archive"
+    },
+    {
+      "id": "preparing-for-xtreme-12-0",
+      "folder": "contests/ieeextreme11/Preparing for Xtreme 12.0",
+      "contest": "IEEEXtreme 11.0",
+      "longName": "Preparing for Xtreme 12.0",
+      "urlName": "72a7d67e7e18f4f7d033f7f5a5a09bef",
+      "contestTaskId": 15427,
+      "timeLimit": 1000,
+      "capability": "practice",
+      "judge": "tokens"
     },
     {
       "id": "pyramid",
@@ -268,6 +400,17 @@
       "capability": "archive"
     },
     {
+      "id": "sub-array-sum-problem",
+      "folder": "contests/ieeextreme11/Sub Array Sum Problem",
+      "contest": "IEEEXtreme 11.0",
+      "longName": "Sub Array Sum Problem",
+      "urlName": "46e8a03f242b875f1ae5fb84a3b4321f",
+      "contestTaskId": 15447,
+      "timeLimit": 2000,
+      "capability": "practice",
+      "judge": "tokens"
+    },
+    {
       "id": "the-fast-and-the-curious",
       "folder": "contests/ieeextreme11/The Fast and the Curious",
       "contest": "IEEEXtreme 11.0",
@@ -319,6 +462,28 @@
       "capability": "archive"
     },
     {
+      "id": "bit-soccer",
+      "folder": "contests/ieeextreme12/Bit Soccer",
+      "contest": "IEEEXtreme 12.0",
+      "longName": "Bit Soccer",
+      "urlName": "bit-soccer",
+      "contestTaskId": 32264,
+      "timeLimit": 500,
+      "capability": "practice",
+      "judge": "tokens"
+    },
+    {
+      "id": "drawing-rooted-binary-trees",
+      "folder": "contests/ieeextreme12/Drawing Rooted Binary Trees",
+      "contest": "IEEEXtreme 12.0",
+      "longName": "Drawing Rooted Binary Trees",
+      "urlName": "drawing-rooted-binary-trees",
+      "contestTaskId": 32282,
+      "timeLimit": 1000,
+      "capability": "practice",
+      "judge": "tokens"
+    },
+    {
       "id": "factorial-zeros",
       "folder": "contests/ieeextreme12/Factorial Zeros",
       "contest": "IEEEXtreme 12.0",
@@ -327,6 +492,17 @@
       "contestTaskId": 32261,
       "timeLimit": 1000,
       "capability": "archive"
+    },
+    {
+      "id": "friendly-sequences",
+      "folder": "contests/ieeextreme12/Friendly Sequences",
+      "contest": "IEEEXtreme 12.0",
+      "longName": "Friendly Sequences",
+      "urlName": "friendly-sequences",
+      "contestTaskId": 32263,
+      "timeLimit": 1000,
+      "capability": "practice",
+      "judge": "tokens"
     },
     {
       "id": "gotta-catch-em-all-12",
@@ -339,6 +515,17 @@
       "capability": "archive"
     },
     {
+      "id": "infinite-snakes-and-ladders",
+      "folder": "contests/ieeextreme12/Infinite snakes and ladders",
+      "contest": "IEEEXtreme 12.0",
+      "longName": "Infinite snakes and ladders",
+      "urlName": "infinite-snakes-and-ladders",
+      "contestTaskId": 32280,
+      "timeLimit": 3900,
+      "capability": "practice",
+      "judge": "tokens"
+    },
+    {
       "id": "lemons",
       "folder": "contests/ieeextreme12/Lemons",
       "contest": "IEEEXtreme 12.0",
@@ -346,6 +533,17 @@
       "urlName": "lemons",
       "contestTaskId": 32268,
       "timeLimit": 500,
+      "capability": "practice",
+      "judge": "tokens"
+    },
+    {
+      "id": "magic-spell",
+      "folder": "contests/ieeextreme12/Magic Spell",
+      "contest": "IEEEXtreme 12.0",
+      "longName": "Magic Spell",
+      "urlName": "magic-spell",
+      "contestTaskId": 32269,
+      "timeLimit": 1000,
       "capability": "practice",
       "judge": "tokens"
     },
@@ -431,6 +629,17 @@
       "capability": "archive"
     },
     {
+      "id": "troll-coder-escape",
+      "folder": "contests/ieeextreme12/Troll Coder - Escape",
+      "contest": "IEEEXtreme 12.0",
+      "longName": "Troll Coder - Escape",
+      "urlName": "troll-coder-escape",
+      "contestTaskId": 32276,
+      "timeLimit": 10000,
+      "capability": "practice",
+      "judge": "interactive"
+    },
+    {
       "id": "tweedledees-split-brackets",
       "folder": "contests/ieeextreme12/Tweedledee's Split Brackets",
       "contest": "IEEEXtreme 12.0",
@@ -459,6 +668,28 @@
       "contestTaskId": 32273,
       "timeLimit": 2000,
       "capability": "archive"
+    },
+    {
+      "id": "xtreme-fake-coins",
+      "folder": "contests/ieeextreme12/Xtreme Fake Coins",
+      "contest": "IEEEXtreme 12.0",
+      "longName": "Xtreme Fake Coins",
+      "urlName": "xtreme-fake-coins",
+      "contestTaskId": 32281,
+      "timeLimit": 500,
+      "capability": "practice",
+      "judge": "tokens"
+    },
+    {
+      "id": "alfa-pool",
+      "folder": "contests/ieeextreme13/Alfa Pool",
+      "contest": "IEEEXtreme 13.0",
+      "longName": "Alfa Pool",
+      "urlName": "alfa-pool",
+      "contestTaskId": 40221,
+      "timeLimit": 1000,
+      "capability": "practice",
+      "judge": "tokens"
     },
     {
       "id": "alfa-universe-weight-sorting",
@@ -499,6 +730,17 @@
       "contestTaskId": 40225,
       "timeLimit": 1000,
       "capability": "archive"
+    },
+    {
+      "id": "charlie-new-pc",
+      "folder": "contests/ieeextreme13/Charlie New PC",
+      "contest": "IEEEXtreme 13.0",
+      "longName": "Charlie New PC",
+      "urlName": "charlie-new-pc",
+      "contestTaskId": 40217,
+      "timeLimit": 2000,
+      "capability": "practice",
+      "judge": "tokens"
     },
     {
       "id": "concentration-game",
@@ -590,6 +832,17 @@
       "urlName": "monokeros",
       "contestTaskId": 40214,
       "timeLimit": 2500,
+      "capability": "practice",
+      "judge": "tokens"
+    },
+    {
+      "id": "pair-swap-teams",
+      "folder": "contests/ieeextreme13/Pair Swap Teams",
+      "contest": "IEEEXtreme 13.0",
+      "longName": "Pair Swap Teams",
+      "urlName": "pair-swap-teams",
+      "contestTaskId": 40233,
+      "timeLimit": 1000,
       "capability": "practice",
       "judge": "tokens"
     },
@@ -706,6 +959,28 @@
       "capability": "archive"
     },
     {
+      "id": "arm-constant-multiplication",
+      "folder": "contests/ieeextreme14/ARM Constant Multiplication",
+      "contest": "IEEEXtreme 14.0",
+      "longName": "ARM Constant Multiplication",
+      "urlName": "arm",
+      "contestTaskId": 45989,
+      "timeLimit": 1000,
+      "capability": "practice",
+      "judge": "checker"
+    },
+    {
+      "id": "coin-collector",
+      "folder": "contests/ieeextreme14/Coin Collector",
+      "contest": "IEEEXtreme 14.0",
+      "longName": "Coin Collector",
+      "urlName": "coin-collector",
+      "contestTaskId": 45990,
+      "timeLimit": 1000,
+      "capability": "practice",
+      "judge": "tokens"
+    },
+    {
       "id": "coupon-codes",
       "folder": "contests/ieeextreme14/Coupon Codes",
       "contest": "IEEEXtreme 14.0",
@@ -714,6 +989,28 @@
       "contestTaskId": 45992,
       "timeLimit": 2000,
       "capability": "archive"
+    },
+    {
+      "id": "crafting-wooden-tables",
+      "folder": "contests/ieeextreme14/Crafting Wooden Tables",
+      "contest": "IEEEXtreme 14.0",
+      "longName": "Crafting Wooden Tables",
+      "urlName": "crafting-wooden-tables",
+      "contestTaskId": 45994,
+      "timeLimit": 1000,
+      "capability": "practice",
+      "judge": "tokens"
+    },
+    {
+      "id": "furin-back",
+      "folder": "contests/ieeextreme14/Furin Back",
+      "contest": "IEEEXtreme 14.0",
+      "longName": "Furin Back",
+      "urlName": "furin-back",
+      "contestTaskId": 46010,
+      "timeLimit": 3000,
+      "capability": "practice",
+      "judge": "tokens"
     },
     {
       "id": "game-of-life-2020",
@@ -733,6 +1030,17 @@
       "urlName": "hotel-wiring",
       "contestTaskId": 46005,
       "timeLimit": 2000,
+      "capability": "practice",
+      "judge": "tokens"
+    },
+    {
+      "id": "ieeexplore-indexing",
+      "folder": "contests/ieeextreme14/IEEEXplore Indexing",
+      "contest": "IEEEXtreme 14.0",
+      "longName": "IEEEXplore Indexing",
+      "urlName": "ieeexplore-indexing",
+      "contestTaskId": 45999,
+      "timeLimit": 1000,
       "capability": "practice",
       "judge": "tokens"
     },
@@ -850,6 +1158,17 @@
       "capability": "archive"
     },
     {
+      "id": "poker-game",
+      "folder": "contests/ieeextreme14/Poker Game",
+      "contest": "IEEEXtreme 14.0",
+      "longName": "Poker Game",
+      "urlName": "poker-game",
+      "contestTaskId": 46009,
+      "timeLimit": 1000,
+      "capability": "practice",
+      "judge": "tokens"
+    },
+    {
       "id": "rescue-mission",
       "folder": "contests/ieeextreme14/Rescue Mission",
       "contest": "IEEEXtreme 14.0",
@@ -858,6 +1177,17 @@
       "contestTaskId": 45987,
       "timeLimit": 3000,
       "capability": "archive"
+    },
+    {
+      "id": "restaurant-reopening",
+      "folder": "contests/ieeextreme14/Restaurant Reopening",
+      "contest": "IEEEXtreme 14.0",
+      "longName": "Restaurant Reopening",
+      "urlName": "restaurant-reopening",
+      "contestTaskId": 46008,
+      "timeLimit": 5000,
+      "capability": "practice",
+      "judge": "tokens"
     },
     {
       "id": "rotational-lights",
@@ -962,6 +1292,28 @@
       "judge": "tokens"
     },
     {
+      "id": "coloring-tiles",
+      "folder": "contests/ieeextreme15/Coloring Tiles",
+      "contest": "IEEEXtreme 15.0",
+      "longName": "Coloring Tiles",
+      "urlName": "coloring-tiles",
+      "contestTaskId": 48045,
+      "timeLimit": 6000,
+      "capability": "practice",
+      "judge": "tokens"
+    },
+    {
+      "id": "doctors-appointments",
+      "folder": "contests/ieeextreme15/Doctor's Appointments",
+      "contest": "IEEEXtreme 15.0",
+      "longName": "Doctor's Appointments",
+      "urlName": "appointment",
+      "contestTaskId": 48061,
+      "timeLimit": 6000,
+      "capability": "practice",
+      "judge": "checker"
+    },
+    {
       "id": "expression-evaluation",
       "folder": "contests/ieeextreme15/Expression Evaluation",
       "contest": "IEEEXtreme 15.0",
@@ -1002,6 +1354,17 @@
       "capability": "archive"
     },
     {
+      "id": "maximum-exploitation",
+      "folder": "contests/ieeextreme15/Maximum Exploitation",
+      "contest": "IEEEXtreme 15.0",
+      "longName": "Maximum Exploitation",
+      "urlName": "exploitation",
+      "contestTaskId": 48039,
+      "timeLimit": 2000,
+      "capability": "practice",
+      "judge": "tokens"
+    },
+    {
       "id": "polygon",
       "folder": "contests/ieeextreme15/Polygon",
       "contest": "IEEEXtreme 15.0",
@@ -1022,6 +1385,17 @@
       "capability": "archive"
     },
     {
+      "id": "secret-boxes",
+      "folder": "contests/ieeextreme15/Secret Boxes",
+      "contest": "IEEEXtreme 15.0",
+      "longName": "Secret Boxes",
+      "urlName": "secret-boxes",
+      "contestTaskId": 48056,
+      "timeLimit": 10000,
+      "capability": "practice",
+      "judge": "interactive"
+    },
+    {
       "id": "spies-of-red-and-blue",
       "folder": "contests/ieeextreme15/Spies of Red and Blue",
       "contest": "IEEEXtreme 15.0",
@@ -1040,6 +1414,17 @@
       "contestTaskId": 48055,
       "timeLimit": 2000,
       "capability": "archive"
+    },
+    {
+      "id": "training-plan",
+      "folder": "contests/ieeextreme15/Training Plan",
+      "contest": "IEEEXtreme 15.0",
+      "longName": "Training Plan",
+      "urlName": "training-plan",
+      "contestTaskId": 48046,
+      "timeLimit": 4000,
+      "capability": "practice",
+      "judge": "tokens"
     },
     {
       "id": "word-search",
@@ -1070,6 +1455,17 @@
       "contestTaskId": 48053,
       "timeLimit": 6000,
       "capability": "archive"
+    },
+    {
+      "id": "xtreme-winners",
+      "folder": "contests/ieeextreme15/Xtreme Winners",
+      "contest": "IEEEXtreme 15.0",
+      "longName": "Xtreme Winners",
+      "urlName": "xtreme-winners",
+      "contestTaskId": 48051,
+      "timeLimit": 500,
+      "capability": "practice",
+      "judge": "tokens"
     },
     {
       "id": "andman",
@@ -1111,6 +1507,28 @@
       "contestTaskId": 48519,
       "timeLimit": 2000,
       "capability": "archive"
+    },
+    {
+      "id": "combo-locks",
+      "folder": "contests/ieeextreme16/Combo Locks",
+      "contest": "IEEEXtreme 16.0",
+      "longName": "Combo Locks",
+      "urlName": "combo-locks",
+      "contestTaskId": 48531,
+      "timeLimit": 1000,
+      "capability": "practice",
+      "judge": "checker"
+    },
+    {
+      "id": "dream-team",
+      "folder": "contests/ieeextreme16/Dream Team",
+      "contest": "IEEEXtreme 16.0",
+      "longName": "Dream Team",
+      "urlName": "dream-team",
+      "contestTaskId": 48515,
+      "timeLimit": 1000,
+      "capability": "practice",
+      "judge": "tokens"
     },
     {
       "id": "gaius-letters",
@@ -1552,6 +1970,17 @@
       "capability": "archive"
     },
     {
+      "id": "another-sliding-window-problem",
+      "folder": "contests/ieeextreme18/Another Sliding Window Problem",
+      "contest": "IEEEXtreme 18.0",
+      "longName": "Another Sliding Window Problem",
+      "urlName": "another-sliding-window-problem",
+      "contestTaskId": 50605,
+      "timeLimit": 500,
+      "capability": "practice",
+      "judge": "tokens"
+    },
+    {
       "id": "balls",
       "folder": "contests/ieeextreme18/Balls",
       "contest": "IEEEXtreme 18.0",
@@ -1624,6 +2053,17 @@
       "contestTaskId": 50606,
       "timeLimit": 500,
       "capability": "archive"
+    },
+    {
+      "id": "doubled-sequence",
+      "folder": "contests/ieeextreme18/Doubled Sequence",
+      "contest": "IEEEXtreme 18.0",
+      "longName": "Doubled Sequence",
+      "urlName": "doubled-sequence",
+      "contestTaskId": 50608,
+      "timeLimit": 1000,
+      "capability": "practice",
+      "judge": "checker"
     },
     {
       "id": "halving",
@@ -1783,6 +2223,17 @@
       "capability": "archive"
     },
     {
+      "id": "triumvirates",
+      "folder": "contests/ieeextreme18/Triumvirates",
+      "contest": "IEEEXtreme 18.0",
+      "longName": "Triumvirates",
+      "urlName": "triumvirates",
+      "contestTaskId": 50607,
+      "timeLimit": 1000,
+      "capability": "practice",
+      "judge": "checker"
+    },
+    {
       "id": "two-fridges",
       "folder": "contests/ieeextreme18/Two Fridges",
       "contest": "IEEEXtreme 18.0",
@@ -1866,6 +2317,17 @@
       "judge": "tokens"
     },
     {
+      "id": "circular-permutation",
+      "folder": "contests/ieeextreme19/Circular Permutation",
+      "contest": "IEEEXtreme 19.0",
+      "longName": "Circular Permutation",
+      "urlName": "circular-permutation",
+      "contestTaskId": 51705,
+      "timeLimit": 1000,
+      "capability": "practice",
+      "judge": "tokens"
+    },
+    {
       "id": "continued-fractions",
       "folder": "contests/ieeextreme19/Continued Fractions",
       "contest": "IEEEXtreme 19.0",
@@ -1905,6 +2367,17 @@
       "timeLimit": 1500,
       "capability": "practice",
       "judge": "tokens"
+    },
+    {
+      "id": "edps",
+      "folder": "contests/ieeextreme19/EDPS",
+      "contest": "IEEEXtreme 19.0",
+      "longName": "EDPS",
+      "urlName": "edps",
+      "contestTaskId": 51702,
+      "timeLimit": 2000,
+      "capability": "practice",
+      "judge": "checker"
     },
     {
       "id": "easy-sum",
@@ -1999,6 +2472,17 @@
       "timeLimit": 1000,
       "capability": "practice",
       "judge": "tokens"
+    },
+    {
+      "id": "sequence-decomposition",
+      "folder": "contests/ieeextreme19/Sequence Descomposition",
+      "contest": "IEEEXtreme 19.0",
+      "longName": "Sequence Decomposition",
+      "urlName": "sequence-decomposition",
+      "contestTaskId": 51724,
+      "timeLimit": 1000,
+      "capability": "practice",
+      "judge": "checker"
     },
     {
       "id": "shaileshs-triplet",

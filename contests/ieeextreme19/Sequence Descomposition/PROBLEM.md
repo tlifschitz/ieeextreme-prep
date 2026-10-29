@@ -27,4 +27,6 @@ Constraints and notes
 
 1 ≤ |Sᵢ| ≤ 6 × 10⁵
 
-The total sum of |Sᵢ| over all test cases does not exceed 6 × 10⁵.
+The total sum of |Sᵢ| over all test cases does not exceed 3 × 10⁶.
+
+Sᵢ is fortunate for all i = 1, ..., T.

@@ -1,0 +1,8 @@
+stop;word;more;less;this
+aaaa;bbbb;cccc;dddd;eeee
+<r>
+ <title>Nothing here, only filler words!</title>
+ <abstract>aaaa is outside? no.</abstract>
+ <body>stop word more</body>
+ <other>aaaa bbbb cccc dddd eeee</other>
+</r>
