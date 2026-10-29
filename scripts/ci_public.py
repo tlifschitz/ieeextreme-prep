@@ -125,13 +125,23 @@ def tracked_vs_manifest():
     return errors
 
 
+def judged_solution(files):
+    """The spoiler file CI runs: the optimal, or for an optimal in another language (a Ruby code
+    golf) the highest Python level."""
+    for n in OPTIMAL:
+        if n in files:
+            return n
+    levels = sorted(n for n in files if re.fullmatch(r"levels/[^/]+/solution\.py", n))
+    return levels[-1] if levels else None
+
+
 def structure(catalog, spoilers):
     errors = []
     for e in practice(catalog):
         errs = check_tests_dir(e)
         try:
             files = spoilers.decode(e)
-            if not any(n in files for n in OPTIMAL):
+            if judged_solution(files) is None:
                 errs.append("spoiler has no solution.cpp or solution.py")
             if "hints.json" not in files:
                 errs.append("spoiler has no hints.json")
@@ -157,7 +167,8 @@ def judge(entry, spoilers, factor):
             dest.parent.mkdir(parents=True, exist_ok=True)
             dest.write_bytes(data)
             dest.chmod(0o755 if executable else 0o644)
-        sol = next((tmp / n for n in OPTIMAL if n in files), None)
+        name = judged_solution(files)
+        sol = tmp / name if name else None
         if sol is None:
             return entry, 1, "spoiler has no solution.cpp or solution.py"
         cmd = [sys.executable, str(ROOT / "scripts" / "verify.py"), entry["id"], "--solution", str(sol), "--no-log"]
